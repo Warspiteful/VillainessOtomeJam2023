@@ -33,6 +33,8 @@ label start:
     mc "(So why…do I feel this way?)"
     "My eyes drift close. I decide not to fight the feeling and fall asleep. I'll just eat a big breakfast tomorrow."
     ""
+
+    $mcname = renpy.input("What is your name?")
     scene bg mcroom base with fade
     "The next morning, I could hear the sounds of birds chirping. My nose twitches as a sweet scent slowly wafts through the room."
     "With a groan, I sit up, my eyes still closed. My muscles are sore and it feels as if I ran a marathon."
@@ -44,13 +46,14 @@ label start:
     mc "Don't mind if I do!"
     "Without a second thought, I start digging in."
 
-    scene white #WIP
+    scene white #WIP: CG
     "I let out a satisfied groan as I eat."
     mc "This is delicious!!"
     "Whoever made this deserves the world. It's absolutely perfect."
     "My thoughts are interrupted by a lady bursting into my room. I pause mid bite."
     scene bg mcroom base
-    show davinia oh
+    show davinia oh at left
+    show maid at right
     "She stares at me."
     "I stare back."
     "She keeps staring."
@@ -146,15 +149,311 @@ label start:
 
 
 label choice1_eat:
+    "Lewis gives me an even weirder look."
+    "It's as if I’d grown two heads."
+    mc "What is it? Why are you looking at me like that?"
+    l "Because you never cared for food before."
+    "I blink."
+    "That’s right. I’m not me anymore. I’m the villainess."
+    "But food is food."
+    "I shrug and give him a smile."
+    mc "I've simply had a change of heart."
+    "Lewis sighs, going back to his newspaper."
+    l "Go ahead. I do not mind."
+    mc "Yay!!"
+    "I take a croissant, nibbling happily on it."
+    jump choice1_done
+
 
 label choice1_important:
+    l "And…why do you care?"
+    "The question catches me off guard. It’s not said in a rude way–it's more genuine confusion."
+    mc "We’re engaged, aren’t we? As your fiance, I need to make sure you’re taking care of yourself."
+    "Lewis stares at me. And he keeps staring."
+    "I stare back."
+    "After a moment, he just shakes his head and sighs."
+    mc "I’m guessing that’s a no?"
+    l "You’d guess right."
+    "I pout slightly and lean forward, taking a croissant in my hand."
+    mc "Suit yourself."
+    jump choice1_done
 
 
+label choice1_done:
+    "Lewis sips on his coffee, not paying me any attention. I use the time to think about how I should go about this whole villainess thing."
+    "The manhwa was fairly new and I had read all available episodes."
+    "When [mcname] showed up in the story, she was cruel from the get go. Stubborn, violent, and selfish, she was hated in the fandom."
+    "I don't want that. And I don't want whatever death flags the author had planned."
+    "Death flags: An element in a story used to foreshadow a character's imminent death or downfall."
+    "Was this even worth it?"
+    "I think back on my past life. It wasn't anything special."
+    "Though, I suppose the criteria for being isekai'd is being unremarkable and then starting a new life."
+    "I am…was a normal office worker. Not a manager, just someone who stayed mediocre."
+    "Despite that, I was overworked. I found myself eating mediocre instant ramen from the convenience store."
+    "At night, I would get my fill of delicious food while reading manhwa and manga."
+    "Now that I think back on it, my life was kind of pathetic. Sure, I enjoyed the nights I had, but my life as a whole wasn't fulfilling."
+    "I look down at the table, the plates cleared of food and my stomach happy."
+    mc "(Yeah. This is way better.)"
+    l "[mcname]."
+    "Here, I can live for myself. I can eat all the delicious food and not be tied down by anything."
+    "Not even the title of villainess. Although it would be a shame if I die again because of it."
+    "I sigh happily and pick up a cream puff."
+    l "[mcname]!"
+    "I'm knocked out of my thoughts as I look up at Lewis."
+    mc "Sorry, sorry. What is it?"
+    "His eyebrows furrow once again as he leans forward."
+    l "You've been acting odd."
+    mc "Odd?"
+    l "The [mcname] I know would currently be talking about the gossip she’s been hearing around the castle."
+    "I shake my head slightly and wave my hand dismissively."
+    mc "I'm not interested in petty gossip."
+    "The room is filled with gasps. I look around, confused."
+    "The castle staff and Lewis are all staring at me in shock."
+    mc "Did I… Did I say something wrong?"
+    show maid at right #Maid Sprite
+    show lewis at center with move
+    "The maid shakily points at me, her face filled with fear."
+    m "Who are you and what have you done with [mcname]?"
+    "Oh, right."
+    "[mcname] loved gossip and spreading rumors. It eventually made a rift between her and Lewis."
+    "I quickly try to cover my words."
+    "Before I can speak, the maid talks once again."
+    m "My lord, she's been acting odd since she woke up. She's been eating food she normally doesn't and has been acting more…"
+    "She looks over at me, as if fearful of my reaction."
+    m "More docile."
+    "Lewis sighs and pinches the bridge of his nose."
+    l "I do not have time for this."
+    "He scowls at me."
+    l "Otillia is visiting soon. Be ready by then."
+    hide lewis with dissolve
+    "Without another word, he gets up and exits the room."
+    show maid at right #WIP: Maid Sprite
+    "I turn towards the maid, the uneaten cream puff in my hand."
+    mc "Could you possibly ask the chef if there are any more croissants? They were delicious."
+    m "Yes, my lady."
+    hide maid with dissolve
+    show davinia at center with move
+    "She stares at me one last time before making her way to the kitchen. I start eating the cream puff, letting my thoughts come together."
+    "In the manhwa, Otillia and [mcname]'s meeting was basically the start of the main plotline."
+    "The original [mcname] was rude towards Otillia, despite her prowess in magic and being personally trained by the head mage."
+    "She laughed in Otillia's face and made fun of her aspirations."
+    mc "(Classic villainess.)"
+    "Lewis ended up defending Otillia. She was touched and that's when they started to get closer."
+    mc "If I can just avoid this first flag…I should be in the clear."
+    "It's not like I don't want them to end up together. I just want to live and not suffer the fate of every manhwa villainess."
+    "When I'm about to formulate a plan, I hear hushed whispering from the corner."
+    scene cg cenric #WIP: Cenric CG
+    "I look towards the source of the noise and see the maid and a man in a chef's uniform conversing with each other."
+    "The man is tall and big, with fluffy blonde hair and a slightly chubby face."
+    "Cute."
+    "With a confused and slightly concerned smile, I nod in their direction."
+    "Both of them walk over to me. The chef bows deeply, not making eye contact."
+    scene bg tearoom day
+    show davinia neutral at left
+    show cenric neutral at right
+    c "My lady… I'm Cenric. The head chef."
+    menu:
+        "Your food is absolutely delicious!":
+            jump choice2_delicious
+        "It's a pleasure to meet you, Cenric!":
+            jump choice2_pleasure
 
 
+label choice2_delicious:
+    "Cenric straightens, his face lit up in a smile. His cheeks are a dark red."
+    c "Th-thank you, my lady."
+    mc "(He looks like a cute golden retriever.)"
+    "Golden Retriever: A character that highly resembles a golden retriever. Often kind, blond, and a bit stupid."
+    c "I w-wanted to personally see what else you would like to eat."
+    c "I know you said you wanted croissants but…I can make you anything if you please."
+    "My eyes immediately shine at the thought. As soon as I open my mouth, a flood of requests starts pouring out."
+    mc "Anything? Can you make doughnuts? Crepes? Curry? Hamburg steak? Stew? Parfaits? Oooh! There's so many options!!"
+    "Cenric looks surprised but smiles happily."
+    c "Anything you wish, my lady."
+    "I take a second to think."
+    "This is a big decision. The ultimate power: the ability to have any type of food made for me."
+    "Well, mostly any type. I doubt I could get something like tteokbokki here."
+    "I gasp as I suddenly think of one of my favorite comfort foods."
+    mc "Since Otillia is visiting, can you make some tea and foods to go along with it? And be sure to include strawberry shortcake."
+    c "As you wish, my lady."
+    hide cenric with dissolve
+    show davinia at center with move
+    "Cenric bows his head, that same goofy grin on his face. He turns and makes his way back to the kitchen."
+    "I smile and mutter to myself."
+    mc "So adorable."
+    jump choice2_done
 
-    # These display lines of dialogue.
+label choice2_pleasure:
+    c "It's rare for someone to come back for more food."
+    "He still avoids eye contact, bowing deeply."
+    "I give him a gentle smile."
+    mc "It was quite delicious. I wanted you to make some more so I can share with Lewis when he gets back."
+    c "Do you have anything in mind?"
+    "I think for a second. If Otillia will also be visiting, it would be wise to set an inviting atmosphere."
+    "This could work."
+    mc "Well, since Otillia is also visiting, could you please prepare tea and some finger foods for us?"
+    c "Any specifics?"
+    mc "Hmmm…"
+    "For some reason, the sight of Lewis not eating fills my mind."
+    mc "Something that Lewis would like."
+    c "Of course, my lady."
+    hide cenric with dissolve
+    show davinia at center with move
+    "With another bow, he makes his way back to the kitchen."
 
-    # This ends the game.
 
+label choice2_done:
+    "Since I'm alone–"
+    "I look over to the maid standing in the corner."
+    "Well, relatively alone, I'll take this time to look around."
+    "It's so odd and very surreal being in a place that was fictional before."
+    "I walk around the tea room, taking in every bit of detail. Fantasy manhwa tend to have a lot of detail and 'My Magical Kindness Made the Cold Prince Fall in Love!!' was no exception."
+    "Everything is elegant and just screams royalty. Not to mention…glittery. Why is everything so glittery?"
+    mc "It's like I'll be blinded."
+    "I touch a vase with gold accents, watching as it glints in the sunlight."
+    "To think I would ever end up in a place like this. It makes me wonder about my old life."
+    "Did people even know that I died? Would they even care? What about–"
+    mc "What about the food in my fridge? It'll spoil. Such a waste."
+    scene cg otilla
+    "I can hear more voices getting closer to the room. I turn and see Lewis, Otillia, and the grand mage."
+    mc "Woah."
+    "Otillia is even more gorgeous in person. Golden locks fall across her shoulders, looking as smooth as silk. She has a rosy complexion, her blue eyes crystal clear."
+    "She's the typical heroine, except her beauty puts her above others. This is when it sets in that I truly am inside a manhwa."
+    scene bg tearoom day
+    show otillia neutral at right
+    show davinia neutral at left
+    "I grin, walking over to them. I curtsy, my eyes meeting hers."
+    mc "It's a pleasure to meet you, Miss Otillia. I am Lady [mcname], but please, call me [mcname]."
+    o "O-oh!"
+    "Otillia's eyes widen. Just for a second, she hesitates before returning the curtsy."
+    "It must be a surprise. [mcname]'s reputation was already less than ideal from the get go. Besides the rumors she spread, she was known to be mean-spirited."
+    "What's supposed to happen at this point is that [mcname]…or I am supposed to scoff and make fun of her background. I call her a wannabe noble that has no true talent and will only end up as trash."
+    "Lewis would then immediately come to Otillia's aid and scold [mcname], calling her bitter and jealous."
+    mc "(Yikes.)"
+    "Since I don't want to see my doom, I take the obvious route."
+    mc "Thank you so much for coming over!! I've heard all about your gift, Miss Otillia."
+    "Otillia smiles, albeit awkwardly."
+    o "It's a pleasure to meet you as well, Lady [mcname]."
+    mc "Oh, please. Call me [mcname]. It's fine, I promise."
+    mc "Come, sit."
+    "I guide her over to the couch. We both sit as the grand mage and Lewis sit across from us. I take a deep breath. Doing good so far."
+    mc "Please, tell me about your studies so far. I have never met someone with powerful magic before."
+    "Otillia smiles, looking a bit cautious. It's best if I'm not too enthusiastic or it would seem like I'm scheming up a plan."
+    o "Oh, it's not much. It's just light magic. Healing… I'm not special."
+    "The grand mage shakes her head."
+    hide davinia
+    show otillia at left with move
+    show lewis neutral at right
+    show noble at center
+    gm "Light magic is the rarest form of magic. Not to mention your healing powers are quite exceptional. You are like a gift from the gods."
+    "Despite looking uncomfortable, Otillia blushes, looking down into her lap."
+    o "I wouldn't say that much."
+    l "Healing magic, you say?"
+    "I look over at Lewis. In the story, he had Otillia attempt to heal his brother. Unfortunately, the disease he had was already too far along, and Lewis ended up taking the throne."
+    o "I've been practicing, but it still drains a lot out of me. I won't be useful for a while."
+    hide noble
+    show davinia neutral at center with dissolve
+    "I shake my head, laughing slightly."
+    mc "That's all right. I don't think anyone is in a rush to have you go out and do some healing."
+    "She seems to finally relax as she nods."
+    o "Thank you for saying that, my lady."
+    l "By the way, I wanted to ask about–"
+    hide otillia
+    show cenric neutral at left with dissolve
+    "Lewis's words are interrupted by Cenric entering the room. He's rolling a cart filled with tea and snacks. My eyes immediately light up."
+    "Lewis looks surprised before sighing and glancing over at me."
+    l "[mcname], what is this?"
+    mc "I asked Cenric to make us some snacks!"
+    "I squeal, standing up as Cenric positions the cart near the table. Lewis' expression turns into a scowl."
+    l "Good lord, [mcname]. This is practically enough for a party! Why did you do this?"
+    menu:
+        "Because I wanted to eat more of Cenric's cooking.":
+            jump choice3_eatmore
+        "You need to appreciate Cenric's cooking more.":
+            jump choice3_appreciate
+
+label choice3_eatmore:
+    "Cenric blushes and then bows his head."
+    c "You're too kind, my lady."
+    mc "It's true!"
+    "I then motion towards Otillia."
+    mc "Come! You must taste his cooking. It's absolutely divine."
+    l "I don't think it's entirely appropriate–"
+    mc "Oh, shush. We have guests. We can't have them hungry."
+    hide lewis with dissolve
+    show otillia neutral at right with dissolve
+    "Otillia walks over, her eyes scanning all the options."
+    mc "Pick whatever you'd like."
+    "She settles on a pink macaron filled with some type of jelly. She takes a small bite. Then she takes a bigger one, popping the whole thing in her mouth."
+    o "This is delicious!"
+    "Cenric chuckles, rubbing the back of his head sheepishly."
+    c "It's not my best, but I appreciate your words."
+    "I click my tongue, giving him a mock stern look."
+    mc "You need to have more confidence in yourself. Anyone would be lucky to have your food."
+    "Cenric doesn't say anything and looks away. His face is almost completely red."
+    "I bite back a giggle and then turn to the food, grabbing some for myself. Lewis sighs and rolls his eyes."
+    l "Anyway, back to the topic at hand."
+    jump choice3_done
+
+label choice3_appreciate: #WIP: Set transforms to show all 4 sprites on-screen at once
+    "Lewis scoffs, rolling his eyes. I walk over to him and tug on his sleeve."
+    mc "Come on."
+    l "[mcname]…"
+    "I don't listen and drag him over to the cart. I point towards the food."
+    mc "Go on. Choose one."
+    l "I don't want to."
+    mc "As your fiance, I command you."
+    "He snorts and raises an eyebrow, crossing his arms."
+    l "There's the [mcname] I'm used to."
+    l "Fine, I'll do it."
+    "He looks over the food for a moment. He seems uninterested and grabs a small tart. He bites into it and then shrugs."
+    l "It's all right. Nothing special."
+    "I turn towards Cenric and see his face fall. I turn back towards Lewis and frown. Can someone really be this apathetic towards food?"
+    hide cenric with dissolve
+    show davinia at left with move
+    mc "Don't be rude. Cenric worked hard."
+    l "Food isn't necessarily something I need to worry about. We're here for a meeting, not your hunger."
+    "The words almost make me angry. I roll my eyes. This would be an issue to solve later."
+    mc "Suit yourself."
+    "I smile towards Otillia and the grand mage."
+    mc "Please, come eat."
+    "Everyone shuffles in to get food. Lewis tries to keep the conversation on track."
+    jump choice3_done
+
+label choice3_done:
+    "We all sit with our plates, the conversation flowing easily between one another. The attention is on Otillia and her upbringing."
+    "I never thought I'd be in a position like this. It seems so surreal that I'm in a pretty and glittering dress while talking to the two most important people in the kingdom."
+    "At first, I was worried I would feel out of place. But I am genuinely having a good time. I feel like I have settled in, if only for now."
+    "I just need to avoid becoming a villainess."
+    o "Well, I'm no one to celebrate."
+    mc "What? Of course you are! You faced a hard childhood and look at you now. Studying directly under the grand mage. That deserves a party."
+    "Otillia giggles, covering her face."
+    o "Oh, please. You and Prince Lewis have been the talk of the town since your engagement."
+    "Lewis's face turns red, and I smirk slightly."
+    mc "(Right. Engaged.)"
+    o "You know, it would be great to have a ball!"
+    "Lewis looks at her curiously."
+    l "A ball?"
+    "She nods, a sudden glint in her eye."
+    o "You two haven't had an engagement party, correct?"
+    "I nod before glancing over at my fiance."
+    mc "He isn't one for parties."
+    l "I'm too busy."
+    mc "(And introverted.)"
+    "Like I'm one to talk. I spent my nights reading manhwa. Not exactly party animal material."
+    o "How can you expect to be king if you can't organize balls?"
+    "Lewis opens his mouth then shuts it. Otillia's smile is bright as if she just won a prize."
+    o "It's settled! I'll leave the planning to you two!"
+    "There isn't much room for discussion. Otillia quickly changes the subject and refuses to let it circle back to the party. After a while, both her and the grand mage depart."
+    "I sit back in my chair, sipping on some tea. I think that went well. Well enough to form a good relationship with Otillia and not be blasted away by light magic."
+    mc "(Victory!)"
+    l "[mcname]?"
+    mc "Hmm?"
+    "I look over at Lewis. He's staring straight at me as if he's studying a painting."
+    l "I am truly concerned for you. You aren't acting like your normal self."
+    mc "Would you rather I be cruel and rude?"
+    l "No, but–"
+    mc "Then there is no problem."
+    "That shuts him up. He exhales, rubbing the bridge of his nose."
+    l "You do know I have no time to be throwing parties. I am to be crowned king soon. I need to spend more time focusing on that."
     return
