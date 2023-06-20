@@ -8,3 +8,4 @@ define c = Character("Cenric")
 define o = Character("Otilla")
 
 define gm = Character("Grand Mage")
+define narr = Character(None, kind=nvl)

@@ -39,8 +39,10 @@ label start:
     "The next morning, I could hear the sounds of birds chirping. My nose twitches as a sweet scent slowly wafts through the room."
     "With a groan, I sit up, my eyes still closed. My muscles are sore and it feels as if I ran a marathon."
     "The smell of food is enough to make me crack open my eyes. Immediately, I notice a silver tray on my bedside."
+    show d oh with dissolve
     mc "What's this?"
     "I pick it up and set it on my lap. With a thick swallow, I take off the lid."
+    show d fc
     mc "Oh. My. God."
     "On the tray is a delectable looking breakfast spread. Two scones, a tiny container of jam, a croissant, and even a bagel with cream cheese spread across it… My mouth is already watering."
     mc "Don't mind if I do!"
@@ -58,9 +60,12 @@ label start:
     "I stare back."
     "She keeps staring."
     m "My lady?"
-    "It’s not until that moment when my surroundings finally start coming into view."
-    "An expensive wardrobe with a mirror gilded in gold. Expensive white trim detailing the entire room. Floral wallpaper. Thick and soft down comforter."
-    "I am not in my bedroom."
+    nvl show
+    narr "It’s not until that moment when my surroundings finally start coming into view."
+    narr "An expensive wardrobe with a mirror gilded in gold. Expensive white trim detailing the entire room. Floral wallpaper. Thick and soft down comforter."
+    narr "I am not in my bedroom."
+    nvl hide
+    nvl clear
     "I take another bite of my croissant, my eyebrows furrowing. The lady in front of me, who I now recognize as a maid, looks at me in concern."
     show d neu
     mc "Hmmm…"
@@ -74,27 +79,36 @@ label start:
     "Clue number one."
     "I look in the mirror. I'm met with rosy and plump cheeks. My hair is short, brown, and curly."
     "Clue number two."
+    show d oh
     mc "Ah. So it does happen."
     "Isekai: A genre where the main character gets transported to another world, usually through death."
+    show d neu
     mc "(I don't remember dying. I only remember falling asleep.)"
     mc "Perhaps…"
+    show d a
     "I mutter to myself. I frown. There is a hint of disappointment. If I was going to be isekai'd…"
     mc "(I wanted to be hit by a truck.)"
     "Well, you can't pick and choose."
+    show d neu
     "I set the mirror down next to me and pick up one of the scones. I slather a healthy amount of jelly on it and start to eat."
     "It would seem that I am now living in the world of 'My Magical Kindness Made the Cold Prince Fall in Love!!' Not my first choice."
     "I'm in the role of villainess. Also not ideal. In the many, many manhwa I've consumed, the villainess never gets the happy ending."
+    show d pout sad
     "I pout, taking another bite of my food. I look over at the maid."
     mc "Where are we?"
     m "Excuse me?"
+    show d neu
     "I speak again."
     mc "Where are we?"
     "The maid tries and fails to not look too concerned."
     m "The castle…"
+    show d oh
     mc "Oh!"
     "My eyes widen as I pinpoint where in the story I was transported to."
     "My character, the villainess, is engaged to the love interest, Lewis. The heroine of the story, Otillia, has just started to study at the castle."
+    show d pout sad
     "I sigh to myself, finishing my food."
+    show d neu
     m "Are… Are you ready to be dressed, my lady?"
     "I nod and set the tray on the bed. I get up and get dressed with the maid's help."
     m "My lady…are you all right?"
@@ -102,9 +116,11 @@ label start:
     "I look over at her."
     mc "Oh, yes. I suppose breakfast has me feeling sluggish."
     m "The food wasn't to your liking again? I can inform–"
+    show d ss
     mc "That's not it."
     "I wave her off, giving her a smile."
     mc "I guess I'm left wanting more."
+    scene
     "I decide not to dwell on it. After I'm dressed, the maid leads me out into the common room."
     "She says nothing more, but it's obvious that she doesn't trust my word."
     scene bg tearoom day with fade
@@ -112,34 +128,46 @@ label start:
     "The first thing I notice is a large bookshelf sprawling the length of one wall. A heavy dark oak table is surrounded by velvet couches and chairs. Behind it are windows with thick red curtains that have been opened to let in the morning light."
     "A man sits in the padded chair at the head of the table. There's food laid out in front of him. All of it untouched."
     show white with fade #WIP: Lewis CG
-    "Lewis, the love interest of the manhwa."
-    "He was popular among readers due to his older age. And I have to say that he is much more handsome in real life."
-    "A soft complexion, long hair with gray streaks, glasses that rest gently on his nose, and tied together with a stern expression…"
-    "Megane: A character with glasses. Oftentimes, male megane are seen as stoic and aloof."
+    nvl show
+    narr "Lewis, the love interest of the manhwa."
+    narr "He was popular among readers due to his older age. And I have to say that he is much more handsome in real life."
+    narr "A soft complexion, long hair with gray streaks, glasses that rest gently on his nose, and tied together with a stern expression…"
+    narr "Megane: A character with glasses. Oftentimes, male megane are seen as stoic and aloof."
+    nvl hide
+    nvl clear
     l "Oh, you're awake. Good morning."
-    scene bg tearoom day with fade
-    show d neu at left with dissolve
+    scene bg tearoom day
+    show d n b at left with dissolve
     show l neu at right with dissolve
     "I just stare at him. It takes me a minute to realize he's talking to me."
+    show d sb
     mc "G-good morning…"
     "Wait, how do I address him?"
     "Sir? My lord? Prince?"
     "I try to remember how the villainess addressed him in the manhwa."
+    show d neu
     mc "Lewis."
+    show l nerve
     l "All right then…"
     "He clears his throat awkwardly."
+    show l neu
     l "Do sit."
     mc "Right."
     "I sit across from him. My eyes keep flickering from him to the food in front of me."
+    show d fc
     "There is even more delicious looking food than what I got this morning. I\’m practically drooling once again."
     "Lewis picks up a newspaper and starts reading. He only stops to drink coffee from his cup."
+    show d fbb
     "All that food…untouched."
     "I can’t hold back anymore."
+    show d n b
     mc "Are you hungry?"
     "Lewis lowers his paper, his eyebrow raised."
+    show l nerve
     l "Hmm?"
     mc "You’re not eating."
     "Lewis gives me an odd look before clearing his throat."
+    show l neu
     l "I am not hungry."
     menu:
         "Then can I eat?":
@@ -149,29 +177,40 @@ label start:
 
 
 label choice1_eat:
+    show l shock
     "Lewis gives me an even weirder look."
     "It's as if I’d grown two heads."
+    show d sb
     mc "What is it? Why are you looking at me like that?"
     l "Because you never cared for food before."
+    show d oh
     "I blink."
     "That’s right. I’m not me anymore. I’m the villainess."
     "But food is food."
+    show d ss
     "I shrug and give him a smile."
     mc "I've simply had a change of heart."
+    show l an
     "Lewis sighs, going back to his newspaper."
     l "Go ahead. I do not mind."
+    show d ls
     mc "Yay!!"
     "I take a croissant, nibbling happily on it."
     jump choice1_done
 
 
 label choice1_important:
+    show l nerve
     l "And…why do you care?"
+    show d oh
     "The question catches me off guard. It’s not said in a rude way–it's more genuine confusion."
+    show d ss
     mc "We’re engaged, aren’t we? As your fiance, I need to make sure you’re taking care of yourself."
     "Lewis stares at me. And he keeps staring."
     "I stare back."
+    show l neu
     "After a moment, he just shakes his head and sighs."
+    show d pout upset
     mc "I’m guessing that’s a no?"
     l "You’d guess right."
     "I pout slightly and lean forward, taking a croissant in my hand."
@@ -180,55 +219,75 @@ label choice1_important:
 
 
 label choice1_done:
-    "Lewis sips on his coffee, not paying me any attention. I use the time to think about how I should go about this whole villainess thing."
-    "The manhwa was fairly new and I had read all available episodes."
-    "When [mcname] showed up in the story, she was cruel from the get go. Stubborn, violent, and selfish, she was hated in the fandom."
-    "I don't want that. And I don't want whatever death flags the author had planned."
-    "Death flags: An element in a story used to foreshadow a character's imminent death or downfall."
-    "Was this even worth it?"
-    "I think back on my past life. It wasn't anything special."
-    "Though, I suppose the criteria for being isekai'd is being unremarkable and then starting a new life."
-    "I am…was a normal office worker. Not a manager, just someone who stayed mediocre."
-    "Despite that, I was overworked. I found myself eating mediocre instant ramen from the convenience store."
-    "At night, I would get my fill of delicious food while reading manhwa and manga."
-    "Now that I think back on it, my life was kind of pathetic. Sure, I enjoyed the nights I had, but my life as a whole wasn't fulfilling."
+    scene bg tearoom day
+    nvl show
+    narr "Lewis sips on his coffee, not paying me any attention. I use the time to think about how I should go about this whole villainess thing."
+    narr "The manhwa was fairly new and I had read all available episodes."
+    narr "When [mcname] showed up in the story, she was cruel from the get go. Stubborn, violent, and selfish, she was hated in the fandom."
+    narr "I don't want that. And I don't want whatever death flags the author had planned."
+    narr "Death flags: An element in a story used to foreshadow a character's imminent death or downfall."
+    narr "Was this even worth it?"
+    narr "I think back on my past life. It wasn't anything special."
+    narr "Though, I suppose the criteria for being isekai'd is being unremarkable and then starting a new life."
+    narr "I am…was a normal office worker. Not a manager, just someone who stayed mediocre."
+    narr "Despite that, I was overworked. I found myself eating mediocre instant ramen from the convenience store."
+    narr "At night, I would get my fill of delicious food while reading manhwa and manga."
+    narr "Now that I think back on it, my life was kind of pathetic. Sure, I enjoyed the nights I had, but my life as a whole wasn't fulfilling."
+    nvl hide
+    nvl clear
     "I look down at the table, the plates cleared of food and my stomach happy."
+    show d ls at center with dissolve
     mc "(Yeah. This is way better.)"
     l "[mcname]."
+    show d fbb
     "Here, I can live for myself. I can eat all the delicious food and not be tied down by anything."
     "Not even the title of villainess. Although it would be a shame if I die again because of it."
     "I sigh happily and pick up a cream puff."
+    show l neu at right with dissolve
+    show d oh at left with move
+
     l "[mcname]!"
     "I'm knocked out of my thoughts as I look up at Lewis."
     mc "Sorry, sorry. What is it?"
+    show l nerve
     "His eyebrows furrow once again as he leans forward."
     l "You've been acting odd."
     mc "Odd?"
     l "The [mcname] I know would currently be talking about the gossip she’s been hearing around the castle."
     "I shake my head slightly and wave my hand dismissively."
+    show d ss
     mc "I'm not interested in petty gossip."
+    show d sb
+    show l shock
     "The room is filled with gasps. I look around, confused."
     "The castle staff and Lewis are all staring at me in shock."
+    show d oh
     mc "Did I… Did I say something wrong?"
-    show maid at right #Maid Sprite
-    show l shock at center with move
+    show maid at offscreenright
+    show maid at center with move #Maid Sprite
+    show l shock
     "The maid shakily points at me, her face filled with fear."
     m "Who are you and what have you done with [mcname]?"
+    show d gloom
     "Oh, right."
     "[mcname] loved gossip and spreading rumors. It eventually made a rift between her and Lewis."
+    show d neu
     "I quickly try to cover my words."
     "Before I can speak, the maid talks once again."
     m "My lord, she's been acting odd since she woke up. She's been eating food she normally doesn't and has been acting more…"
     "She looks over at me, as if fearful of my reaction."
     m "More docile."
+    show l an
     "Lewis sighs and pinches the bridge of his nose."
     l "I do not have time for this."
+    show l a
     "He scowls at me."
     l "Otillia is visiting soon. Be ready by then."
-    hide l with dissolve
+    show l at offscreenright with move
+    show maid at right with move #WIP: Maid Sprite
     "Without another word, he gets up and exits the room."
-    show maid at right #WIP: Maid Sprite
     "I turn towards the maid, the uneaten cream puff in my hand."
+    show d fbb
     mc "Could you possibly ask the chef if there are any more croissants? They were delicious."
     m "Yes, my lady."
     hide maid with dissolve
@@ -237,10 +296,12 @@ label choice1_done:
     "In the manhwa, Otillia and [mcname]'s meeting was basically the start of the main plotline."
     "The original [mcname] was rude towards Otillia, despite her prowess in magic and being personally trained by the head mage."
     "She laughed in Otillia's face and made fun of her aspirations."
+    show d gloom
     mc "(Classic villainess.)"
     "Lewis ended up defending Otillia. She was touched and that's when they started to get closer."
     mc "If I can just avoid this first flag…I should be in the clear."
     "It's not like I don't want them to end up together. I just want to live and not suffer the fate of every manhwa villainess."
+    show d neu
     "When I'm about to formulate a plan, I hear hushed whispering from the corner."
     scene cg cenric #WIP: Cenric CG
     "I look towards the source of the noise and see the maid and a man in a chef's uniform conversing with each other."

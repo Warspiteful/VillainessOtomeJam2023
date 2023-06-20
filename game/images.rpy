@@ -22,7 +22,7 @@ image d fbb:
 image d fc:
     "Sprites/Davinia Sprites/Davinia-FoodCraving-Sprite.png"
     zoom 0.4
-image d gn:
+image d gloom:
     "Sprites/Davinia Sprites/Davinia-GloomNetural-Sprite.png"
     zoom 0.4
 image d ga:
@@ -40,21 +40,22 @@ image d n l:
 image d oh:
     "Sprites/Davinia Sprites/Davinia-Oh-Sprite.png"
     zoom 0.4
-image d p:
+image d pout upset:
     "Sprites/Davinia Sprites/Davinia-PoutUpset-Sprite.png"
     zoom 0.4
-image d sp:
+image d pout sad:
     "Sprites/Davinia Sprites/Davinia-SadProut-Sprite.png"
     zoom 0.4
 image d s:
     "Sprites/Davinia Sprites/Davinia-Shout-Sprite.png"
     zoom 0.4
 image d ss:
-    "Sprites/Davinia Sprites/Davinia-SoftSmle-Sprite.png"
+    "Sprites/Davinia Sprites/Davinia-SoftSmile-Sprite.png"
     zoom 0.4
 image d sb:
-    "Sprites/Davinia Sprites/Davinia-SurpriseBlush-Sprite.png"
+    "Sprites/Davinia Sprites/Davinia-SupriseBlush-Sprite.png"
     zoom 0.4
+    
 image d sb 2:
     "Sprites/Davinia Sprites/Davinia-SurpriseBlushv2-Sprite.png"
     zoom 0.4
@@ -86,7 +87,7 @@ image l f:
 image l g:
     "Sprites/Lewis Sprites/Lewis-Gloom-Sprite.png"
     zoom 0.4
-image l ne:
+image l nerve:
     "Sprites/Lewis Sprites/Lewis-Nervous-Sprite.png"
     zoom 0.4
 image l neu:
@@ -156,7 +157,7 @@ image o laugh evil ex:
 image o happy ex:
     "Sprites/Otillia Sprites/Otillia extra happy.png"
     zoom 0.4
-image o flust pout :
+image o flust pout:
     "Sprites/Otillia Sprites/Otillia flustered pout.png"
     zoom 0.4
 image o flust shout:
