@@ -76,6 +76,10 @@ cache/
 /doc-web
 /LICENSE.txt
 
+# Local Logs
+/traceback.txt
+/log.txt
+
 # Gui template.
 /gui/game/gui
 
