@@ -52,7 +52,7 @@ label start:
     "Whoever made this deserves the world. It's absolutely perfect."
     "My thoughts are interrupted by a lady bursting into my room. I pause mid bite."
     scene bg mcroom base
-    show davinia oh at left
+    show d oh at left
     show maid at right
     "She stares at me."
     "I stare back."
@@ -62,7 +62,7 @@ label start:
     "An expensive wardrobe with a mirror gilded in gold. Expensive white trim detailing the entire room. Floral wallpaper. Thick and soft down comforter."
     "I am not in my bedroom."
     "I take another bite of my croissant, my eyebrows furrowing. The lady in front of me, who I now recognize as a maid, looks at me in concern."
-    show davinia neutral
+    show d neu
     mc "Hmmm…"
     "I keep looking around. An odd sense of familiarity settles in my stomach."
     "Something about this room…I know it."
@@ -118,8 +118,8 @@ label start:
     "Megane: A character with glasses. Oftentimes, male megane are seen as stoic and aloof."
     l "Oh, you're awake. Good morning."
     scene bg tearoom day with fade
-    show davinia neutral at left with dissolve
-    show lewis neutral at right with dissolve
+    show d neu at left with dissolve
+    show l neu at right with dissolve
     "I just stare at him. It takes me a minute to realize he's talking to me."
     mc "G-good morning…"
     "Wait, how do I address him?"
@@ -211,7 +211,7 @@ label choice1_done:
     "The castle staff and Lewis are all staring at me in shock."
     mc "Did I… Did I say something wrong?"
     show maid at right #Maid Sprite
-    show lewis at center with move
+    show l shock at center with move
     "The maid shakily points at me, her face filled with fear."
     m "Who are you and what have you done with [mcname]?"
     "Oh, right."
@@ -225,14 +225,14 @@ label choice1_done:
     l "I do not have time for this."
     "He scowls at me."
     l "Otillia is visiting soon. Be ready by then."
-    hide lewis with dissolve
+    hide l with dissolve
     "Without another word, he gets up and exits the room."
     show maid at right #WIP: Maid Sprite
     "I turn towards the maid, the uneaten cream puff in my hand."
     mc "Could you possibly ask the chef if there are any more croissants? They were delicious."
     m "Yes, my lady."
     hide maid with dissolve
-    show davinia at center with move
+    show d neu at center with move
     "She stares at me one last time before making her way to the kitchen. I start eating the cream puff, letting my thoughts come together."
     "In the manhwa, Otillia and [mcname]'s meeting was basically the start of the main plotline."
     "The original [mcname] was rude towards Otillia, despite her prowess in magic and being personally trained by the head mage."
@@ -249,8 +249,8 @@ label choice1_done:
     "With a confused and slightly concerned smile, I nod in their direction."
     "Both of them walk over to me. The chef bows deeply, not making eye contact."
     scene bg tearoom day
-    show davinia neutral at left
-    show cenric neutral at right
+    show d neu at left
+    show c puppy lookDown at right
     c "My lady… I'm Cenric. The head chef."
     menu:
         "Your food is absolutely delicious!":
@@ -260,6 +260,7 @@ label choice1_done:
 
 
 label choice2_delicious:
+    show c smile lookDown:
     "Cenric straightens, his face lit up in a smile. His cheeks are a dark red."
     c "Th-thank you, my lady."
     mc "(He looks like a cute golden retriever.)"
@@ -276,8 +277,8 @@ label choice2_delicious:
     "I gasp as I suddenly think of one of my favorite comfort foods."
     mc "Since Otillia is visiting, can you make some tea and foods to go along with it? And be sure to include strawberry shortcake."
     c "As you wish, my lady."
-    hide cenric with dissolve
-    show davinia at center with move
+    hide c with dissolve
+    show d neu at center with move
     "Cenric bows his head, that same goofy grin on his face. He turns and makes his way back to the kitchen."
     "I smile and mutter to myself."
     mc "So adorable."
@@ -297,8 +298,8 @@ label choice2_pleasure:
     "For some reason, the sight of Lewis not eating fills my mind."
     mc "Something that Lewis would like."
     c "Of course, my lady."
-    hide cenric with dissolve
-    show davinia at center with move
+    hide c with dissolve
+    show c neu at center with move
     "With another bow, he makes his way back to the kitchen."
 
 
@@ -320,8 +321,8 @@ label choice2_done:
     "Otillia is even more gorgeous in person. Golden locks fall across her shoulders, looking as smooth as silk. She has a rosy complexion, her blue eyes crystal clear."
     "She's the typical heroine, except her beauty puts her above others. This is when it sets in that I truly am inside a manhwa."
     scene bg tearoom day
-    show otillia neutral at right
-    show davinia neutral at left
+    show o neu at right
+    show d neu at left
     "I grin, walking over to them. I curtsy, my eyes meeting hers."
     mc "It's a pleasure to meet you, Miss Otillia. I am Lady [mcname], but please, call me [mcname]."
     o "O-oh!"
@@ -341,9 +342,9 @@ label choice2_done:
     "Otillia smiles, looking a bit cautious. It's best if I'm not too enthusiastic or it would seem like I'm scheming up a plan."
     o "Oh, it's not much. It's just light magic. Healing… I'm not special."
     "The grand mage shakes her head."
-    hide davinia
-    show otillia at left with move
-    show lewis neutral at right
+    hide d
+    show o neu at left with move
+    show l neu at right
     show noble at center
     gm "Light magic is the rarest form of magic. Not to mention your healing powers are quite exceptional. You are like a gift from the gods."
     "Despite looking uncomfortable, Otillia blushes, looking down into her lap."
@@ -352,14 +353,14 @@ label choice2_done:
     "I look over at Lewis. In the story, he had Otillia attempt to heal his brother. Unfortunately, the disease he had was already too far along, and Lewis ended up taking the throne."
     o "I've been practicing, but it still drains a lot out of me. I won't be useful for a while."
     hide noble
-    show davinia neutral at center with dissolve
+    show d neu at center with dissolve
     "I shake my head, laughing slightly."
     mc "That's all right. I don't think anyone is in a rush to have you go out and do some healing."
     "She seems to finally relax as she nods."
     o "Thank you for saying that, my lady."
     l "By the way, I wanted to ask about–"
-    hide otillia
-    show cenric neutral at left with dissolve
+    hide o
+    show c conf at left with dissolve
     "Lewis's words are interrupted by Cenric entering the room. He's rolling a cart filled with tea and snacks. My eyes immediately light up."
     "Lewis looks surprised before sighing and glancing over at me."
     l "[mcname], what is this?"
@@ -380,8 +381,8 @@ label choice3_eatmore:
     mc "Come! You must taste his cooking. It's absolutely divine."
     l "I don't think it's entirely appropriate–"
     mc "Oh, shush. We have guests. We can't have them hungry."
-    hide lewis with dissolve
-    show otillia neutral at right with dissolve
+    hide l with dissolve
+    show o flust at right with dissolve
     "Otillia walks over, her eyes scanning all the options."
     mc "Pick whatever you'd like."
     "She settles on a pink macaron filled with some type of jelly. She takes a small bite. Then she takes a bigger one, popping the whole thing in her mouth."
@@ -409,8 +410,8 @@ label choice3_appreciate: #WIP: Set transforms to show all 4 sprites on-screen a
     "He looks over the food for a moment. He seems uninterested and grabs a small tart. He bites into it and then shrugs."
     l "It's all right. Nothing special."
     "I turn towards Cenric and see his face fall. I turn back towards Lewis and frown. Can someone really be this apathetic towards food?"
-    hide cenric with dissolve
-    show davinia at left with move
+    hide c with dissolve
+    show o neu at left with move
     mc "Don't be rude. Cenric worked hard."
     l "Food isn't necessarily something I need to worry about. We're here for a meeting, not your hunger."
     "The words almost make me angry. I roll my eyes. This would be an issue to solve later."
