@@ -1,4 +1,6 @@
-define mc = Character("You")
+define y = Character("You")
+define mc = Character('[mcname]')
+default mcname = "Davinia"
 
 
 define m = Character("Maid")
