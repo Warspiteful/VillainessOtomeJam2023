@@ -1,17 +1,12 @@
-﻿# The script of the game goes in this file.
+init python:
+    from enum import Enum
+    class Routes(Enum):
+        LEWIS = 1
+        CENRIC = 2
+    routes = { Routes.LEWIS : 0, Routes.CENRIC : 0}
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-
-# The game starts here.
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     show cg1
 
     "The hit manhwa 'My Magical Kindness Made the Cold Prince Fall in Love!!' is the newest craze among manhwa readers."
@@ -170,8 +165,10 @@ label start:
     l "I am not hungry."
     menu:
         "Then can I eat?":
+            $routes[Routes.CENRIC] += 1
             jump choice1_eat
         "You need to eat breakfast. It's the most important meal of the day.":
+            $routes[Routes.LEWIS] += 1
             jump choice1_important
 
 
@@ -311,31 +308,39 @@ label choice1_done:
     scene bg tearoom day
     show d neu at left
     show c puppy lookDown at right
+    voice c1
     c "My lady… I'm Cenric. The head chef."
     menu:
         "Your food is absolutely delicious!":
+            $routes[Routes.CENRIC] += 1
             jump choice2_delicious
         "It's a pleasure to meet you, Cenric!":
+            $routes[Routes.LEWIS] += 1
             jump choice2_pleasure
 
 
 label choice2_delicious:
     show c smile lookDown:
     "Cenric straightens, his face lit up in a smile. His cheeks are a dark red."
+    voice c2
     c "Th-thank you, my lady."
     mc "(He looks like a cute golden retriever.)"
     "Golden Retriever: A character that highly resembles a golden retriever. Often kind, blond, and a bit stupid."
+    voice c3
     c "I w-wanted to personally see what else you would like to eat."
+    voice c4
     c "I know you said you wanted croissants but…I can make you anything if you please."
     "My eyes immediately shine at the thought. As soon as I open my mouth, a flood of requests starts pouring out."
     mc "Anything? Can you make doughnuts? Crepes? Curry? Hamburg steak? Stew? Parfaits? Oooh! There's so many options!!"
     "Cenric looks surprised but smiles happily."
+    voice c5
     c "Anything you wish, my lady."
     "I take a second to think."
     "This is a big decision. The ultimate power: the ability to have any type of food made for me."
     "Well, mostly any type. I doubt I could get something like tteokbokki here."
     "I gasp as I suddenly think of one of my favorite comfort foods."
     mc "Since Otillia is visiting, can you make some tea and foods to go along with it? And be sure to include strawberry shortcake."
+    voice c6
     c "As you wish, my lady."
     hide c with dissolve
     show d neu at center with move
@@ -345,18 +350,22 @@ label choice2_delicious:
     jump choice2_done
 
 label choice2_pleasure:
+    voice c7
     c "It's rare for someone to come back for more food."
     "He still avoids eye contact, bowing deeply."
     "I give him a gentle smile."
     mc "It was quite delicious. I wanted you to make some more so I can share with Lewis when he gets back."
+    voice c8
     c "Do you have anything in mind?"
     "I think for a second. If Otillia will also be visiting, it would be wise to set an inviting atmosphere."
     "This could work."
     mc "Well, since Otillia is also visiting, could you please prepare tea and some finger foods for us?"
+    voice c9
     c "Any specifics?"
     mc "Hmmm…"
     "For some reason, the sight of Lewis not eating fills my mind."
     mc "Something that Lewis would like."
+    voice c10
     c "Of course, my lady."
     hide c with dissolve
     show c neu at center with move
@@ -385,6 +394,7 @@ label choice2_done:
     show d neu at left
     "I grin, walking over to them. I curtsy, my eyes meeting hers."
     mc "It's a pleasure to meet you, Miss Otillia. I am Lady [mcname], but please, call me [mcname]."
+    voice o1
     o "O-oh!"
     "Otillia's eyes widen. Just for a second, she hesitates before returning the curtsy."
     "It must be a surprise. [mcname]'s reputation was already less than ideal from the get go. Besides the rumors she spread, she was known to be mean-spirited."
@@ -394,12 +404,14 @@ label choice2_done:
     "Since I don't want to see my doom, I take the obvious route."
     mc "Thank you so much for coming over!! I've heard all about your gift, Miss Otillia."
     "Otillia smiles, albeit awkwardly."
+    voice o2
     o "It's a pleasure to meet you as well, Lady [mcname]."
     mc "Oh, please. Call me [mcname]. It's fine, I promise."
     mc "Come, sit."
     "I guide her over to the couch. We both sit as the grand mage and Lewis sit across from us. I take a deep breath. Doing good so far."
     mc "Please, tell me about your studies so far. I have never met someone with powerful magic before."
     "Otillia smiles, looking a bit cautious. It's best if I'm not too enthusiastic or it would seem like I'm scheming up a plan."
+    voice o_alright
     o "Oh, it's not much. It's just light magic. Healing… I'm not special."
     "The grand mage shakes her head."
     hide d
@@ -408,6 +420,7 @@ label choice2_done:
     show noble at center
     gm "Light magic is the rarest form of magic. Not to mention your healing powers are quite exceptional. You are like a gift from the gods."
     "Despite looking uncomfortable, Otillia blushes, looking down into her lap."
+    voice o_alright
     o "I wouldn't say that much."
     l "Healing magic, you say?"
     "I look over at Lewis. In the story, he had Otillia attempt to heal his brother. Unfortunately, the disease he had was already too far along, and Lewis ended up taking the throne."
@@ -417,6 +430,7 @@ label choice2_done:
     "I shake my head, laughing slightly."
     mc "That's all right. I don't think anyone is in a rush to have you go out and do some healing."
     "She seems to finally relax as she nods."
+    voice o_glad
     o "Thank you for saying that, my lady."
     l "By the way, I wanted to ask about–"
     hide o
@@ -429,12 +443,15 @@ label choice2_done:
     l "Good lord, [mcname]. This is practically enough for a party! Why did you do this?"
     menu:
         "Because I wanted to eat more of Cenric's cooking.":
+            $routes[Routes.CENRIC] += 1
             jump choice3_eatmore
         "You need to appreciate Cenric's cooking more.":
+            $routes[Routes.LEWIS] += 1
             jump choice3_appreciate
 
 label choice3_eatmore:
     "Cenric blushes and then bows his head."
+    voice c_aww
     c "You're too kind, my lady."
     mc "It's true!"
     "I then motion towards Otillia."
@@ -446,7 +463,9 @@ label choice3_eatmore:
     "Otillia walks over, her eyes scanning all the options."
     mc "Pick whatever you'd like."
     "She settles on a pink macaron filled with some type of jelly. She takes a small bite. Then she takes a bigger one, popping the whole thing in her mouth."
+    voice o_laugh
     o "This is delicious!"
+    voice c_laugh
     "Cenric chuckles, rubbing the back of his head sheepishly."
     c "It's not my best, but I appreciate your words."
     "I click my tongue, giving him a mock stern look."
@@ -486,24 +505,30 @@ label choice3_done:
     "I never thought I'd be in a position like this. It seems so surreal that I'm in a pretty and glittering dress while talking to the two most important people in the kingdom."
     "At first, I was worried I would feel out of place. But I am genuinely having a good time. I feel like I have settled in, if only for now."
     "I just need to avoid becoming a villainess."
+    voice o3
     o "Well, I'm no one to celebrate."
     mc "What? Of course you are! You faced a hard childhood and look at you now. Studying directly under the grand mage. That deserves a party."
     "Otillia giggles, covering her face."
+    voice o4
     o "Oh, please. You and Prince Lewis have been the talk of the town since your engagement."
     "Lewis's face turns red, and I smirk slightly."
     mc "(Right. Engaged.)"
+    voice o5
     o "You know, it would be great to have a ball!"
     "Lewis looks at her curiously."
     l "A ball?"
     "She nods, a sudden glint in her eye."
+    voice o6
     o "You two haven't had an engagement party, correct?"
     "I nod before glancing over at my fiance."
     mc "He isn't one for parties."
     l "I'm too busy."
     mc "(And introverted.)"
     "Like I'm one to talk. I spent my nights reading manhwa. Not exactly party animal material."
+    voice o7
     o "How can you expect to be king if you can't organize balls?"
     "Lewis opens his mouth then shuts it. Otillia's smile is bright as if she just won a prize."
+    voice o8
     o "It's settled! I'll leave the planning to you two!"
     "There isn't much room for discussion. Otillia quickly changes the subject and refuses to let it circle back to the party. After a while, both her and the grand mage depart."
     "I sit back in my chair, sipping on some tea. I think that went well. Well enough to form a good relationship with Otillia and not be blasted away by light magic."
@@ -517,4 +542,46 @@ label choice3_done:
     mc "Then there is no problem."
     "That shuts him up. He exhales, rubbing the bridge of his nose."
     l "You do know I have no time to be throwing parties. I am to be crowned king soon. I need to spend more time focusing on that."
+
+    $routeIndex = max(routes, key=routes.get)
+    if routeIndex == Routes.CENRIC:
+        jump CenricRoute
+    if routeIndex == Routes.LEWIS:
+        jump LewisRoute
+
+label CenricRoute:
+    "I place my hands on my hips and grin."
+    mc "Leave the party planning to me!"
+    "Anyone can tell that Lewis is stressed. The last thing I want to do is add more stress to his daily duties. I want him to relax."
+    mc "I'll coordinate with Cenric and the other castle staff. You can focus on your work."
+    l "You'd do that?"
+    mc "Of course. You'll only have to keep up appearances at the ball. No party planning."
+    "He thinks for a moment. It looks like he's having an internal battle with himself."
+    "Finally, after what seems like an awkwardly long time, he speaks."
+    l "All right. But if you run into any trouble at all, come straight to me. Is that clear?"
+    mc "Yes, my prince."
+    "He gives me a look. I giggle, continuing to sip my tea."
+    "What he doesn't know is that I'll use this chance to eat more of Cenric's food."
+    "It's a truly evil plan."
+    return
+
+label LewisRoute:
+    mc "Then let me organize it."
+    l "Really?"
+    "I nod. He scoffs as if it was a stupid joke."
+    l "I don't trust you to organize a ball all by yourself."
+    "His voice softens just a bit."
+    l "I will help."
+    "I place my hand against my chin and tilt my head, humming slightly. I grin at him as an idea pops into my head."
+    mc "Only if we figure out the menu together."
+    l "That is the least important thing we need to figure out."
+    "I gasp, offended at his words."
+    mc "It's highly important! You don't want a party with bad food!"
+    "Lewis brushes off my words and stands up."
+    l "Enough complaining. Let's go prepare."
+    "As he walks away, my face darkens. I will make Lewis see the true value of food."
+    "An almost devious giggle leaves my mouth."
+    mc "Evil plan, commence!"
+    "I stop, a disgusted look crossing my face."
+    "Yeah. Not cut out to be a villainess."
     return
