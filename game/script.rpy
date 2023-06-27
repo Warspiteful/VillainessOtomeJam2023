@@ -239,8 +239,10 @@ label choice1_done:
     "Here, I can live for myself. I can eat all the delicious food and not be tied down by anything."
     "Not even the title of villainess. Although it would be a shame if I die again because of it."
     "I sigh happily and pick up a cream puff."
-    show l neu at right with dissolve
-    show d oh at left with move
+    show l neu at right
+    show d oh at left
+    with dissolve
+    with move
 
     l "[mcname]!"
     "I'm knocked out of my thoughts as I look up at Lewis."
