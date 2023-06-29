@@ -1,6 +1,9 @@
 image cg1:
     "Finished CGs/IMG_6548.png"
-
+image cg2:
+    "Finished CGs/IMG_6702.png"
+image cg3:
+    "Finished CGs/IMG_6744.png"
 image bg mcroom base:
     "Backgrounds/mcroom.jpg"
 
@@ -55,7 +58,7 @@ image d ss:
 image d sb:
     "Sprites/Davinia Sprites/Davinia-SupriseBlush-Sprite.png"
     zoom 0.4
-    
+
 image d sb 2:
     "Sprites/Davinia Sprites/Davinia-SurpriseBlushv2-Sprite.png"
     zoom 0.4
@@ -308,3 +311,7 @@ image c think laugh:
 image c timid:
     "Sprites/Cenric Sprites/Cenric timid.png"
     zoom 0.375
+
+image maid:
+    "Sprites/MaidSprite PNG finished.png"
+    zoom 0.4

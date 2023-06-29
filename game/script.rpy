@@ -7,6 +7,8 @@ init python:
 
 
 label start:
+
+    play music music_Credits
     show cg1
 
     "The hit manhwa 'My Magical Kindness Made the Cold Prince Fall in Love!!' is the newest craze among manhwa readers."
@@ -26,10 +28,13 @@ label start:
     "I lay back on my bed, phone in hand. My body feels light and tingly."
     y "(Did I eat today? I'm sure I did.)"
     y "(So why…do I feel this way?)"
+    stop music fadeout 1.0
     "My eyes drift close. I decide not to fight the feeling and fall asleep. I'll just eat a big breakfast tomorrow."
     scene black with fade
     call screen custom_input_modal("What was the villainess's name?", 'mcname')
+
     scene bg mcroom base with fade
+    play music music_Main
     "The next morning, I could hear the sounds of birds chirping. My nose twitches as a sweet scent slowly wafts through the room."
     "With a groan, I sit up, my eyes still closed. My muscles are sore and it feels as if I ran a marathon."
     "The smell of food is enough to make me crack open my eyes. Immediately, I notice a silver tray on my bedside."
@@ -42,7 +47,7 @@ label start:
     mc "Don't mind if I do!"
     "Without a second thought, I start digging in."
 
-    scene white #WIP: CG
+    scene cg2 with dissolve
     "I let out a satisfied groan as I eat."
     mc "This is delicious!!"
     "Whoever made this deserves the world. It's absolutely perfect."
@@ -50,6 +55,7 @@ label start:
     scene bg mcroom base
     show d oh at left
     show maid at right
+    with dissolve
     "She stares at me."
     "I stare back."
     "She keeps staring."
@@ -114,25 +120,27 @@ label start:
     mc "That's not it."
     "I wave her off, giving her a smile."
     mc "I guess I'm left wanting more."
-    scene
     "I decide not to dwell on it. After I'm dressed, the maid leads me out into the common room."
     "She says nothing more, but it's obvious that she doesn't trust my word."
     scene bg tearoom day with fade
     "The common room is just as elaborate as my bedroom, if not more." #WIP: [mcname]
-    "The first thing I notice is a large bookshelf sprawling the length of one wall. A heavy dark oak table is surrounded by velvet couches and chairs. Behind it are windows with thick red curtains that have been opened to let in the morning light."
+    "The first thing I notice is a large bookshelf sprawling the length of one wall. A heavy dark oak table is surrounded by velvet couches and chairs."
+    "Behind it are windows with thick red curtains that have been opened to let in the morning light."
     "A man sits in the padded chair at the head of the table. There's food laid out in front of him. All of it untouched."
-    show white with fade #WIP: Lewis CG
-    nvl show
-    narr "Lewis, the love interest of the manhwa."
-    narr "He was popular among readers due to his older age. And I have to say that he is much more handsome in real life."
-    narr "A soft complexion, long hair with gray streaks, glasses that rest gently on his nose, and tied together with a stern expression…"
-    narr "Megane: A character with glasses. Oftentimes, male megane are seen as stoic and aloof."
-    nvl hide
-    nvl clear
-    l "Oh, you're awake. Good morning."
+    scene cg3 with dissolve
+
+    "Lewis, the love interest of the manhwa."
+    "He was popular among readers due to his older age. And I have to say that he is much more handsome in real life."
+    "A soft complexion, long hair with gray streaks, glasses that rest gently on his nose, and tied together with a stern expression…"
+    "Megane: A character with glasses. Oftentimes, male megane are seen as stoic and aloof."
     scene bg tearoom day
-    show d n b at left with dissolve
-    show l neu at right with dissolve
+    show d n b at left
+    show l neu at right
+    with dissolve
+    stop music fadeout 3.0
+    play music music_Lewis_nm fadein 3.0
+    voice l1
+    l "Oh, you're awake. Good morning."
     "I just stare at him. It takes me a minute to realize he's talking to me."
     show d sb
     mc "G-good morning…"
@@ -142,9 +150,11 @@ label start:
     show d neu
     mc "Lewis."
     show l nerve
+    voice l2
     l "All right then…"
     "He clears his throat awkwardly."
     show l neu
+    voice l3
     l "Do sit."
     mc "Right."
     "I sit across from him. My eyes keep flickering from him to the food in front of me."
@@ -249,12 +259,15 @@ label choice1_done:
     mc "Sorry, sorry. What is it?"
     show l nerve
     "His eyebrows furrow once again as he leans forward."
+    voice l4
     l "You've been acting odd."
     mc "Odd?"
+    voice l5
     l "The [mcname] I know would currently be talking about the gossip she’s been hearing around the castle."
     "I shake my head slightly and wave my hand dismissively."
     show d ss
     mc "I'm not interested in petty gossip."
+    stop music
     show d sb
     show l shock
     "The room is filled with gasps. I look around, confused."
@@ -266,6 +279,7 @@ label choice1_done:
     show l shock
     "The maid shakily points at me, her face filled with fear."
     m "Who are you and what have you done with [mcname]?"
+    play music music_Main_nm
     show d gloom
     "Oh, right."
     "[mcname] loved gossip and spreading rumors. It eventually made a rift between her and Lewis."
@@ -277,19 +291,23 @@ label choice1_done:
     m "More docile."
     show l an
     "Lewis sighs and pinches the bridge of his nose."
+    voice l6
     l "I do not have time for this."
     show l a
     "He scowls at me."
+    voice l7
     l "Otillia is visiting soon. Be ready by then."
-    show l at offscreenright with move
-    show maid at right with move #WIP: Maid Sprite
+    show l at offscreenright
+    show maid at right
+    with move
     "Without another word, he gets up and exits the room."
     "I turn towards the maid, the uneaten cream puff in my hand."
     show d fbb
     mc "Could you possibly ask the chef if there are any more croissants? They were delicious."
     m "Yes, my lady."
-    hide maid with dissolve
-    show d neu at center with move
+    hide maid
+    show d neu at center
+    with dissolve
     "She stares at me one last time before making her way to the kitchen. I start eating the cream puff, letting my thoughts come together."
     "In the manhwa, Otillia and [mcname]'s meeting was basically the start of the main plotline."
     "The original [mcname] was rude towards Otillia, despite her prowess in magic and being personally trained by the head mage."
@@ -301,6 +319,7 @@ label choice1_done:
     "It's not like I don't want them to end up together. I just want to live and not suffer the fate of every manhwa villainess."
     show d neu
     "When I'm about to formulate a plan, I hear hushed whispering from the corner."
+    play music music_Cenric_nm
     scene cg cenric #WIP: Cenric CG
     "I look towards the source of the noise and see the maid and a man in a chef's uniform conversing with each other."
     "The man is tall and big, with fluffy blonde hair and a slightly chubby face."
@@ -311,6 +330,7 @@ label choice1_done:
     show d neu at left
     show c puppy lookDown at right
     voice c1
+
     c "My lady… I'm Cenric. The head chef."
     menu:
         "Your food is absolutely delicious!":
@@ -386,11 +406,13 @@ label choice2_done:
     "To think I would ever end up in a place like this. It makes me wonder about my old life."
     "Did people even know that I died? Would they even care? What about–"
     mc "What about the food in my fridge? It'll spoil. Such a waste."
+    play music music_Oti_nm
     scene cg otilla
     "I can hear more voices getting closer to the room. I turn and see Lewis, Otillia, and the grand mage."
     mc "Woah."
     "Otillia is even more gorgeous in person. Golden locks fall across her shoulders, looking as smooth as silk. She has a rosy complexion, her blue eyes crystal clear."
     "She's the typical heroine, except her beauty puts her above others. This is when it sets in that I truly am inside a manhwa."
+    play music music_Main_nm
     scene bg tearoom day
     show o neu at right
     show d neu at left
@@ -400,7 +422,8 @@ label choice2_done:
     o "O-oh!"
     "Otillia's eyes widen. Just for a second, she hesitates before returning the curtsy."
     "It must be a surprise. [mcname]'s reputation was already less than ideal from the get go. Besides the rumors she spread, she was known to be mean-spirited."
-    "What's supposed to happen at this point is that [mcname]…or I am supposed to scoff and make fun of her background. I call her a wannabe noble that has no true talent and will only end up as trash."
+    "What's supposed to happen at this point is that [mcname]…or I am supposed to scoff and make fun of her background."
+    "I call her a wannabe noble that has no true talent and will only end up as trash."
     "Lewis would then immediately come to Otillia's aid and scold [mcname], calling her bitter and jealous."
     mc "(Yikes.)"
     "Since I don't want to see my doom, I take the obvious route."
@@ -460,8 +483,9 @@ label choice3_eatmore:
     mc "Come! You must taste his cooking. It's absolutely divine."
     l "I don't think it's entirely appropriate–"
     mc "Oh, shush. We have guests. We can't have them hungry."
-    hide l with dissolve
-    show o flust at right with dissolve
+    hide l
+    show o flust at right
+    with dissolve
     "Otillia walks over, her eyes scanning all the options."
     mc "Pick whatever you'd like."
     "She settles on a pink macaron filled with some type of jelly. She takes a small bite. Then she takes a bigger one, popping the whole thing in her mouth."
@@ -518,12 +542,14 @@ label choice3_done:
     voice o5
     o "You know, it would be great to have a ball!"
     "Lewis looks at her curiously."
+    voice l8
     l "A ball?"
     "She nods, a sudden glint in her eye."
     voice o6
     o "You two haven't had an engagement party, correct?"
     "I nod before glancing over at my fiance."
     mc "He isn't one for parties."
+    voice l9
     l "I'm too busy."
     mc "(And introverted.)"
     "Like I'm one to talk. I spent my nights reading manhwa. Not exactly party animal material."
@@ -538,11 +564,14 @@ label choice3_done:
     l "[mcname]?"
     mc "Hmm?"
     "I look over at Lewis. He's staring straight at me as if he's studying a painting."
+    voice l10
     l "I am truly concerned for you. You aren't acting like your normal self."
     mc "Would you rather I be cruel and rude?"
+    voice l11
     l "No, but–"
     mc "Then there is no problem."
     "That shuts him up. He exhales, rubbing the bridge of his nose."
+    voice l12
     l "You do know I have no time to be throwing parties. I am to be crowned king soon. I need to spend more time focusing on that."
 
     $routeIndex = max(routes, key=routes.get)
@@ -556,10 +585,12 @@ label CenricRoute:
     mc "Leave the party planning to me!"
     "Anyone can tell that Lewis is stressed. The last thing I want to do is add more stress to his daily duties. I want him to relax."
     mc "I'll coordinate with Cenric and the other castle staff. You can focus on your work."
+    voice l18
     l "You'd do that?"
     mc "Of course. You'll only have to keep up appearances at the ball. No party planning."
     "He thinks for a moment. It looks like he's having an internal battle with himself."
     "Finally, after what seems like an awkwardly long time, he speaks."
+    voice l19
     l "All right. But if you run into any trouble at all, come straight to me. Is that clear?"
     mc "Yes, my prince."
     "He gives me a look. I giggle, continuing to sip my tea."
@@ -569,17 +600,22 @@ label CenricRoute:
 
 label LewisRoute:
     mc "Then let me organize it."
+    voice l13
     l "Really?"
     "I nod. He scoffs as if it was a stupid joke."
+    voice l14
     l "I don't trust you to organize a ball all by yourself."
     "His voice softens just a bit."
+    voice l15
     l "I will help."
     "I place my hand against my chin and tilt my head, humming slightly. I grin at him as an idea pops into my head."
     mc "Only if we figure out the menu together."
+    voice l16
     l "That is the least important thing we need to figure out."
     "I gasp, offended at his words."
     mc "It's highly important! You don't want a party with bad food!"
     "Lewis brushes off my words and stands up."
+    voice l17
     l "Enough complaining. Let's go prepare."
     "As he walks away, my face darkens. I will make Lewis see the true value of food."
     "An almost devious giggle leaves my mouth."
