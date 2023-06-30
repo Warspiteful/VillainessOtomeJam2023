@@ -3,6 +3,7 @@ init python:
     CENRIC = 0
 
 
+
 label start:
 
     play music music_Credits
@@ -56,10 +57,12 @@ label start:
     "I stare back."
     "She keeps staring."
     m "My lady?"
-    
-    "It’s not until that moment when my surroundings finally start coming into view."
-    "An expensive wardrobe with a mirror gilded in gold. Expensive white trim detailing the entire room. Floral wallpaper. Thick and soft down comforter."
-    "I am not in my bedroom."
+    nvl show
+    narr "It’s not until that moment when my surroundings finally start coming into view."
+    narr "An expensive wardrobe with a mirror gilded in gold. Expensive white trim detailing the entire room. Floral wallpaper. Thick and soft down comforter."
+    narr "I am not in my bedroom."
+    nvl hide
+    nvl clear
     "I take another bite of my croissant, my eyebrows furrowing. The lady in front of me, who I now recognize as a maid, looks at me in concern."
     show d neu
     mc "Hmmm…"
@@ -137,7 +140,7 @@ label start:
     "Megane: A character with glasses. Oftentimes, male megane are seen as stoic and aloof."
     scene bg tearoom day
     show d n b at left
-    show l neu at right_fix
+    show l neu at right
     with dissolve
     stop music fadeout 3.0
     play music music_Lewis_nm fadein 3.0
@@ -235,10 +238,6 @@ label choice1_important:
 
 label choice1_done:
     scene bg tearoom day
-<<<<<<< .merge_file_mUHTU7
-
-=======
->>>>>>> .merge_file_IHMbcA
     "Lewis sips on his coffee, not paying me any attention. I use the time to think about how I should go about this whole villainess thing."
     "The manhwa was fairly new and I had read all available episodes."
     "When [mcname] showed up in the story, she was cruel from the get go. Stubborn, violent, and selfish, she was hated in the fandom."
@@ -259,7 +258,7 @@ label choice1_done:
     "Here, I can live for myself. I can eat all the delicious food and not be tied down by anything."
     "Not even the title of villainess. Although it would be a shame if I die again because of it."
     "I sigh happily and pick up a cream puff."
-    show l neu at right_fix
+    show l neu at right
     show d oh at left
     with dissolve
     with move
@@ -336,7 +335,7 @@ label choice1_done:
     show d neu
     "When I'm about to formulate a plan, I hear hushed whispering from the corner."
     play music music_Cenric_nm
-    scene cg4 with dissolve
+    scene cg cenric #WIP: Cenric CG
     "I look towards the source of the noise and see the maid and a man in a chef's uniform conversing with each other."
     "The man is tall and big, with fluffy blonde hair and a slightly chubby face."
     "Cute."
@@ -424,11 +423,7 @@ label choice2_pleasure:
     show c close blush smile
     c "Of course, my lady."
     hide c with dissolve
-<<<<<<< .merge_file_mUHTU7
-    show c smile neu at offscreenright
-=======
     show d neu at center with move
->>>>>>> .merge_file_IHMbcA
     "With another bow, he makes his way back to the kitchen."
 
 
@@ -456,7 +451,7 @@ label choice2_done:
     show d gloom
     mc "What about the food in my fridge? It'll spoil. Such a waste."
     play music music_Oti_nm
-    scene cg5 with dissolve
+    scene cg otilla
     "I can hear more voices getting closer to the room. I turn and see Lewis, Otillia, and the grand mage."
     mc "Woah."
     "Otillia is even more gorgeous in person. Golden locks fall across her shoulders, looking as smooth as silk. She has a rosy complexion, her blue eyes crystal clear."
@@ -506,13 +501,6 @@ label choice2_done:
     voice o_alright
     o "Oh, it's not much. It's just light magic. Healing… I'm not special."
     "The grand mage shakes her head."
-<<<<<<< .merge_file_mUHTU7
-    hide d
-    show o neu at left with move
-    show l neu at right_fix
-
-=======
->>>>>>> .merge_file_IHMbcA
     gm "Light magic is the rarest form of magic. Not to mention your healing powers are quite exceptional. You are like a gift from the gods."
     show o flust ce smile
     "Despite looking uncomfortable, Otillia blushes, looking down into her lap."
@@ -522,13 +510,8 @@ label choice2_done:
     l "Healing magic, you say?"
     "I look over at Lewis. In the story, he had Otillia attempt to heal his brother. Unfortunately, the disease he had was already too far along, and Lewis ended up taking the throne."
     o "I've been practicing, but it still drains a lot out of me. I won't be useful for a while."
-<<<<<<< .merge_file_mUHTU7
-
-    show d neu at center with dissolve
-=======
     show l ss
     show d d n l
->>>>>>> .merge_file_IHMbcA
     "I shake my head, laughing slightly."
     mc "That's all right. I don't think anyone is in a rush to have you go out and do some healing."
     show o smile nor
