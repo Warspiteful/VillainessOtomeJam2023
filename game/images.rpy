@@ -73,10 +73,10 @@ image l bb:
     "Sprites/Lewis Sprites/Lewis-BigBlush-Sprite.png"
     zoom 0.4
 image l bb n:
-    "Sprites/Lewis Sprites/Lewis-BigBlushNeutral-LookngAway-Sprite.png"
+    "Sprites/Lewis Sprites/Lewis-BigBlushNeutral-LookingAway-Sprite.png"
     zoom 0.4
 image l bb s:
-    "Sprites/Lewis Sprites/Lewis-BigBlushSmile-LookngAway-Sprite.png"
+    "Sprites/Lewis Sprites/Lewis-BigBlushSmile-LookingAway-Sprite.png"
     zoom 0.4
 image l bs:
     "Sprites/Lewis Sprites/Lewis-BigSmile-Sprite.png"
@@ -143,7 +143,7 @@ image o blush talk:
     "Sprites/Otillia Sprites/Otillia blush talk.png"
     zoom 0.4
 image o flust ce smile:
-    "Sprites\Otillia Sprites/Otillia closed eyes flustered smile.png"
+    "Sprites/Otillia Sprites/Otillia closed eyes flustered smile.png"
     zoom 0.4
 image o flust ce:
     "Sprites/Otillia Sprites/Otillia closed eyes flustered.png"

@@ -7,7 +7,7 @@ define m = Character("Maid")
 
 define l = Character("Lewis")
 define c = Character("Cenric")
-define o = Character("Otilla")
+define o = Character("Otillia")
 
 define gm = Character("Grand Mage")
 define narr = Character(None, kind=nvl)
