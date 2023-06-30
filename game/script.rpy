@@ -5,7 +5,6 @@ init python:
         CENRIC = 2
     routes = { Routes.LEWIS : 0, Routes.CENRIC : 0}
 
-
 label start:
 
     play music music_Credits
@@ -60,12 +59,10 @@ label start:
     "I stare back."
     "She keeps staring."
     m "My lady?"
-    nvl show
-    narr "It’s not until that moment when my surroundings finally start coming into view."
-    narr "An expensive wardrobe with a mirror gilded in gold. Expensive white trim detailing the entire room. Floral wallpaper. Thick and soft down comforter."
-    narr "I am not in my bedroom."
-    nvl hide
-    nvl clear
+    
+    "It’s not until that moment when my surroundings finally start coming into view."
+    "An expensive wardrobe with a mirror gilded in gold. Expensive white trim detailing the entire room. Floral wallpaper. Thick and soft down comforter."
+    "I am not in my bedroom."
     "I take another bite of my croissant, my eyebrows furrowing. The lady in front of me, who I now recognize as a maid, looks at me in concern."
     show d neu
     mc "Hmmm…"
@@ -135,7 +132,7 @@ label start:
     "Megane: A character with glasses. Oftentimes, male megane are seen as stoic and aloof."
     scene bg tearoom day
     show d n b at left
-    show l neu at right
+    show l neu at right_fix
     with dissolve
     stop music fadeout 3.0
     play music music_Lewis_nm fadein 3.0
@@ -226,21 +223,19 @@ label choice1_important:
 
 label choice1_done:
     scene bg tearoom day
-    nvl show
-    narr "Lewis sips on his coffee, not paying me any attention. I use the time to think about how I should go about this whole villainess thing."
-    narr "The manhwa was fairly new and I had read all available episodes."
-    narr "When [mcname] showed up in the story, she was cruel from the get go. Stubborn, violent, and selfish, she was hated in the fandom."
-    narr "I don't want that. And I don't want whatever death flags the author had planned."
-    narr "Death flags: An element in a story used to foreshadow a character's imminent death or downfall."
-    narr "Was this even worth it?"
-    narr "I think back on my past life. It wasn't anything special."
-    narr "Though, I suppose the criteria for being isekai'd is being unremarkable and then starting a new life."
-    narr "I am…was a normal office worker. Not a manager, just someone who stayed mediocre."
-    narr "Despite that, I was overworked. I found myself eating mediocre instant ramen from the convenience store."
-    narr "At night, I would get my fill of delicious food while reading manhwa and manga."
-    narr "Now that I think back on it, my life was kind of pathetic. Sure, I enjoyed the nights I had, but my life as a whole wasn't fulfilling."
-    nvl hide
-    nvl clear
+
+    "Lewis sips on his coffee, not paying me any attention. I use the time to think about how I should go about this whole villainess thing."
+    "The manhwa was fairly new and I had read all available episodes."
+    "When [mcname] showed up in the story, she was cruel from the get go. Stubborn, violent, and selfish, she was hated in the fandom."
+    "I don't want that. And I don't want whatever death flags the author had planned."
+    "Death flags: An element in a story used to foreshadow a character's imminent death or downfall."
+    "Was this even worth it?"
+    "I think back on my past life. It wasn't anything special."
+    "Though, I suppose the criteria for being isekai'd is being unremarkable and then starting a new life."
+    "I am…was a normal office worker. Not a manager, just someone who stayed mediocre."
+    "Despite that, I was overworked. I found myself eating mediocre instant ramen from the convenience store."
+    "At night, I would get my fill of delicious food while reading manhwa and manga."
+    "Now that I think back on it, my life was kind of pathetic. Sure, I enjoyed the nights I had, but my life as a whole wasn't fulfilling."
     "I look down at the table, the plates cleared of food and my stomach happy."
     show d ls at center with dissolve
     mc "(Yeah. This is way better.)"
@@ -249,7 +244,7 @@ label choice1_done:
     "Here, I can live for myself. I can eat all the delicious food and not be tied down by anything."
     "Not even the title of villainess. Although it would be a shame if I die again because of it."
     "I sigh happily and pick up a cream puff."
-    show l neu at right
+    show l neu at right_fix
     show d oh at left
     with dissolve
     with move
@@ -320,7 +315,7 @@ label choice1_done:
     show d neu
     "When I'm about to formulate a plan, I hear hushed whispering from the corner."
     play music music_Cenric_nm
-    scene cg cenric #WIP: Cenric CG
+    scene cg4 with dissolve
     "I look towards the source of the noise and see the maid and a man in a chef's uniform conversing with each other."
     "The man is tall and big, with fluffy blonde hair and a slightly chubby face."
     "Cute."
@@ -390,7 +385,7 @@ label choice2_pleasure:
     voice c10
     c "Of course, my lady."
     hide c with dissolve
-    show c neu at center with move
+    show c smile neu at offscreenright
     "With another bow, he makes his way back to the kitchen."
 
 
@@ -407,7 +402,7 @@ label choice2_done:
     "Did people even know that I died? Would they even care? What about–"
     mc "What about the food in my fridge? It'll spoil. Such a waste."
     play music music_Oti_nm
-    scene cg otilla
+    scene cg5 with dissolve
     "I can hear more voices getting closer to the room. I turn and see Lewis, Otillia, and the grand mage."
     mc "Woah."
     "Otillia is even more gorgeous in person. Golden locks fall across her shoulders, looking as smooth as silk. She has a rosy complexion, her blue eyes crystal clear."
@@ -441,8 +436,8 @@ label choice2_done:
     "The grand mage shakes her head."
     hide d
     show o neu at left with move
-    show l neu at right
-    show noble at center
+    show l neu at right_fix
+
     gm "Light magic is the rarest form of magic. Not to mention your healing powers are quite exceptional. You are like a gift from the gods."
     "Despite looking uncomfortable, Otillia blushes, looking down into her lap."
     voice o_alright
@@ -450,7 +445,7 @@ label choice2_done:
     l "Healing magic, you say?"
     "I look over at Lewis. In the story, he had Otillia attempt to heal his brother. Unfortunately, the disease he had was already too far along, and Lewis ended up taking the throne."
     o "I've been practicing, but it still drains a lot out of me. I won't be useful for a while."
-    hide noble
+
     show d neu at center with dissolve
     "I shake my head, laughing slightly."
     mc "That's all right. I don't think anyone is in a rush to have you go out and do some healing."

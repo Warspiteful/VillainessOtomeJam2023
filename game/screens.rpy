@@ -256,7 +256,7 @@ screen quick_menu():
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Prefs") action ShowMenu('options')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -288,16 +288,27 @@ style quick_button_text:
 screen navigation():
 
     vbox:
-        style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        if not renpy.get_screen("main_menu"):
+            style_prefix "navigation"
+            
+            xpos 100
+            yalign 0.5
+            
+            spacing gui.navigation_spacing
 
-        spacing gui.navigation_spacing
-
+        else:
+            style_prefix "mainmenu"
+        
+            xpos gui.navigation_xpos
+            yalign 0.95
+        
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start") action Start():
+                if renpy.get_screen("main_menu"):
+                    text_size 80
+                
 
         else:
 
@@ -307,7 +318,8 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("options")
+        
 
         if _in_replay:
 
@@ -317,12 +329,16 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
+             
         textbutton _("About") action ShowMenu("about")
+           
+
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Controls") action ShowMenu("controls")
+
 
         if renpy.variant("pc"):
 
@@ -330,9 +346,22 @@ screen navigation():
             ## Web.
             textbutton _("Quit") action Quit(confirm=not main_menu)
 
+        
 
-style navigation_button is gui_button
-style navigation_button_text is gui_button_text
+
+style navigation_button is gui_button:
+    hover_sound "audio/Other/hover_sound.wav"
+style navigation_button_text:
+    size 40
+    hover_color "#ec6bf3"
+    idle_color "#a760d3"
+
+style mainmenu_button is gui_button:
+    hover_sound "audio/Other/hover_sound.wav"
+style mainmenu_button_text:
+    size 55
+    hover_color "#ec6bf3"
+    idle_color "#a760d3"
 
 style navigation_button:
     size_group "navigation"
@@ -381,11 +410,6 @@ style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
-style main_menu_frame:
-    xsize 420
-    yfill True
-
-    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -471,6 +495,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     textbutton _("Return"):
         style "return_button"
+
+        xpos 100
 
         action Return()
 
@@ -708,11 +734,11 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences():
+screen options():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Options"), scroll="viewport"):
 
         vbox:
 
@@ -956,13 +982,13 @@ style history_label_text:
 ## screens (keyboard_help, mouse_help, and gamepad_help) to display the actual
 ## help.
 
-screen help():
+screen controls():
 
     tag menu
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help"
 

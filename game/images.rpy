@@ -3,7 +3,14 @@ image cg1:
 image cg2:
     "Finished CGs/IMG_6702.png"
 image cg3:
+    "Finished CGs/lewiscg.png"
+image cg4:
+    "Finished CGs/IMG_6750.png"
+image cg5:
+    "Finished CGs/IMG_6752.png"
+image cg6:
     "Finished CGs/IMG_6744.png"
+
 image bg mcroom base:
     "Backgrounds/mcroom.jpg"
 

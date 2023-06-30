@@ -18,18 +18,67 @@ define config.name = _("TheVillainessJustWantsToEat")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = ": Demo"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+TEAM:
+
+{b}Lead & Writer:{/b}
+
+TheChosenGiraffe
+
+{b}Voice Acting:{/b}
+
+Lewis - Nic Hamill
+
+Cenric - Max Herzfeld
+
+Otillia - Mei Xin Bierzynski
+
+{b}Art:{/b}
+
+Apririnn
+
+Guorin
+
+Mai
+
+Onisuisei
+
+Orbin
+
+{b}Editing:{/b}
+
+Akatea
+
+Frufrulai
+
+{b}GUI:{/b}
+
+Fatherrot
+
+Bulhwa
+
+{b}Programming:{/b}
+
+Warspireful
+
+F1reshark
+
+{b}Audio:{/b}
+
+OST - Rosko Vair
+
+Mixing - Ralph Villegas
 """)
 
 
