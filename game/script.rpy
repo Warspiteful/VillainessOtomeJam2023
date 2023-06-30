@@ -423,12 +423,8 @@ label choice2_pleasure:
     voice c10
     show c close blush smile
     c "Of course, my lady."
-    hide c with dissolve
-<<<<<<< .merge_file_mUHTU7
     show c smile neu at offscreenright
-=======
     show d neu at center with move
->>>>>>> .merge_file_IHMbcA
     "With another bow, he makes his way back to the kitchen."
 
 
@@ -506,13 +502,10 @@ label choice2_done:
     voice o_alright
     o "Oh, it's not much. It's just light magic. Healing… I'm not special."
     "The grand mage shakes her head."
-<<<<<<< .merge_file_mUHTU7
     hide d
     show o neu at left with move
     show l neu at right_fix
 
-=======
->>>>>>> .merge_file_IHMbcA
     gm "Light magic is the rarest form of magic. Not to mention your healing powers are quite exceptional. You are like a gift from the gods."
     show o flust ce smile
     "Despite looking uncomfortable, Otillia blushes, looking down into her lap."
@@ -522,13 +515,8 @@ label choice2_done:
     l "Healing magic, you say?"
     "I look over at Lewis. In the story, he had Otillia attempt to heal his brother. Unfortunately, the disease he had was already too far along, and Lewis ended up taking the throne."
     o "I've been practicing, but it still drains a lot out of me. I won't be useful for a while."
-<<<<<<< .merge_file_mUHTU7
-
-    show d neu at center with dissolve
-=======
     show l ss
     show d d n l
->>>>>>> .merge_file_IHMbcA
     "I shake my head, laughing slightly."
     mc "That's all right. I don't think anyone is in a rush to have you go out and do some healing."
     show o smile nor
