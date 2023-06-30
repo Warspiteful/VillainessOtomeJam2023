@@ -458,6 +458,7 @@ label choice2_done:
     "She's the typical heroine, except her beauty puts her above others. This is when it sets in that I truly am inside a manhwa."
     play music music_Main_nm
     scene bg tearoom day
+    show d ss at center
     show o neu at right
     show d ls at left
     with dissolve
