@@ -106,7 +106,10 @@ screen say(who, what):
             window:
                 id "namebox"
                 style "namebox"
-                text who id "who"
+                text who id "who":
+                    xpos 15
+                    yanchor 0.3
+
 
         text what id "what"
 
@@ -145,8 +148,8 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
+    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
 
 style say_label:
     properties gui.text_properties("name", accent=True)
@@ -291,24 +294,24 @@ screen navigation():
 
         if not renpy.get_screen("main_menu"):
             style_prefix "navigation"
-            
+
             xpos 100
             yalign 0.5
-            
+
             spacing gui.navigation_spacing
 
         else:
             style_prefix "mainmenu"
-        
+
             xpos gui.navigation_xpos
             yalign 0.95
-        
+
         if main_menu:
 
             textbutton _("Start") action Start():
                 if renpy.get_screen("main_menu"):
                     text_size 80
-                
+
 
         else:
 
@@ -319,7 +322,7 @@ screen navigation():
         textbutton _("Load") action ShowMenu("load")
 
         textbutton _("Options") action ShowMenu("options")
-        
+
 
         if _in_replay:
 
@@ -329,9 +332,9 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-             
+
         textbutton _("About") action ShowMenu("about")
-           
+
 
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
@@ -346,7 +349,7 @@ screen navigation():
             ## Web.
             textbutton _("Quit") action Quit(confirm=not main_menu)
 
-        
+
 
 
 style navigation_button is gui_button:

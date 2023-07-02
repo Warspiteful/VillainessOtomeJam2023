@@ -11,6 +11,8 @@ image cg5:
 image cg6:
     "Finished CGs/IMG_6744.png"
 
+image end card:
+    "Ending_Card.png"
 image bg mcroom base:
     "Backgrounds/mcroom.jpg"
 

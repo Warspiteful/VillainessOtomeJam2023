@@ -56,7 +56,7 @@ label start:
     "I stare back."
     "She keeps staring."
     m "My lady?"
-    
+
     "It’s not until that moment when my surroundings finally start coming into view."
     "An expensive wardrobe with a mirror gilded in gold. Expensive white trim detailing the entire room. Floral wallpaper. Thick and soft down comforter."
     "I am not in my bedroom."
@@ -235,28 +235,31 @@ label choice1_important:
 
 label choice1_done:
     scene bg tearoom day
-<<<<<<< .merge_file_mUHTU7
-
-=======
->>>>>>> .merge_file_IHMbcA
+    show d neu at center with dissolve
     "Lewis sips on his coffee, not paying me any attention. I use the time to think about how I should go about this whole villainess thing."
     "The manhwa was fairly new and I had read all available episodes."
+    show d gloom
     "When [mcname] showed up in the story, she was cruel from the get go. Stubborn, violent, and selfish, she was hated in the fandom."
     "I don't want that. And I don't want whatever death flags the author had planned."
     "Death flags: An element in a story used to foreshadow a character's imminent death or downfall."
+    show d pout sad
     "Was this even worth it?"
+    show d oh
     "I think back on my past life. It wasn't anything special."
     "Though, I suppose the criteria for being isekai'd is being unremarkable and then starting a new life."
     "I am…was a normal office worker. Not a manager, just someone who stayed mediocre."
+    show d ga
     "Despite that, I was overworked. I found myself eating mediocre instant ramen from the convenience store."
     "At night, I would get my fill of delicious food while reading manhwa and manga."
+    show d gloom
     "Now that I think back on it, my life was kind of pathetic. Sure, I enjoyed the nights I had, but my life as a whole wasn't fulfilling."
+    show d ls
     "I look down at the table, the plates cleared of food and my stomach happy."
-    show d ls at center with dissolve
+    show d fc
     mc "(Yeah. This is way better.)"
     l "[mcname]."
-    show d fbb
     "Here, I can live for myself. I can eat all the delicious food and not be tied down by anything."
+    show d fbb
     "Not even the title of villainess. Although it would be a shame if I die again because of it."
     "I sigh happily and pick up a cream puff."
     show l neu at right_fix
@@ -455,7 +458,7 @@ label choice2_done:
     scene cg5 with dissolve
     "I can hear more voices getting closer to the room. I turn and see Lewis, Otillia, and the grand mage."
     mc "Woah."
-    "Otillia is even more gorgeous in person. Golden locks fall across her shoulders, looking as smooth as silk. She has a rosy complexion, her blue eyes crystal clear."
+    "Otillia is even more gorgeous in person. Golden locks fall across her shoulders, looking as smooth as silk. She has a rosy complexion, her hazel eyes captivating."
     "She's the typical heroine, except her beauty puts her above others. This is when it sets in that I truly am inside a manhwa."
     play music music_Main_nm
     scene bg tearoom day
@@ -516,7 +519,7 @@ label choice2_done:
     "I look over at Lewis. In the story, he had Otillia attempt to heal his brother. Unfortunately, the disease he had was already too far along, and Lewis ended up taking the throne."
     o "I've been practicing, but it still drains a lot out of me. I won't be useful for a while."
     show l ss
-    show d d n l
+    show d n l
     "I shake my head, laughing slightly."
     mc "That's all right. I don't think anyone is in a rush to have you go out and do some healing."
     show o smile nor
@@ -525,13 +528,11 @@ label choice2_done:
     o "Thank you for saying that, my lady."
     show l nerve
     l "By the way, I wanted to ask about–"
-    show c conf at right
+    show c conf at left
     hide o
-    show l shock at center
+    show l shock
     with dissolve
-
     "Lewis's words are interrupted by Cenric entering the room. He's rolling a cart filled with tea and snacks. My eyes immediately light up."
-
     show d oh
     voice l_sigh
     "Lewis looks surprised before sighing and glancing over at me."
@@ -567,6 +568,7 @@ label choice3_eatmore:
     show d pout upset
     mc "Oh, shush. We have guests. We can't have them hungry."
     hide l
+    show d at right
     show o flust at center
     with dissolve
     "Otillia walks over, her eyes scanning all the options."
@@ -625,7 +627,7 @@ label choice3_appreciate: #WIP: Set transforms to show all 4 sprites on-screen a
     show c sad frown
     "I turn towards Cenric and see his face fall. I turn back towards Lewis and frown. Can someone really be this apathetic towards food?"
     hide c
-    show d pout upset
+    show d pout upset at left
     show l an at right
     with dissolve
     mc "Don't be rude. Cenric worked hard."
@@ -754,7 +756,8 @@ label CenricRoute:
     show d fc
     "What he doesn't know is that I'll use this chance to eat more of Cenric's food."
     "It's a truly evil plan."
-    scene black with fade
+    scene end card with fade
+    pause
     return
 
 label LewisRoute:
@@ -795,5 +798,6 @@ label LewisRoute:
     show d oh
     "I stop, a disgusted look crossing my face."
     "Yeah. Not cut out to be a villainess."
-    scene black with fade
+    scene end card with fade
+    pause
     return
