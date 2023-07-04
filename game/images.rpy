@@ -15,10 +15,14 @@ image end card:
     "Ending_Card.png"
 image bg mcroom base:
     "Backgrounds/mcroom.jpg"
-
+image bg dining night:
+    "Backgrounds/diningnightlight.jpg"
 image bg tearoom day:
     "Backgrounds/tearoomday.jpg"
-
+image bg hall day:
+    "Background/hall1day.jpg"
+image bg fc day:
+    "Background/frontcastleday.jpg"
 image d neu:
     "Sprites/Davinia Sprites/Davinia-Netural-Sprite.png"
     zoom 0.4
@@ -67,7 +71,6 @@ image d ss:
 image d sb:
     "Sprites/Davinia Sprites/Davinia-SupriseBlush-Sprite.png"
     zoom 0.4
-
 image d sb 2:
     "Sprites/Davinia Sprites/Davinia-SurpriseBlushv2-Sprite.png"
     zoom 0.4

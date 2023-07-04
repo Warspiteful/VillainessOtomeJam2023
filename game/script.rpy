@@ -798,6 +798,5 @@ label LewisRoute:
     show d oh
     "I stop, a disgusted look crossing my face."
     "Yeah. Not cut out to be a villainess."
-    scene end card with fade
-    pause
-    return
+    jump lewis_route
+    
