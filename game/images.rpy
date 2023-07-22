@@ -15,14 +15,33 @@ image end card:
     "Ending_Card.png"
 image bg mcroom base:
     "Backgrounds/mcroom.jpg"
+image bg mcroom nightlight:
+    "Backgrounds/mcroomnightlight.jpg"
 image bg dining night:
     "Backgrounds/diningnightlight.jpg"
 image bg tearoom day:
     "Backgrounds/tearoomday.jpg"
 image bg hall day:
-    "Background/hall1day.jpg"
+    "Backgrounds/hall1day.jpg"
 image bg fc day:
-    "Background/frontcastleday.jpg"
+    "Backgrounds/frontcastleday.jpg"
+image bg ballroom:
+    "Backgrounds/ballroom.jpg"
+image bg office day:
+    "Backgrounds/lewisofficeday.jpg"
+image bg office after:
+    "Backgrounds/lewisofficeevening.jpg"
+image bg o_room day:
+    "Backgrounds/otilliaroom.jpg"
+image bg gazebo day:
+    "Backgrounds/gazeboday.jpg"
+image bg kitchen day:
+    "Backgrounds/kitchen day.png"
+image bg kitchen evening:
+    "Backgrounds/kitchen evening.png"
+image bg kitchen night:
+    "Backgrounds/kitchen night.png"
+
 image d neu:
     "Sprites/Davinia Sprites/Davinia-Netural-Sprite.png"
     zoom 0.4
@@ -71,8 +90,8 @@ image d ss:
 image d sb:
     "Sprites/Davinia Sprites/Davinia-SupriseBlush-Sprite.png"
     zoom 0.4
-image d sb 2:
-    "Sprites/Davinia Sprites/Davinia-SurpriseBlushv2-Sprite.png"
+image d sb a:
+    "Sprites/Davinia Sprites/Davinia-SupriseBlushv2-Sprite.png"
     zoom 0.4
 
 image l a:
@@ -212,19 +231,19 @@ image o talk angry:
     "Sprites/Otillia Sprites/Otillia talk angry.png"
     zoom 0.4
 image o talk neu:
-    "Sprites/Otillia Sprites/Otillia talk neu.png"
+    "Sprites/Otillia Sprites/Otillia talk neutral.png"
     zoom 0.4
 image o talk sad:
     "Sprites/Otillia Sprites/Otillia talk sad.png"
     zoom 0.4
 image o talk surp:
-    "Sprites/Otillia Sprites/Otillia talk surp.png"
+    "Sprites/Otillia Sprites/Otillia talk surprised.png"
     zoom 0.4
 
 image c blush laugh:
     "Sprites/Cenric Sprites/Cenric blush laugh.png"
     zoom 0.375
-image c blush laugh 2:
+image c blush laugh a:
     "Sprites/Cenric Sprites/Cenric blush 2 laugh.png"
     zoom 0.375
 image c smile calm:
@@ -260,7 +279,7 @@ image c timid ex:
 image c huh blush:
     "Sprites/Cenric Sprites/Cenric huh blush 1.png"
     zoom 0.375
-image c huh blush 2:
+image c huh blush a:
     "Sprites/Cenric Sprites/Cenric huh blush 2.png"
     zoom 0.375
 image c laugh:
