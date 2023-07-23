@@ -41,7 +41,16 @@ image bg kitchen evening:
     "Backgrounds/kitchen evening.png"
 image bg kitchen night:
     "Backgrounds/kitchen night.png"
-
+image bg bench day:
+    "Backgrounds/benchday.jpg"
+image bg fountain day:
+    "Backgrounds/fountainday.jpg"
+image bg hall2 afternoon:
+    "Backgrounds/hall2evening.jpg"
+image bg village day:
+    "Backgrounds/village.jpg"
+image bg lewisroom day:
+    "Backgrounds/lewisroomday.jpg"
 image d neu:
     "Sprites/Davinia Sprites/Davinia-Netural-Sprite.png"
     zoom 0.4
@@ -297,7 +306,7 @@ image c frown neu:
 image c smile neu:
     "Sprites/Cenric Sprites/Cenric neutral smile.png"
     zoom 0.375
-image c shy open:
+image c shy o:
     "Sprites/Cenric Sprites/Cenric open shy.png"
     zoom 0.375
 image c shy slight_open:

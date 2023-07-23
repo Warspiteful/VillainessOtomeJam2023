@@ -756,9 +756,7 @@ label CenricRoute:
     show d fc
     "What he doesn't know is that I'll use this chance to eat more of Cenric's food."
     "It's a truly evil plan."
-    scene end card with fade
-    pause
-    return
+    jump cenric_route
 
 label LewisRoute:
     show d ss

@@ -1374,4 +1374,6 @@ label l_choice3_done:
     mc "I finally get a manhwa worthy ending."
     show l nerve
     l "What\'s a manhwa?"
+    scene end card with fade
+    pause
     return
