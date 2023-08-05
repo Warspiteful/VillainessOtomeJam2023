@@ -26,6 +26,7 @@ label cenric_route:
     mc "(Oops.)"
     show c flust surp at right2 with move
     "Everyone in the kitchen stops. Cenric turns around, his eyes widening slightly. He immediately comes over."
+    voice c18
     c "My lady, are you okay?!"
     show d n b
     "I smile sheepishly."
@@ -33,6 +34,7 @@ label cenric_route:
     show d neu
     show c timid
     "I bend down to start picking things up. Cenric stops me."
+    voice c19
     c "Please, let me do it."
     "I ignore his words and help him anyway."
     show d oh
@@ -47,6 +49,7 @@ label cenric_route:
     show d ss
     "I try to hold in a laugh at his surprised look as he cradles the bowls in his arms. His face softens as a light blush spreads across his cheeks."
     show c blush laugh
+    voice c21
     c "Honestly, I\'m not that surprised. I was kind of expecting you to come visit in the future since you seemed so interested in my food."
     show d ls
     mc "Of course I am. It\'s delicious!"
@@ -55,6 +58,7 @@ label cenric_route:
     mc "What\'s for dinner, by the way?"
     show c frown neu
     "Cenric deflates like a balloon."
+    voice c22
     c "Stew. Beef stew."
     show d fc
     mc "Oooh! I love beef stew!"
@@ -65,6 +69,7 @@ label cenric_route:
     show c smile calm
     "I can feel Cenric\'s eyes on me, his eyes practically filled with awe. I don\'t know why, but it makes me smile to see him happy."
     show c laugh
+    voice c23
     c "You really love food, huh?"
     show d ss
     mc "I do. It\'s–"
@@ -82,10 +87,12 @@ label cenric_route:
     "Lewis walks over to us and puts his hands on his hips."
     l "Can you not bother the cooks?"
     show c flust surp
+    voice c24
     c "Oh, she\'s not a bother!"
     show l an
     "Lewis turns to him and his eyes narrow. It wasn\'t in an angry way, but it was enough to make Cenric cower just slightly."
     show c flust lookDown
+    voice c25
     c "My lord."
     show d neu
     show c frown neu
@@ -112,9 +119,11 @@ label cenric_route:
     show d oh
     mc "Am I really not a bother? I know I get really excited about food."
     show c flust lookDown
+    voice c27
     c "I actually think it\'s cute."
     show c huh blush
     "He pauses for a minute as he processes his own words. His face turns red."
+    voice c28
     c "I-I mean it\'s cute that–Well, not cute. It\'s very… I love how you love food."
     show d n l
     "I giggle, covering my mouth as I do so."
@@ -122,6 +131,7 @@ label cenric_route:
     show d neu
     show c smile calm
     "Cenric bows his head."
+    voice c29
     c "I-I would appreciate that, my lady."
     hide c with dissolve
     show d at center
@@ -287,6 +297,7 @@ label cenric_route:
     "I can\'t move. What in the k-drama moment was that?! Is my heart pounding? Can he hear it?"
     "Cenric tilts his head once again, letting the leaf go."
     show c talk neu
+    voice c31
     c "What\'s wrong?"
     show d n b
     "I blush and look away."
@@ -297,9 +308,11 @@ label cenric_route:
     mc "Anyhow, thank you for lunch. It\'s quite tasty."
     show c calm smile
     "Cenric nods, his gaze falling back on his food."
+    voice c32
     c "I\'m glad you enjoyed it, my lady."
     mc "You know, I don\'t mind if you call me [mcname]."
     show c frown neu
+    voice c33
     c "It would be inappropriate."
     show d ss
     "I hum, scooting slightly closer to him."
@@ -313,6 +326,7 @@ label cenric_route:
     mc "In fact, it makes me somewhat uncomfortable if you do."
     show c flust surp
     "He looks at me, his eyebrows raised."
+    voice c35
     c "Really?"
     show d ss
     "I nod."
@@ -409,13 +423,16 @@ label cenric_route:
     with dissolve
     mc "And then she said my dress was tacky!"
     "Cenric gasps."
+    voice c36
     c "She did not!"
     show d a
     "I shake my head, cutting off a piece of fried pork cutlet and shoving it into my mouth. I\'m currently telling Cenric about my unfortunate breakfast with a group of noble ladies."
     mc "I had to refrain from jumping across the table."
+    voice c37
     c "No kidding. That sounds…"
     show c frown neu
     "He shivers."
+    voice c38
     c "Scary."
     show d s
     mc "The worst part of it all is that they looked at me all crazy like when I started eating a second plate of desserts. Apparently that\'s a taboo."
@@ -427,6 +444,7 @@ label cenric_route:
     show d pout upset
     mc "Cenric. They called me tacky."
     show c laugh
+    voice c40
     c "They\'re just jealous."
     "I snort."
     mc "And what would they be jealous of?"
@@ -449,6 +467,7 @@ label cenric_route:
     with moveinright
     "Lewis is laughing. Actually laughing. The smile on his face looks so pure and natural."
     show c laugh
+    voice c42
     c "Oh, it\'s Prince Lewis. Let\'s go say"
     show c flust surp at left
     show d at left2
@@ -497,6 +516,7 @@ label cenric_route:
     show c sad frown
     show d neu
     "Cenric sighs. He takes a step back, putting some distance between us."
+    voice c44
     c "The happiness just isn\'t there anymore."
     "I frown. It\'s hard to imagine Cenric being anything but unhappy. The fact that what he does for a living makes him miserable makes my heart hurt."
     "I need to do something to help him. I like hanging out with a happy Cenric."
@@ -504,13 +524,16 @@ label cenric_route:
     show d oh
     mc "Can you teach me how to cook?"
     show c tense
+    voice c45
     c "What? Why?"
     show d ss
     mc "Maybe teaching someone will bring back your passion."
     show c shy o
     "Cenric\'s blush is like a rose blossoming, the deep red color blooming from the center of his face all the way to his ears. His eyes are sparkling as he stares at me in awe."
     show c close smile
+    voice c46
     c "You would do that for me?! Then I would love to teach you!"
+    voice c47
     c "This actually means a lot. You\'re so sweet!"
     show d n l
     "I giggle nervously, looking away."
@@ -879,12 +902,15 @@ label cenric_route:
     show c smile neu at right2
     show d at left2
     with move
+    voice c48
     c "Let me help."
     show d sb a
     "He comes up behind me. It\'s like my whole world eclipses. His hands wrap over mine as he shows me the correct posture and grip."
     show c smile calm
+    voice c49
     c "You have to hold the knife like this so you have control. Then curl your other fingers–"
     "Cenric curls my fingers with one hand so my knuckles are near the blade."
+    voice c50
     c "Like this. That way you won\'t cut yourself. Now try."
     show d n b
     "My eyebrows furrow as I try to focus on cutting the tomato. I block the feeling of Cenric\'s arms around mine as I slice the tomato."
@@ -895,12 +921,14 @@ label cenric_route:
     show d neu
     show c conf
     mc "How do you do this every day?"
+    voice c51
     c "Practice, of course."
     show d n b at left
     show c at right
     with move
     "His warm breath sends a shiver down my spine. But as soon as I feel it, he pulls away. He gives me a smile."
     show c smile calm
+    voice c52
     c "Good job! You just cut your first tomato."
     show d n l
     mc "All thanks to you, Chef."
@@ -1093,6 +1121,7 @@ label cenric_route:
     mc "Oi, why aren\'t you talking?"
     show c puppy
     "His eyes widen."
+    voice c53
     c "Did you just throw flour at me?"
     show d ls
     mc "What are you gonna do about it?"
@@ -1102,12 +1131,14 @@ label cenric_route:
     show d oh
     mc "Hey! I did not use that much!"
     show c laugh
+    voice c54
     c "Payback!"
     show d n l
     mc "Oh, you\'re in for it!"
     "We start a flour battle. We take turns flinging the white powder at each other. Laughter fills the empty space as the room brightens with the change in mood."
     "It feels good to make Cenric feel happy. It feels even better to throw flour around like a couple of children."
     show c blush laugh
+    voice c55
     c "Ahahaha! You look adorable like that!"
     "Cenric laughs and points at me. I giggle, rolling my eyes."
     show d ls
@@ -1117,6 +1148,7 @@ label cenric_route:
     show c at center with move
     "Cenric notices. His hands reach out and grab my waist, turning me around and pulling me flush against his chest."
     show c conf
+    voice c56
     c "I won\'t let you get away."
     show d sb a
     "I stare up at him. He stares back. We\'re both covered in flour. He reaches out, brushing some from my face."
@@ -1124,6 +1156,7 @@ label cenric_route:
     "His eyes keep flickering down to my lips."
     "My heart is pounding. It always seems to pound around him, but this time it\'s different. It feels like something might actually happen."
     show c flust lookDown
+    voice c57
     c "Can I kiss you?"
     show d n b
     "I almost don\'t hear his words. They\'re so quiet that I thought I just imagined it. But he\'s looking at me expectantly. So I nod."
@@ -1137,12 +1170,14 @@ label cenric_route:
     show d gloom
     mc "Does my breath stink?"
     show c huh blush
+    voice c58
     c "I just kissed an engaged woman! A noble woman engaged to a prince!"
     show d neu
     mc "Oh."
     show d n l
     show c shy pout
     "It takes me a moment, but I start laughing. Cenric doesn\'t find it funny. He pouts and crosses his arms."
+    voice c59
     c "It\'s not funny."
     show d n b
     mc "(It is. I know he doesn\'t know, but his reaction is so cute, I can\'t help but laugh.)"
@@ -1158,6 +1193,7 @@ label cenric_route:
     mc "I like you, you dummy. I\'m happy they\'re together."
     show c blush laugh
     "He lights up like a sparkler in the night."
+    voice c61
     c "Really?"
     show d n b
     mc "Really."
@@ -1165,6 +1201,7 @@ label cenric_route:
     show d oh
     mc "W-we should probably clean up and finish baking."
     show c laugh
+    voice c62
     c "Right. Right, let\'s do that."
     "Despite the bashfulness between us, there\'s a sense of comfort and familiarity. We spend the rest of the night by each other\'s side. The smiles on our faces never go away."
     scene bg ballroom with fade
@@ -1180,6 +1217,7 @@ label cenric_route:
     with dissolve
     "But I don\'t care about the food. For once. Now I want to talk to Cenric. It seems there\'s a lull in the crowd so I make my way over to the table and pull him aside."
     "He gives me a smile. His face is sweaty and he looks exhausted, but he also seems truly happy. No sadness in his eyes."
+    voice c63
     c "Hi."
     show d ls
     mc "Hi, Chef."
@@ -1187,6 +1225,7 @@ label cenric_route:
     "He laughs."
     mc "You should be proud of yourself, Cenric."
     show c huh blush
+    voice c64
     c "Stop it…"
     "I turn to the crowd. Most of them have plates and are eating contentedly. I turn back to him."
     mc "See? They love your food. I told you. You have a gift."

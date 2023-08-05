@@ -595,6 +595,7 @@ label l_choice2_done:
     mc "Cenric, you\'ve done it again!!"
     "I squeal happily. Both men look at me with tired expressions."
     show c flust lookDown
+    voice c11
     c "My lady… You asked for too much food."
     show d neu
     "I shrug, walking up to the counter and looking over the delightful spread."
@@ -602,6 +603,7 @@ label l_choice2_done:
     mc "We need the perfect food for this ball. Lewis, what did you ask him to make?"
     show c timid ex
     "Cenric nervously looks at Lewis then back at me."
+    voice c12
     c "He only asked for one thing."
     show d pout upset
     "I glare at Lewis, crossing my arms. I knew he would do this, but I am still disappointed, nonetheless."
@@ -856,6 +858,7 @@ label l_choice2_done:
     "At the sound of Cenric\'s loud and booming voice, I jump away from Lewis. My body heats up from embarrassment."
     mc "E-everything\'s fine."
     show c smile calm
+    voice c14
     c "And the food?"
     show l bs
     "Lewis looks at me then back at Cenric. His face is aglow with a genuine smile."
@@ -1280,6 +1283,7 @@ label l_choice3_done:
     show c smile calm at right
     with moveinright
     "Cenric greets us with a smile."
+    voice c15
     c"My lady, my lord. I hope everything is up to your standards."
     show d fc
     mc "If it\'s your food, it is above all standards. Thank you for your hard work, Cenric."
@@ -1313,6 +1317,7 @@ label l_choice3_done:
     show d ls
     show c conf
     mc "Victory!"
+    voice c16
     c "Victory!"
     show l behind d
     show l at left2
@@ -1324,6 +1329,7 @@ label l_choice3_done:
     show o smile evil
     "I look over and see Otillia. I smile and greet her. Her eyebrows are raised and she has a smirk on her face as if she was told the best gossip."
     show c laugh
+    voice c17
     c "Prince Lewis just found his favorite food."
     show d ss
     "I nod."
