@@ -1,6 +1,6 @@
 label cenric_route:
     scene bg hall day with fade
-    show d gloom at center with dissolve 
+    show d gloom at center with dissolve
     "The thought of planning a whole party makes my stomach growl. I honestly don\'t know why it would be a good idea."
     "I\'ve never planned a party in my life, not to mention I\'m in a completely different time period."
     "Yes, I want to eat more of Cenric\'s food. But party planning?"
@@ -13,7 +13,7 @@ label cenric_route:
     show d fc
     "A kitchen is a wonderful place. The way people work in sync to whip up food that is simply magical will always amaze me."
     "I look around, trying to find Cenric and his cute puppy dog face."
-    show d oh at left 
+    show d oh at left
     show c sad frown at right
     with dissolve
     "He pops into my field of vision. I half-expected him to have a big grin while he cooks, but instead he looks almost…"
@@ -23,7 +23,7 @@ label cenric_route:
     "He doesn\'t look happy. I decide to leave before I\'m noticed."
     "I take a step back, bumping into a table and knocking down a bunch of mixing bowls and utensils. I freeze."
     show d oh
-    mc "(Oops.)" 
+    mc "(Oops.)"
     show c flust surp at right2 with move
     "Everyone in the kitchen stops. Cenric turns around, his eyes widening slightly. He immediately comes over."
     c "My lady, are you okay?!"
@@ -73,7 +73,7 @@ label cenric_route:
     show c timid
     mc "(Uh oh.)"
     show c behind d at left2
-    show l a at right 
+    show l a at right
     with moveinright
     "I turn and see Lewis glaring at us with his arms crossed. Well, not us. More specifically, me."
     show d ss
@@ -133,13 +133,14 @@ label cenric_route:
     scene bg tearoom day
     show d neu at left
     show o neu at right
-    with dissolve 
+    with dissolve
     "The next morning, I meet Otillia in the drawing room."
     "Since she\'s the one who came up with the idea of the ball, she surely must have some ideas on what I can do."
     show d ss
     mc "Thank you for taking the time to have some tea with me."
     show o smile nor
     "She gives me a smile and sits across from me."
+    voice o35
     o "It\'s no problem at all. I appreciate having a break from magic practice, my lady."
     show d oh
     "I raise an eyebrow."
@@ -147,16 +148,19 @@ label cenric_route:
     mc "Otillia, no honorifics. We\'re friends, are we not?"
     show d ss
     show o laugh
+    voice o36
     o "Sorry, sorry. How have you been? Lewis mentioned he found you hanging out with Cenric?"
     show d n l
     "I laugh, rolling my eyes."
     mc "It makes it sound like I was sneaking around to hang out with the cook. But yes, I did go visit him."
     show o smile nor
+    voice o37
     o "You two seem like you would get along. Is he nice?"
     show d ls
     "I smile and nod. I clasp my hands together as the image of his smile pops into my mind."
     mc "He\'s so sweet! He reminds me of a big puppy!"
     show o laugh
+    voice o38
     o "You must really like him."
     mc "Oh, for sure. He would have been a fan favorite if he wasn\'t–"
     show d oh
@@ -167,27 +171,32 @@ label cenric_route:
     show d ss
     mc "He reminds me of a character in a romance novel I once read. He was a side character, though, and never got the spotlight as much."
     show o happy ex
-    "Otillia\'s eyes widen and fill with excitement." 
+    "Otillia\'s eyes widen and fill with excitement."
+    voice o39
     o "I didn\'t know you read romance novels!"
     show d n l
     mc "I do. I don\'t read them as often, but I enjoy them a decent amount."
     show o smile nor
+    voice o40
     o "I can share some of my novels with you, if you\'d like!"
     show d ss
     "I give her a smile."
     mc "That would be delightful. I\'m glad there\'s someone here with similar interests as me."
     show o blush neu sad
+    voice o41
     o "It does make it easier. I\'ll admit…I am slightly lonely."
-    show d oh 
+    show d oh
     "I take a sip of my tea. Otillia mentioned she talked to Lewis. They may already be on track to becoming closer. I just need to give a little push."
     show d ss
     mc "Don\'t worry, Otillia. Lewis and I will make sure to keep you company."
     mc "Other than that, how are you adjusting?"
     show o smile nor
+    voice o42
     o "It\'s quite different from my village. Everything seems so…"
     mc "Different?"
     show o pout sad
     "She nods and sighs."
+    voice o43
     o "Very. I don\'t know how I\'ll fit in."
     show d n l
     mc "Fitting in isn\'t important."
@@ -197,6 +206,7 @@ label cenric_route:
     mc "You should be more comfortable. And if you need help, come to me or Lewis."
     show o happy ex
     "Otillia gives me a bright grin. Her tentativeness from earlier disappears."
+    voice o44
     o "Thank you, [mcname]. It means a lot."
     mc "You\'re welcome."
     show d ls
@@ -221,7 +231,7 @@ label cenric_route:
     show c conf
     c "I just finished up lunch for you, Prince Lewis, and Lady Otillia. We can talk after, if you\'d like."
     show d ss
-    "I shake my head." 
+    "I shake my head."
     mc "I want to eat with you. Otillia and Lewis can have lunch together."
     show c puppy
     "He cocks his head to the side. I can imagine dog ears perking up and his tail wagging as he does so."
@@ -340,9 +350,9 @@ label cenric_route:
     "I think for a moment."
     show d oh
     mc "Oh! I know the perfect place."
-    show c smile calm 
+    show c smile calm
     "I grab Cenric\'s hand and drag him behind me. He follows with a content smile."
-    show bg fountain day 
+    show bg fountain day
     show d ss
     show c smile calm
     with dissolve
@@ -351,7 +361,7 @@ label cenric_route:
     mc "Here!"
     show c laugh
     c "Good choice!"
-    show c smile calm 
+    show c smile calm
     "He sits and takes out the food, setting it between us. I lick my lips in excitement as I look over the food. Along with the flatbread, he brought cookies for dessert. For drinks, he made fruit juice."
     show d oh
     mc "Did you make the juice yourself?"
@@ -394,8 +404,8 @@ label cenric_route:
     "His eyes would get wide, his shoulders drooping as he fidgets with his fingers. It always looks as if he was going to cry. As cute as that is, I would get the strong urge to reach out and hug him."
     "So I avoid going too deep into the topic."
     show bg kitchen day
-    show d s at left 
-    show c laugh at right 
+    show d s at left
+    show c laugh at right
     with dissolve
     mc "And then she said my dress was tacky!"
     "Cenric gasps."
@@ -428,8 +438,8 @@ label cenric_route:
     show d n b
     "I love himbos."
     show bg gazebo day
-    show d oh 
-    show c smile calm 
+    show d oh
+    show c smile calm
     with dissolve
     "After lunch, we both are taking a walk. I let out a gasp as I spot Lewis and Otillia at the gazebo ahead of us."
     show d at left
@@ -522,7 +532,7 @@ label cenric_route:
     "I look at Cenric and then give him a smile."
     mc "Nothing. Nothing at all. I need to go now. I\'ll see you later."
     "Without waiting for Cenric to reply, I quickly walk off. This feeling in my chest, the way I feel when I look at Cenric… It must be Lewis and Otillia rubbing off on me."
-    hide c 
+    hide c
     show bg hall day
     show d at center
     with dissolve
@@ -531,13 +541,13 @@ label cenric_route:
     mc "(I definitely didn\'t want to kiss him back there. No way.)"
     show d gloom
     "It must be the effects of getting stuck in a romance manhwa. It has to be."
-    scene bg hall2 afternoon with fade 
+    scene bg hall2 afternoon with fade
     "I spent the rest of the day party planning to distract myself from my budding emotions. After I finish, I decide to pay Lewis a visit."
     show d neu with dissolve
     "I knock on his office door."
     mc "Lewis? Are you free?"
     l "Come in."
-    show bg office after 
+    show bg office after
     show d at left
     show l neu at right
     with dissolve
@@ -634,7 +644,7 @@ label cenric_route:
     show bg village day with dissolve
     "Once we reach the village, I can already feel the sour stares. I ignore it and instead focus on the market. Stalls line each other, the middle walkway filled with people bargaining and shopping."
     show d bb
-    "My eyes are wide as I take in all the stalls. I then turn to Cenric." 
+    "My eyes are wide as I take in all the stalls. I then turn to Cenric."
     mc "Do you know what you need?"
     show c smile calm
     "He smiles."
@@ -870,7 +880,7 @@ label cenric_route:
     show d at left2
     with move
     c "Let me help."
-    show d sb a 
+    show d sb a
     "He comes up behind me. It\'s like my whole world eclipses. His hands wrap over mine as he shows me the correct posture and grip."
     show c smile calm
     c "You have to hold the knife like this so you have control. Then curl your other fingers–"
@@ -883,7 +893,7 @@ label cenric_route:
     "I cut several uneven slices. Juice spreads across the cutting board as I squish the tomatoes."
     "After a short struggle, I finally finish cutting the first tomato."
     show d neu
-    show c conf 
+    show c conf
     mc "How do you do this every day?"
     c "Practice, of course."
     show d n b at left
@@ -989,7 +999,7 @@ label cenric_route:
     show d neu
     mc "(Maybe not demand. I\'ll politely ask.)"
     "I go to knock on his door but see that it\'s slightly cracked open. I mutter out an \'excuse me\' before opening the door."
-    show bg lewisroom day 
+    show bg lewisroom day
     show d at left
     show l bb at right
     show o blush smile at right2
@@ -1002,6 +1012,7 @@ label cenric_route:
     with move
     "They both immediately pull away from each other, shock on their faces. Lewis is the first to speak."
     l "[mcname], it\'s not what it looks like!"
+    voice o45
     o "That\'s right! We were just–"
     show d ss
     "I hold up my hands to stop them. While it is kind of funny to see them flustered, there\'s no reason for me to drag it on."
@@ -1024,10 +1035,11 @@ label cenric_route:
     "He and Otillia both gasp."
     show l sh a
     l "We can\'t call off the engagement!"
-    show d neu 
+    show d neu
     mc "Yes, we can. And we should. It\'s obvious we both have different priorities."
     show o talk sad
     "Otillia speaks up, her voice small."
+    voice o46
     o "But the ball…"
     show d ls
     mc "We can still have the ball. And it\'ll still be an engagement announcement. But for the both of you."
@@ -1045,7 +1057,7 @@ label cenric_route:
     with dissolve
     "I leave them flustered, closing the door behind me. As I walk down the halls, a wave of relief washes over me."
     "I didn\'t know I was holding so much stress over this, but now it\'s all gone."
-    show bg kitchen day 
+    show bg kitchen day
     show d ss at left
     show c tense at right2
     with dissolve
@@ -1156,7 +1168,7 @@ label cenric_route:
     c "Right. Right, let\'s do that."
     "Despite the bashfulness between us, there\'s a sense of comfort and familiarity. We spend the rest of the night by each other\'s side. The smiles on our faces never go away."
     scene bg ballroom with fade
-    show d gloom at center with dissolve 
+    show d gloom at center with dissolve
     mc "(My feet hurt.)"
     "The ball has been in full swing for almost an hour now. After Lewis and I mentioned that we wouldn\'t get married, things were…crazy, to say the least."
     "There were a lot of murmurs, glances, and no doubt ill feelings towards me. Lewis could see the situation going out of control and quickly quelled the rumors."
@@ -1176,7 +1188,7 @@ label cenric_route:
     mc "You should be proud of yourself, Cenric."
     show c huh blush
     c "Stop it…"
-    "I turn to the crowd. Most of them have plates and are eating contentedly. I turn back to him." 
+    "I turn to the crowd. Most of them have plates and are eating contentedly. I turn back to him."
     mc "See? They love your food. I told you. You have a gift."
     show d n b
     show c flust lookDown

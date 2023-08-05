@@ -18,6 +18,7 @@ label lewis_route:
     "My eyes narrow as I continue to stare. So he\'s observant, at least."
     mc "Lewis, why did you want to marry me?"
     show l nerve
+    voice l20
     l "What?"
     "The question catches him off guard. He ponders before answering."
     l "Because I have to."
@@ -106,6 +107,7 @@ label lewis_route:
     o "Of course. And you know…"
     show o flust smile
     "She pauses, a wistful and somewhat shy smile on her face."
+    voice o9
     o "I’m glad you aren’t as bad as the rumors said. I was afraid you would be some type of villain."
     show d n l
     "I start laughing."
@@ -125,6 +127,7 @@ label lewis_route:
     l "What?"
     show d neu
     mc "Nothing…"
+    voice l21
     l "No, there’s something. What is it?"
     show d gloom
     "I set down my fork and take a nervous breath. This is it. I can do it. I’ll get closer to him."
@@ -136,6 +139,7 @@ label lewis_route:
     l "[mcname]…"
     "Lewis looks almost moved. His expression is soft."
     show l ss b
+    voice l21
     l "I… I appreciate it. If I’m being honest, it has been rather difficult with my bro–the king on his deathbed."
     l "With the addition of the ball, I am quite stressed."
     show d ss
@@ -283,6 +287,7 @@ label l_choice1_done:
     show d bb
     mc "But everything should be sparkly! The silverware, table cloths, food…"
     show l nerve
+    voice l26
     l "Food can\'t be sparkly."
     show d n l
     mc "That\'s what you think."
@@ -305,8 +310,8 @@ label l_choice1_done:
     show l neu at right
     with moveinright
 
-    pause 1     
-    show d neu at left 
+    pause 1
+    show d neu at left
     with moveinright
     "After coming to a compromise on the table cloth, Lewis says he has some work to get done. He walks out of the ballroom and towards his office. I follow him."
     l "What are you doing?"
@@ -314,10 +319,12 @@ label l_choice1_done:
     "I put my hands behind my back, smiling as I do so."
     mc "Following you."
     show l an
+    voice l30
     l "[mcname], I have work to do. Go somewhere else."
     "I frown."
     show d pout sad
     mc "Can I not keep my fiance company while he works oh so diligently?"
+    voice l31
     l "No."
     show d pout upset
     "I sigh, continuing to follow him down the hall. He gives me a sidelong glance. It\'s silent for a moment before he agrees."
@@ -365,6 +372,7 @@ label l_choice1_done:
     show l neu at right
     with dissolve
     mc "Lewis?"
+    voice l36
     l "Hmmm?"
     show d neu
     mc "Can you tell me about your brothers?"
@@ -442,11 +450,13 @@ label l_choice1_done:
     "She has a small vanity with hardly any makeup or perfume on it. It fits her character perfectly."
     "A set of dresses are laid out on the bed. Only two are hers while the rest are from my closet."
     show o flust at right with moveinright
+    voice o10
     o "[mcname], are you sure it\'s okay if I borrow these?"
     "I nod, sitting on the bed as I watch Otillia look over the dresses."
     show d ss
     mc "Of course! I have too many, and the majority of them don\'t fit my tastes. In fact, you can keep all of these."
     show o shout
+    voice o11
     o "That\'s too much!"
     show d ls
     mc "Nonsense. I\'m more than happy to empty my closet and fill yours up."
@@ -458,11 +468,13 @@ label l_choice1_done:
     show d oh
     mc "That one looks really pretty."
     show o flust pout
+    voice o12
     o "Do you think so? What if it\'s too fancy?"
     "I wave my hand dismissively."
     show d ls
     mc "Not at all! Plus, I think pink looks great on you."
     show o blush pout sad
+    voice o13
     o "I don\'t know…"
     show d ss
     "I look around her pink room then back at her. I cross my arms, a playfully stern look on my face."
@@ -471,7 +483,7 @@ label l_choice1_done:
     show o blush surp
     o "[mcname]!"
     show o flust ce smile
-    "She giggles, covering her face shyly with the dress. I laugh in response, shaking my head. I truly feel like I am having fun." 
+    "She giggles, covering her face shyly with the dress. I laugh in response, shaking my head. I truly feel like I am having fun."
     "This isn\'t as bad as I thought it would be."
     show o smile nor
     o "What about you? What will you be wearing?"
@@ -486,6 +498,7 @@ label l_choice1_done:
     show d ss
     mc "Yes. We\'re going to match. We are a couple now, after all."
     show o laugh
+    voice o14
     o "Did something happen between the two of you?"
     menu:
         "Mention the cookbook.":
@@ -501,19 +514,22 @@ label choice2_book:
     mc "Lewis gave me a gift."
     show o blush surp
     "Otillia\'s eyes widened."
+    voice o15
     o "He did?! What was it?!"
     show d sb a
-    mc "I-it was just a cookbook! Nothing special!" 
+    mc "I-it was just a cookbook! Nothing special!"
     show d n b
     mc "He said he doesn\'t use it and wanted to give it to someone who would. It was more of him giving it away."
     show o smile evil
     "Otillia\'s surprised expression morphs into a knowing smirk."
     show o laugh evil
+    voice o16
     o "Oh, really?"
     show d pout upset
     mc "Why do you look like that? It\'s scary."
     show o happy ex
     "She laughs, pushing on my shoulder lightly."
+    voice o17
     o "[mcname], you are dense, aren\'t you?"
     jump l_choice2_done
 label choice2_brothers:
@@ -523,12 +539,14 @@ label choice2_brothers:
     mc "Nothing, I suppose. We talked about his family."
     show o smile nor
     "She hums thoughtfully. After a moment, she looks at me curiously."
+    voice o18
     o "Why do you think it\'s nothing?"
     show d neu
     "I shrug."
     mc "Because all he did was talk about his family."
     show o pout a
     "Otillia rolls her eyes and sighs, as if she\'s frustrated."
+    voice o19
     o "When has Lewis ever talked about anything other than work?"
     show d oh
     "I stop and think. It\'s true. He doesn\'t seem to like to talk about anything else. Actually, I don\'t think he likes to talk about work either."
@@ -538,23 +556,29 @@ label choice2_brothers:
     jump l_choice2_done
 label l_choice2_done:
     show o laugh
+    voice o20
     o "Can\'t you see? Your relationship with Lewis has deepened!"
     show d sb
     mc "Wh-what?! No, no. That\'s not it. We\'re just friends."
     show o smile evil
     "Otillia snaps her fingers, looking at me like I just made a huge discovery."
+    voice o21
     o "Exactly."
     show o laugh evil
+    voice o22
     o "Before the two of you started planning the party, would you have called him a friend?"
     show d n b
     mc "No…"
     show o happy ex
+    voice o23
     o "See? You\'ve made progress. I told you that he was closed off, but now he\'s opening up to you!"
+    voice o24
     o "I knew my advice would work."
     show d n l
     "She looks proud of herself. I let out a giggle, nodding my head."
     mc "Okay, okay. You were right. And thank you for your advice. I\'m glad I have a friend like you."
     show o smile nor
+    voice o25
     o "And I\'m glad to have a friend like you. I was never able to indulge in a talk like this… It\'s nice."
     show d ss
     mc "It is."
@@ -617,21 +641,22 @@ label l_choice2_done:
     mc "You\'ve done a fantastic job. Why don\'t you go rest while Lewis and I figure out what we want?"
     show c shy pout
     show d oh
-    "It looks like he wants to protest, but at the same time, his shoulders visibly relax." 
+    "It looks like he wants to protest, but at the same time, his shoulders visibly relax."
     show d gloom
     "A pang of guilt hits me as I realize that I probably did ask for too much food."
     show d neu
     show c shy
     c "As you wish."
-    hide c 
+    hide c
     with dissolve
-    show l at right 
+    show l at right
     show d at left
     with move
     show d oh
     "He gives a bow then leaves Lewis and me alone. I start looking over the table. Desserts, side dishes, finger foods… There is truly a lot to eat."
     mc "Where should we start?"
     show l nerve
+    voice l39
     l "I don\'t even know. How about you just–"
     show l a
     l "Are you eating another sandwich?"
@@ -696,11 +721,13 @@ label l_choice2_done:
     show d ss
     mc "Close your eyes."
     show l nerve
+    voice l45
     l "All right…"
     show d ls
     "He does what he\'s told. I have a devious smile on my face as I take a step closer to him."
     mc "Now open your mouth."
     show l f
+    voice l46
     l "This is absolutely ridiculous–"
     show d n l
     mc "Just do it!"
@@ -713,11 +740,14 @@ label l_choice2_done:
     show d oh
     mc "What do you think?"
     show l ss
+    voice l47
     l "It tastes like…"
     show l neu
+    voice l48
     l "It tastes like cream cheese and cucumbers."
     show l a
     "He opens his eyes, his scowl now directed towards me."
+    voice l49
     l "This is foolish."
     show d pout upset
     "I sigh, crossing my arms."
@@ -781,7 +811,7 @@ label l_choice2_done:
     mc "Now focus."
     mc "What do you taste? What do you feel?"
     "Lewis hums and takes a moment. I can see the cogs in his brain turn as he slowly articulates his thoughts."
-    show l ce 
+    show l ce
     l "It tastes sweet. Delicate. Refreshing… It reminds me of you."
     show d sb a
     "I can\'t hide the shock fast enough as Lewis opens his eyes. My cheeks are almost as red as the strawberries."
@@ -795,6 +825,7 @@ label l_choice2_done:
     show d n b
     "There\'s an awkward pause as I avoid Lewis\' gaze. I\'m about to speak up when he takes a step closer to me."
     show l ss
+    voice l52
     l "Cream…"
     show d sb a
     "We\'re close enough to where I can feel his breath. My heart starts pounding in my chest as he reaches out."
@@ -805,14 +836,17 @@ label l_choice2_done:
     show d sb
     "I stare up at him. We both can\'t seem to look away from each other."
     show d ss
+    voice l54
     l "You really have changed, haven\'t you?"
     show d n b
     "His voice is about as soft as his touch. It sends shivers down my spine. Nothing else seems to exist at this moment. Not the castle, not the people, not even the food."
     mc "I\'m only trying to become a person who\'s worthy of standing by your side."
     show l bs
+    voice l55
     l "Shouldn\'t it be the opposite?"
     show d sb
     "He gives me a smile and I swear I can see sparkles around his face."
+    voice l56
     l "I want to be someone worthy of your–"
     show c conf at center with moveinright
     c "How\'s it going in here?"
@@ -825,6 +859,7 @@ label l_choice2_done:
     c "And the food?"
     show l bs
     "Lewis looks at me then back at Cenric. His face is aglow with a genuine smile."
+    voice l57
     l "It\'s delicious."
     show d ls
     mc "(He said it\'s delicious!)"
@@ -873,7 +908,7 @@ label l_choice2_done:
     "I feel like I\'ve suddenly become the lead in a romance, vying for the male lead\'s attention and waiting for that one moment that ties everything together."
     "The more intimate moments, the ones filled with raw honesty, are shared in his office."
     "He got used to having me there while he worked, and I got used to the scritching of his pen as he mumbled to himself over documents."
-    "Sometimes we would converse either about his past or some vague retelling of mine. I love seeing this side of him." 
+    "Sometimes we would converse either about his past or some vague retelling of mine. I love seeing this side of him."
     "The vulnerable side that seems to only be for me. Even if I annoy him by talking his ear off, he is never truly angry at me. If anything, he got used to it."
     scene bg office day with fade
     show l neu at left with dissolve
@@ -922,18 +957,20 @@ label choice3_tease:
     mc "I never would\'ve pegged you for the type."
     show l bb n
     "His face slowly blossoms into a cherry red. It\'s truly a beautiful sight."
+    voice l59
     l "I-it\'s not mine! It\'s Otillia\'s. She must\'ve left it–"
     show d oh
     mc "Let\'s see… \'A Knight\'s Honor\', \'Fated Love\', and…oh my. \'Loving the Enemy\'."
     show d ls
     "I face Lewis. The smirk on my face is impossible to hide, though I don\'t even try."
     mc "Are you telling me all of these are Otillia\'s?"
+    voice l60
     l "N-no…"
     show d oh
     mc "Who would\'ve thought the cold and introverted prince loves romance novels!"
     show d ls
     mc "And many of these seem quite the cheesy variety. Is this why you\'re in your office late at night? Because you\'re reading romance novels?"
-    show d sb 
+    show d sb
     show l sh b at left2 with move
     l "Enough!"
     "The bookshelf shakes as Lewis slams his hand next to my head. A book tumbles onto the ground. I can practically feel my heart inching its way up my throat."
@@ -972,6 +1009,7 @@ label l_choice3_done:
     "His voice is a whisper. A shiver runs down my spine. What is this side of him?"
     l "I\'ve heard you drone on and on about how you just love romance."
     show l ss
+    voice l67
     l "Shouldn\'t this be a good thing? Now I can make all those cliche romance scenarios happen."
     #CHECK WIP
     show d sb
@@ -1047,6 +1085,7 @@ label l_choice3_done:
     mc "Hmmm?"
     "My mind is swimming with thoughts of Lewis. I can barely focus on Otillia as I absentmindedly brush her hair."
     show o smile evil
+    voice o26
     o "Lewis is here."
     show d sb a
     show o laugh
@@ -1055,6 +1094,7 @@ label l_choice3_done:
     show d n b
     mc "Otillia! You scared me."
     show o smile evil
+    voice o28
     o "Oh, I\'m sure. Are you all right? Are you nervous for tomorrow?"
     show d neu
     "I stop brushing her hair and she turns to face me. I think for a moment. Am I nervous?"
@@ -1063,14 +1103,17 @@ label l_choice3_done:
     show d neu
     mc "I\'m not nervous… I don\'t know how to put it into words."
     show o ce happy
+    voice o29
     o "Is it because you\'re in love with Lewis?"
     show d sb
     "I gasp, covering my mouth."
     show d sb a
     mc "L-love? I am not–It\'s not like that!"
     show o laugh
+    voice o30
     o "I\'m not blind, [mcname]. Nor is anyone else who sees the two of you together."
     show o smile evil
+    voice o31
     o "It\'s so obvious that the two of you are closer than just friends."
     show d n b
     mc "I think that\'s too big of an assumption."
@@ -1085,10 +1128,12 @@ label l_choice3_done:
     show d n b
     mc "(That four letter word keeps popping up in my mind.)"
     show o smile nor
+    voice o32
     o "I\'m just happy you were able to find love."
     show d pout upset
     mc "Love is also a big assumption! It\'s not like I think about him all the time."
     show o laugh
+    voice o33
     o "Whatever you say, my lady."
     o "It\'s hard to believe you found something…someone you love more than food."
     show o talk neu
@@ -1140,11 +1185,13 @@ label l_choice3_done:
     show d ss
     mc "Lewis! I haven\'t seen you all day."
     show l ss b
+    voice l72
     l "Apologies. Are you ready?"
     show d oh
     "His cheeks are flushed, hair slightly messy. I reach out and smooth down any flyaways as my eyebrows furrow."
     mc "I am, but… Are you doing okay?"
     show l nerve
+    voice l73
     l "I\'m all right."
     show d ss
     mc "Here, eat this. It\'ll calm you down."
@@ -1160,7 +1207,7 @@ label l_choice3_done:
     mc "Oh."
     show l bs
     "Before I can even respond, the doors of the ballroom open. Lewis straightens himself and loops his arm around mine. The bright lights are a shock but not as much of a shock as Lewis\' words."
-    show bg ballroom 
+    show bg ballroom
     show d n b
     show l neu
     with dissolve
@@ -1169,7 +1216,7 @@ label l_choice3_done:
     show d ss
     "I shake myself out of it and smile at everyone. When Lewis finishes speaking, I go to talk to him."
     d "Brother!"
-    show l ss 
+    show l ss
     l "David."
     "A man with dark, black hair that\'s perfectly styled and dark eyes that are practically a copy of Lewis\'. He turns his attention to me, giving me a smirk."
     d "It\'s a pleasure to finally meet you. And must I say…you look divine."
@@ -1272,6 +1319,7 @@ label l_choice3_done:
     show c at right2
     show o flust at right
     with move
+    voice o34
     o "What\'s the victory for?"
     show o smile evil
     "I look over and see Otillia. I smile and greet her. Her eyebrows are raised and she has a smirk on her face as if she was told the best gossip."
@@ -1316,13 +1364,14 @@ label l_choice3_done:
     o "Oh! Music! It would be great to start dancing!"
     show d oh
     mc "(She\'s much more of a schemer than I thought.)"
-    hide c 
-    hide o 
+    hide c
+    hide o
     with dissolve
     show l ss at right2
     show d at left2
     with move
     "Lewis turns to me, holding out his hand."
+    voice l75
     l "May I have this dance, my lady?"
     show d neu
     "I nod silently and take his hand. He leads me out to the center of the ballroom to join the other couples dancing."
@@ -1342,6 +1391,7 @@ label l_choice3_done:
     show d n b
     mc "So…what you said earlier. Was that–?"
     show l bb s
+    voice l78
     l "Yes. I was confessing my feelings."
     show d sb
     "I am in shock. My eyes widen as it fully sets in. Lewis has feelings for me. Not platonic but romantic feelings. I can feel my heart pounding in my chest."
