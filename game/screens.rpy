@@ -112,7 +112,9 @@ screen say(who, what):
                     yanchor 0.3
 
 
-        text what id "what"
+        text what id "what":
+            yalign 0.25
+        
 
 
     ## If there's a side image, display it above the text. Do not display on the

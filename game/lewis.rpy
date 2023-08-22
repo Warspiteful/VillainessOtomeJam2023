@@ -306,7 +306,7 @@ label l_choice1_done:
     show d n l
     show l an
     "Lewis stares at me, his eyes narrowed in disbelief. I struggle to hold back a laugh. It\'s moments like these that I truly started to enjoy."
-    scene bg hall day with fadeR
+    scene bg hall day with fade
     show l neu at right
     with moveinright
 
