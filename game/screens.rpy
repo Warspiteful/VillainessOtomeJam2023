@@ -106,6 +106,7 @@ screen say(who, what):
             window:
                 id "namebox"
                 style "namebox"
+                ypos -65
                 text who id "who":
                     xpos 15
                     yanchor 0.3
@@ -297,6 +298,7 @@ screen navigation():
 
             xpos 100
             yalign 0.5
+            
 
             spacing gui.navigation_spacing
 
@@ -305,12 +307,14 @@ screen navigation():
 
             xpos gui.navigation_xpos
             yalign 0.95
+            
 
         if main_menu:
 
             textbutton _("Start") action Start():
                 if renpy.get_screen("main_menu"):
                     text_size 80
+                    
 
 
         else:
@@ -331,10 +335,9 @@ screen navigation():
         elif not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
-
+            
 
         textbutton _("About") action ShowMenu("about")
-
 
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
@@ -361,10 +364,12 @@ style navigation_button_text:
 
 style mainmenu_button is gui_button:
     hover_sound "audio/Other/hover_sound.wav"
+    xalign 0.5
 style mainmenu_button_text:
     size 55
     hover_color "#ec6bf3"
     idle_color "#a760d3"
+      
 
 style navigation_button:
     size_group "navigation"
