@@ -41,6 +41,7 @@ label cenric_route:
     mc "I was curious about how things work here."
     show c tense
     "He gives me a strained smile."
+    voice c20
     c "There\'s nothing very interesting going on here."
     show d pout upset
     "I scoff, setting the utensils back on the table."
@@ -73,6 +74,7 @@ label cenric_route:
     c "You really love food, huh?"
     show d ss
     mc "I do. It\'s–"
+    voice l85
     l "What the hell is going on here?!"
     show d oh
     show c timid
@@ -85,6 +87,7 @@ label cenric_route:
     "I give him a smile. He sighs heavily, as if he just found a child sneaking snacks before dinner. Which I did not think of doing."
     "This time."
     "Lewis walks over to us and puts his hands on his hips."
+    voice l86
     l "Can you not bother the cooks?"
     show c flust surp
     voice c24
@@ -99,6 +102,7 @@ label cenric_route:
     "I wave my hand dismissively."
     mc "It\'s fine. I came in here to see Cenric and how he works."
     show l shock
+    voice l87
     l "But–"
     "I place my hand on his shoulder."
     show d ss
@@ -106,6 +110,7 @@ label cenric_route:
     show l nerve
     "He gives me a skeptical look. I can tell that he still doesn\'t trust me yet. But I can prove to him that this will be a piece of cake. Then maybe I can prove it to myself in the process."
     show l neu
+    voice l88
     l "All right. I\'ll leave you to your own devices."
     hide l
     show c at right
@@ -114,6 +119,7 @@ label cenric_route:
     show d gloom
     mc "I apologize about him."
     show c timid ex
+    voice c26
     c "It\'s no worries. He\'s the crown prince."
     "Cenric smiles shyly, not meeting my gaze."
     show d oh
@@ -292,6 +298,7 @@ label cenric_route:
     mc "(What is happening?)"
     show c smile calm
     "Cenric pulls back. He\'s holding a leaf as his eyes sparkle."
+    voice c30
     c "You had a leaf in your hair."
     show d sb a
     "I can\'t move. What in the k-drama moment was that?! Is my heart pounding? Can he hear it?"
@@ -319,6 +326,7 @@ label cenric_route:
     mc "Why?"
     show c flust lookDown
     "He clears his throat awkwardly. He takes a bite of his sandwich."
+    voice c34
     c "Because I\'m a chef. You\'re a noble."
     show d n l
     "I laugh, bumping his shoulder."
@@ -439,6 +447,7 @@ label cenric_route:
     show d gloom
     mc "I don\'t think I\'m cut out for all this…nobility."
     show c smile neu
+    voice c39
     c "Well, it seems you\'re doing okay."
     "I give Cenric a sideways glance."
     show d pout upset
@@ -449,6 +458,7 @@ label cenric_route:
     "I snort."
     mc "And what would they be jealous of?"
     show c conf
+    voice c41
     c "You\'re sweet, pretty, and have a good appetite. You\'re the perfect woman."
     show d sb a
     "I blush and continue to eat. Cenric doesn\'t realize what he said and continues to eat as well."
@@ -477,6 +487,7 @@ label cenric_route:
     show d ss
     mc "(Looks like everything is on track for them.)"
     show c timid
+    voice c43
     c "My lady, what\'s going on?"
     "Cenric\'s voice is a whisper as he stares down at me. I furrow my eyebrows, peeking from behind the tree."
     show d neu
@@ -595,23 +606,27 @@ label cenric_route:
     mc "Because it\'s necessary."
     "He nods, leaning back in his seat."
     show l neu
+    voice l89
     l "Wow. That\'s… I\'m really proud of you. Good job, [mcname]."
     show d ls
     "My smile grows into a smirk."
     mc "Thank you. Did I satisfy your expectations?"
     show l ss
     "Lewis sighs, rolling his eyes. He then gives me a playful smile."
+    voice l90
     l "Yes. Yes, you did."
     show d ss
     mc "Good."
     show l nerve
     "Lewis clears his throat, crossing his arms."
+    voice l91
     l "You know, you\'ve been spending an awful lot of time with Cenric."
     show d neu
     "I straighten my position and mimic his crossed arms."
     mc "And you\'ve been spending a lot of time with Otillia."
     show l bb
     "Lewis starts to get flustered as he blushes."
+    voice l92
     l "I-I have not! I\'ve b-been spending a normal amount of time!"
     show d oh
     "I raise my eyebrows."
@@ -1039,6 +1054,7 @@ label cenric_route:
     show o blush surp at center
     with move
     "They both immediately pull away from each other, shock on their faces. Lewis is the first to speak."
+    voice l93
     l "[mcname], it\'s not what it looks like!"
     voice o45
     o "That\'s right! We were just–"
@@ -1047,6 +1063,7 @@ label cenric_route:
     mc "I have been waiting for this to happen."
     "My voice is calm, a ghost of a smile on my lips."
     show l nerve
+    voice l94
     l "What do you mean?"
     mc "Lewis, how are you feeling about the marriage thing?"
     show l g
@@ -1062,6 +1079,7 @@ label cenric_route:
     show o flust shout:
     "He and Otillia both gasp."
     show l sh a
+    voice l95
     l "We can\'t call off the engagement!"
     show d neu
     mc "Yes, we can. And we should. It\'s obvious we both have different priorities."
@@ -1186,6 +1204,7 @@ label cenric_route:
     mc "Lewis and I called off our engagement. He\'s in love with Otillia."
     show c sad pout
     "Cenric tilts his head. I can tell he\'s trying to piece everything together. But it doesn\'t click. He just gasps and looks sad."
+    voice c60
     c "Oh no! I\'m so sorry!"
     show d neu
     "I stare at him. True himbo behavior."
@@ -1232,12 +1251,14 @@ label cenric_route:
     show d n b
     show c flust lookDown
     "Cenric suddenly wraps his arms around me in a tight bear hug."
+    voice c65
     c "I love you."
     mc "I love you, too."
     show d sb a
     "I don\'t miss a beat responding. But after I say it, my eyes widen. Cenric pulls away and stares at me in amazement."
     "The words feel natural, but not wrong. None of this feels wrong. He gives me a giant, beaming smile."
     show c smile calm
+    voice c66
     c "Thank you. For helping me fall in love with food again. I couldn\'t have done this without you."
     show d oh
     "I go to respond, but I\'m interrupted. A noble holding an empty plate with wide eyes looks at us."
@@ -1248,6 +1269,7 @@ label cenric_route:
     show d ls
     mc "Looks like you\'ll need some help."
     show c puppy
+    voice c67
     c "Please."
     show c smile calm
     "We head back to the refreshments and start handing out food and replenishing when needed. Cenric\'s face is beaming with every compliment he receives."

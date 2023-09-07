@@ -139,13 +139,14 @@ label lewis_route:
     l "[mcname]…"
     "Lewis looks almost moved. His expression is soft."
     show l ss b
-    voice l21
+    voice l22
     l "I… I appreciate it. If I’m being honest, it has been rather difficult with my bro–the king on his deathbed."
     l "With the addition of the ball, I am quite stressed."
     show d ss
     mc "Don’t worry, Lewis. I’ll be sure to take that stress away from you. I\'ll support you as your fiance."
     show l bb n
     "Lewis’ face turns red as he looks away."
+    voice l23
     l "Y-you don’t need to do all that. It is truly okay. In fact, I’m used to doing all this work alone."
     l "I am sure I can handle it by myself. So you can just–"
     show d n l
@@ -278,10 +279,12 @@ label l_choice1_done:
     show l an at right
     show d ls at left
     with dissolve
+    voice l24
     l "Not that one."
     show d pout upset
     mc "What? Why not?"
     "I hold up a piece of fabric that is gilded with gold and sparkled in the light. It\'s pretty and fit for royalty."
+    voice l25
     l "It\'s too gaudy."
     "Lewis then holds up a cloth. It\'s dark blue without any extra additions. I roll my eyes."
     show d bb
@@ -298,10 +301,12 @@ label l_choice1_done:
     mc "What about this?"
     show l neu
     "He hums in thought, reaching out to feel the fabric."
+    voice l27
     l "I still feel as if it\'s too sparkly…"
     show d ls
     mc "You know, you\'re sparkly, too."
     show l nerve
+    voice l28
     l "What does that even mean?!"
     show d n l
     show l an
@@ -314,6 +319,7 @@ label l_choice1_done:
     show d neu at left
     with moveinright
     "After coming to a compromise on the table cloth, Lewis says he has some work to get done. He walks out of the ballroom and towards his office. I follow him."
+    voice l29
     l "What are you doing?"
     show d ls
     "I put my hands behind my back, smiling as I do so."
@@ -329,6 +335,7 @@ label l_choice1_done:
     show d pout upset
     "I sigh, continuing to follow him down the hall. He gives me a sidelong glance. It\'s silent for a moment before he agrees."
     show l f
+    voice l32
     l "Fine. You may stay. But no causing a ruckus."
     show d ls
     mc "Yay!"
@@ -342,10 +349,12 @@ label l_choice1_done:
     with dissolve
     "I sit obediently, still confused. I watch with wide eyes as he picks out a book from his bookshelf and hands it to me."
     mc "What\'s this?"
+    voice l33
     l "A book on etiquette since you seem to be lacking some."
     show d n l
     mc "Oh, so you joke now?"
     "His face stays serious, but his eyes hold a hint of playfulness."
+    voice l34
     l "I do. It\'s actually a cookbook one of my younger brothers gifted me. I never had any use for it. It\'s yours now, if you\'d like."
     show d oh
     "My eyes widen. I start to flip through the book. It\'s filled with different recipes, many of which I\'ve never even heard of before."
@@ -353,6 +362,7 @@ label l_choice1_done:
     show d sb
     mc "You\'d really give me this?"
     show l ss b
+    voice l35
     l "Of course. I don\'t think my brother would mind, and I would hate for it to collect dust on my shelf."
     hide l with dissolve
     "{nw}"
@@ -378,8 +388,10 @@ label l_choice1_done:
     mc "Can you tell me about your brothers?"
     "He looks up from his papers. With a thoughtful hum, he leans back in his chair."
     "I take note of the way his shoulders seem to relax ever so slightly and how he stretches out his hands. It seems a distraction is needed."
+    voice l37
     l "What do you want to know?"
     mc "I\'ve only met them once. I would like to know your thoughts on them."
+    voice l38
     l "Why the sudden curiosity?"
     mc "I want to prepare myself before the party, that\'s all. I don\'t want to embarrass myself."
     show l ss
@@ -661,6 +673,7 @@ label l_choice2_done:
     voice l39
     l "I don\'t even know. How about you just–"
     show l a
+    voice l40
     l "Are you eating another sandwich?"
     show d ls
     "I smile at him, no shame in my voice at all."
@@ -668,10 +681,12 @@ label l_choice2_done:
     show l shock
     "That look of awe is still visible as he makes his way over to me. He sets his papers down and crosses his arms."
     show l nerve
+    voice l41
     l "How can you eat so well?"
     show d ss
     mc "Do you mean how I can eat so much?"
     "He shakes his head."
+    voice l42
     l "No. How can you eat like it\'s the only thing that makes you happy?"
     show d oh
     "I think for a moment."
@@ -695,7 +710,9 @@ label l_choice2_done:
     "Lewis doesn\'t respond for a while. His eyebrows furrow as if he\'s trying to solve a difficult math equation."
     show l nerve
     show d neu
+    voice l43
     l "I don\'t seem to understand."
+    voice l44
     l "I\'ve always seen eating as a chore. Something that was a duty, not a hobby."
     show d neu
     "He looks hesitant. I lean in closer, my eyes focused on him. My voice is soft and comforting."
@@ -724,7 +741,7 @@ label l_choice2_done:
     mc "Close your eyes."
     show l nerve
     voice l45
-    l "All right…"
+    l "Alright…"
     show d ls
     "He does what he\'s told. I have a devious smile on my face as I take a step closer to him."
     mc "Now open your mouth."
@@ -814,11 +831,13 @@ label l_choice2_done:
     mc "What do you taste? What do you feel?"
     "Lewis hums and takes a moment. I can see the cogs in his brain turn as he slowly articulates his thoughts."
     show l ce
+    voice l50
     l "It tastes sweet. Delicate. Refreshing… It reminds me of you."
     show d sb a
     "I can\'t hide the shock fast enough as Lewis opens his eyes. My cheeks are almost as red as the strawberries."
     show l f
     "Once he realizes what he said, he also gets a matching blush."
+    voice l51
     l "I-I\'m sorry! I didn\'t mean to–"
     show d n b
     "I quickly interrupt him."
@@ -833,6 +852,7 @@ label l_choice2_done:
     "We\'re close enough to where I can feel his breath. My heart starts pounding in my chest as he reaches out."
     "His hand feels soft against my skin as his thumb brushes away cream on the edge of my lips."
     show l ss b
+    voice l53
     l "You had cream on your lips."
     mc "(I think I\'m gonna pass out.)"
     show d sb
@@ -851,6 +871,7 @@ label l_choice2_done:
     voice l56
     l "I want to be someone worthy of your–"
     show c conf at center with moveinright
+    voice c13
     c "How\'s it going in here?"
     show d sb a
     show l nerve
@@ -948,6 +969,7 @@ label l_choice2_done:
     mc "\'The Duke\'s Gentle Touch\'?"
     show l bb
     "In a second, Lewis is by my side. His face is grim, but his ears are turning red."
+    voice l58
     l "Don\'t pay mind to that."
     menu:
         "So you\'re a secret romance lover.":
@@ -975,6 +997,7 @@ label choice3_tease:
     mc "And many of these seem quite the cheesy variety. Is this why you\'re in your office late at night? Because you\'re reading romance novels?"
     show d sb
     show l sh b at left2 with move
+    voice l61
     l "Enough!"
     "The bookshelf shakes as Lewis slams his hand next to my head. A book tumbles onto the ground. I can practically feel my heart inching its way up my throat."
     jump l_choice3_done
@@ -983,6 +1006,7 @@ label choice3_grab:
     "I take one of the books off the shelves, reading the title out loud."
     mc "Oh my! \'Loving the Enemy\'?"
     show l bb
+    voice l62
     l "Put it back…"
     show d n l
     mc "I had no idea you liked stuff like this!"
@@ -992,6 +1016,7 @@ label choice3_grab:
     "I clear my throat, preparing myself for the best performance I can give."
     mc "\'My dearest Frederick, we must not do this! You are my enemy, you cannot be my lover!\'"
     show l a
+    voice l63
     l "I said to stop."
     show d n l
     "When Lewis goes to grab the book, I let out a giggle and hold it above my head, though it doesn\'t achieve much."
@@ -1004,12 +1029,15 @@ label l_choice3_done:
     show d oh
     "Kabedon: When one traps another against a hard object, normally a wall, in a dramatic fashion."
     show l neu
+    voice l64
     l "Will you keep teasing me?"
     "He isn\'t angry. No, I can see no malice in his eyes. Instead there is embarrassment and something… Something else I couldn\'t quite place. But my mind could barely focus now anyway."
     show l ss
     show d sb a
+    voice l65
     l "You know, my dear fiance…"
     "His voice is a whisper. A shiver runs down my spine. What is this side of him?"
+    voice l66
     l "I\'ve heard you drone on and on about how you just love romance."
     show l ss
     voice l67
@@ -1028,6 +1056,7 @@ label l_choice3_done:
     "If I focus on his eyes, I will probably figure out what that hidden emotion is. If I focus on his lips…"
     show l bb n at left with move
     "The moment is broken as Lewis realizes our position. He immediately steps away as his face goes red, and he starts stuttering out an apology."
+    voice l68
     l "M-my apologies! That was… That was way too much of me! I shouldn\'t have gotten close to you like that."
     show d oh
     mc "It\'s fine! Really…"
@@ -1043,16 +1072,19 @@ label l_choice3_done:
     "Who would\'ve thought that the cool and introverted megane loves romance novels? I wouldn\'t! Yet another side to Lewis that I find endearing."
     show d ss
     show l g
+    voice l69
     l "It\'s not cute. It\'s embarrassing. Now go sit."
     show l neu
     show d neu
     "I let out a dramatic sigh as I go and sit down. Lewis fixes up the bookshelf before coming to stand in front of me with his arms crossed."
     mc "So…"
     show l nerve
+    voice l70
     l "Don\'t speak of this to anyone."
     "I lower my head."
     mc "Yes, sir…"
     show l ss
+    voice l71
     l "Good girl."
     show d oh
     "He pats my head. I try not to look up in shock. He\'s so weird tonight."
@@ -1195,7 +1227,7 @@ label l_choice3_done:
     mc "I am, but… Are you doing okay?"
     show l nerve
     voice l73
-    l "I\'m all right."
+    l "I\'m alright."
     show d ss
     mc "Here, eat this. It\'ll calm you down."
     show d gloom
@@ -1203,6 +1235,7 @@ label l_choice3_done:
     show d neu
     mc "Lewis, are you sure–"
     show l ss b
+    voice l74
     l "I\'m so grateful for you, [mcname]. Not only have I enjoyed eating because of you, but I\'ve been enjoying life so much more. I\'m grateful that I can enjoy it with you."
     show d oh
     mc "Oh."
@@ -1385,11 +1418,13 @@ label l_choice3_done:
     "Anxiety starts to build up inside of me as I realize this is my chance to talk to him."
     show d neu
     show l ss b
+    voice l76
     l "What do you think of the party?"
     show d n l
     mc "Like I thought, I am overwhelmed. Your brother, some of the other nobles…I didn\'t realize I would do this much socializing."
     "He chuckles."
     show l ss
+    voice l77
     l "It\'s definitely something hard to get used to. But I don\'t think you need to worry. You\'re making a great impression."
     "We glide across the dance floor. Our steps aren\'t the smoothest, but it\'s enough to where we don\'t make a fool of ourselves."
     show d ss
@@ -1405,9 +1440,13 @@ label l_choice3_done:
     show d n b
     mc "I cannot fathom why you would like someone like me."
     show l bb
+    voice l79
     l "How could I not like someone like you?"
+    voice l80
     l "You have truly helped me, [mcname]. I didn\'t know it at the time, but I realized that I need someone like you in my life. Someone who\'s kind and looks out for others."
+    voice l81
     l "I like it when you laugh. I like it when you tease me, despite my annoyance. I like how you speak your mind, how you\'ve blossomed into someone beautiful inside and out."
+    voice l82
     l "When I see you eat, I see a shining happiness. I want that happiness to be a part of my life. When we marry, I will be marrying out of love. Not obligation."
     show d bb
     mc "O-oh. Wow. I-I don\'t…"
@@ -1424,11 +1463,13 @@ label l_choice3_done:
     show d n l
     "I start laughing like I\'ve never laughed before. It\'s filled with pure elation and love."
     show l ss
+    voice l83
     l "Why are you laughing?"
     mc "(Because you\'re perfect. Because my life is perfect.)"
     show d bb
     mc "I finally get a manhwa worthy ending."
     show l nerve
+    voice l84
     l "What\'s a manhwa?"
     scene end card with fade
     pause
