@@ -629,7 +629,7 @@ label choice3_appreciate: #WIP: Set transforms to show all 4 sprites on-screen a
     hide c
     show d pout upset at left
     show l an at right
-    with dissolve
+    with moveoutleft
     mc "Don't be rude. Cenric worked hard."
     l "Food isn't necessarily something I need to worry about. We're here for a meeting, not your hunger."
     show d a
@@ -795,6 +795,7 @@ label LewisRoute:
     mc "Evil plan, commence!"
     show d oh
     "I stop, a disgusted look crossing my face."
+    show d gloom
     "Yeah. Not cut out to be a villainess."
     jump lewis_route
     

@@ -313,11 +313,11 @@ label l_choice1_done:
     "Lewis stares at me, his eyes narrowed in disbelief. I struggle to hold back a laugh. It\'s moments like these that I truly started to enjoy."
     scene bg hall day with fade
     show l neu at right
-    with moveinright
+    with moveinleft
 
     pause 1
     show d neu at left
-    with moveinright
+    with moveinleft
     "After coming to a compromise on the table cloth, Lewis says he has some work to get done. He walks out of the ballroom and towards his office. I follow him."
     voice l29
     l "What are you doing?"
@@ -346,7 +346,7 @@ label l_choice1_done:
     "He steps behind me, placing his hands on my shoulders. I try to look back at him, but instead he leads me over to a chair and pushes me down."
     show d at left
     show l neu at right
-    with dissolve
+    with moveinright
     "I sit obediently, still confused. I watch with wide eyes as he picks out a book from his bookshelf and hands it to me."
     mc "What\'s this?"
     voice l33
@@ -972,7 +972,7 @@ label l_choice2_done:
     voice l58
     l "Don\'t pay mind to that."
     menu:
-        "So you\'re a secret romance lover.":
+        "\"So you\'re a secret romance lover.\"":
             jump choice3_tease
         "Grab the book.":
             jump choice3_grab
