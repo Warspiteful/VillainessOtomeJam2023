@@ -23,17 +23,17 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#a760d3'
+define gui.accent_color = '#b48ac7'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#5e5793'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#ec6bf3'
+define gui.hover_color = '#b48ac7'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -44,8 +44,8 @@ define gui.insensitive_color = '#8888887f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#a760d3'
-define gui.hover_muted_color = '#ec6bf3'
+define gui.muted_color = '#5e5793'
+define gui.hover_muted_color = '#b48ac7'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#000000'
@@ -150,6 +150,7 @@ define gui.dialogue_text_xalign = 0.0
 define gui.button_width = None
 define gui.button_height = None
 
+
 ## The borders on each side of the button, in left, top, right, bottom order.
 define gui.button_borders = Borders(6, 6, 6, 6)
 
@@ -180,9 +181,9 @@ define gui.button_text_xalign = 0.0
 ##
 ## These customizations are used by the default interface:
 
-define gui.radio_button_borders = Borders(27, 6, 6, 6)
+define gui.radio_button_borders = Borders(67,-10, 67,-10)
 
-define gui.check_button_borders = Borders(27, 6, 6, 6)
+define gui.check_button_borders = Borders(67,-10, 67,-10)
 
 define gui.confirm_button_text_xalign = 0.5
 
@@ -225,15 +226,15 @@ define gui.choice_button_text_insensitive_color = "#444444"
 define gui.slot_button_width = 414
 define gui.slot_button_height = 309
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
-define gui.slot_button_text_size = 21
+define gui.slot_button_text_size = 30
 define gui.slot_button_text_xalign = 0.5
-define gui.slot_button_text_idle_color = gui.idle_small_color
+define gui.slot_button_text_idle_color = gui.idle_color
 define gui.slot_button_text_selected_idle_color = gui.selected_color
 define gui.slot_button_text_selected_hover_color = gui.hover_color
 
 ## The width and height of thumbnails used by the save slots.
-define config.thumbnail_width = 384
-define config.thumbnail_height = 216
+define config.thumbnail_width = 414
+define config.thumbnail_height = 309
 
 ## The number of columns and rows in the grid of save slots.
 define gui.file_slot_cols = 3
@@ -317,14 +318,14 @@ define gui.scrollbar_tile = False
 define gui.slider_tile = False
 
 ## Horizontal borders.
-define gui.bar_borders = Borders(6, 6, 6, 6)
-define gui.scrollbar_borders = Borders(6, 6, 6, 6)
-define gui.slider_borders = Borders(6, 6, 6, 6)
+define gui.bar_borders = Borders(58,58, 58,58)
+define gui.scrollbar_borders = Borders(58,58, 58,58)
+define gui.slider_borders = Borders(58,58, 58,58)
 
 ## Vertical borders.
-define gui.vbar_borders = Borders(6, 6, 6, 6)
-define gui.vscrollbar_borders = Borders(6, 6, 6, 6)
-define gui.vslider_borders = Borders(6, 6, 6, 6)
+define gui.vbar_borders = Borders(58,58, 58,58)
+define gui.vscrollbar_borders = Borders(58,58, 58,58)
+define gui.vslider_borders = Borders(58,58, 58,58)
 
 ## What to do with unscrollable scrollbars in the gui. "hide" hides them, while
 ## None shows them.
@@ -455,8 +456,8 @@ init python:
         gui.quick_button_text_size = 30
 
         ## File button layout.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
+        gui.file_slot_cols = 3
+        gui.file_slot_rows = 1
 
         ## NVL-mode.
         gui.nvl_height = 255
