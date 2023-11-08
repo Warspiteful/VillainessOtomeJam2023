@@ -9,7 +9,19 @@ image cg4:
 image cg5:
     "Finished CGs/IMG_6752.png"
 image cg6:
-    "Finished CGs/IMG_6744.png"
+    "Finished CGs/Lewis_Chibi.png"
+
+image cenric_cg1:
+    "Finished CGs/Cenric_1_cg.png"
+image cenric_cg2:
+    "Finished CGs/Cenric_2_cg.png"
+image cenric_chibi:
+    "Finished CGs/Cenric_Chibi.png"
+
+image lewis_cg1:
+    "Finished CGs/Lewis_1_cg.png"
+image lewis_cg2:
+    "Finished CGs/Lewis_2_cg.png"
 
 image end card:
     "Ending_Card.png"
