@@ -13,6 +13,7 @@ label lewis_route:
     show d pout upset
     mc "You\'ve barely eaten your food."
     show l ss
+    voice l_sigh
     l "And you\'ve eaten all of yours."
     show d ga
     "My eyes narrow as I continue to stare. So he\'s observant, at least."
@@ -40,6 +41,7 @@ label lewis_route:
     "I have the hidden objective of wanting to understand why he doesn\'t love food. It was never addressed in the manhwa, nor was it even a thing."
     "But he isn\'t just a fictional character anymore. He\'s a real person."
     show l ss
+    voice l_sigh
     "Lewis takes a deep breath and slowly lets it out."
     show l ss b
     l "We should become friends. I think… I think I would like that."
@@ -47,6 +49,7 @@ label lewis_route:
     "My smile turns into a grin."
     mc "I look forward to our future relationship together."
     show l bs
+    voice l_ofc
     l "As do I."
     scene bg fc day with fade
     "I got lost. A lot. The castle was way bigger than I anticipated and all the halls looked the same."
@@ -78,6 +81,7 @@ label lewis_route:
     show d ls
     mc "Hello, Otillia. How many times have I told you to call me just [mcname]?"
     show o laugh
+    voice o_laugh
     "She giggles."
     o "Yes, yes. I’ll try."
     show d ss
@@ -198,6 +202,7 @@ label lewis_route:
     show d oh
     mc "What about food?"
     show l ce
+    voice l_laugh
     "He chuckles, rolling his eyes."
     l "Food? Again?"
     show d ls
@@ -211,6 +216,7 @@ label lewis_route:
     show d neu
     mc "We make two lists of food we want. Then we give those lists to Cenric to make, and we have a tasting."
     show l nerve
+    voice l_stop
     l "That is way too much work."
     show d fc
     mc "Eating food is not too much work. It\'s fun!"
@@ -295,6 +301,7 @@ label l_choice1_done:
     show d n l
     mc "That\'s what you think."
     show l ss
+    voice l_laugh
     "Lewis chuckles to himself as he continues to look through the fabrics. My mind tries to wander to food, but I keep it on track."
     "I pick up another fabric. This is the same dark blue that Lewis likes, except it has silver detailing. I show it to him."
     show d oh
@@ -376,6 +383,7 @@ label l_choice1_done:
     show d neu
     "I sigh to myself and continue looking through the recipes. Perhaps I\'ll have Cenric make one of these dishes for us in the future."
     scene bg office after with dissolve
+    voice l_sigh
     "An hour or two later and Lewis has been sighing constantly. I look up from the cookbook in concern."
     "It is obvious he\'s stressed about whatever work he\'s currently doing."
     show d oh at left
@@ -437,6 +445,7 @@ label l_choice1_done:
     show l g
     "Lewis looks vulnerable, if only for a second. There\'s sadness in his eyes and his breath wavers as he opens his mouth. I thought I overstepped when he speaks again."
     show l nerve
+    voice l_sigh
     l "If I\'m being honest, I am devastated. This country needs someone like him. But I know that I\'ll work hard to keep his legacy alive. It\'s the least I could do."
     show d oh
     mc "Lewis…"
@@ -495,6 +504,7 @@ label l_choice1_done:
     show o blush surp
     o "[mcname]!"
     show o flust ce smile
+    voice o_laugh
     "She giggles, covering her face shyly with the dress. I laugh in response, shaking my head. I truly feel like I am having fun."
     "This isn\'t as bad as I thought it would be."
     show o smile nor
@@ -540,6 +550,7 @@ label choice2_book:
     show d pout upset
     mc "Why do you look like that? It\'s scary."
     show o happy ex
+    voice o_laugh
     "She laughs, pushing on my shoulder lightly."
     voice o17
     o "[mcname], you are dense, aren\'t you?"
@@ -642,6 +653,7 @@ label l_choice2_done:
     "I take a bite. And then another. The cucumber was chopped up into tiny pieces, each bite filled with a smooth cream cheese with hints of dill and lemon juice. The bread is soft and fluffy."
     mc "My god, Cenric. This is delicious."
     show c laugh
+    voice c_laugh
     "He chuckles, rubbing the back of his head sheepishly."
     c "Thank you, my lady."
     show d fbb
@@ -660,6 +672,7 @@ label l_choice2_done:
     "A pang of guilt hits me as I realize that I probably did ask for too much food."
     show d neu
     show c shy
+    voice c_wish
     c "As you wish."
     hide c
     with dissolve
@@ -790,6 +803,7 @@ label l_choice2_done:
     "I pick up a small tart filled with what looks like blueberry jam. I turn to Lewis."
     mc "All right, eyes closed."
     show l neu
+    voice l_sigh
     l "Fine, fine."
     show d n b
     show l ce
@@ -801,6 +815,7 @@ label l_choice2_done:
     "I jump slightly, jolting out of my thoughts. I nod and quickly finish the tart."
     show d neu
     mc "What do you think?"
+    voice l_this
     l "It\'s a tart."
     show d pout upset
     mc "What an astute observation."
@@ -833,9 +848,9 @@ label l_choice2_done:
     "Lewis hums and takes a moment. I can see the cogs in his brain turn as he slowly articulates his thoughts."
     voice l50
     l "It tastes sweet. Delicate. Refreshing… It reminds me of you."
-    show bg kitchen day with dissolve
-    show d ls
-    show d sb a
+    scene bg kitchen day with dissolve
+    show l ce at right2
+    show d sb a at left2
     "I can\'t hide the shock fast enough as Lewis opens his eyes. My cheeks are almost as red as the strawberries."
     show l f
     "Once he realizes what he said, he also gets a matching blush."
@@ -875,9 +890,9 @@ label l_choice2_done:
     show c conf at center with moveinright
     voice c13
     c "How\'s it going in here?"
-    show d sb a
-    show l nerve
-#WIP TRANSFORM
+    show d sb a at left
+    show l nerve at right
+    with move
     "At the sound of Cenric\'s loud and booming voice, I jump away from Lewis. My body heats up from embarrassment."
     mc "E-everything\'s fine."
     show c smile calm
@@ -893,7 +908,6 @@ label l_choice2_done:
     "I grab a random plate of food, shoving it in Lewis\' direction."
     show d fc
     mc "Come now! No time for breaks. We have lots of food to try!"
-    # BREAK FADE TO BLACK
     scene black with fade
     "It\'s obvious that my relationship with Lewis has changed. That moment in the kitchen catapulted us into unknown territory. If I\'m being honest, it made me feel scared yet excited at the same time."
     "The ball is fast approaching. But my mind is filled with the way Lewis looked at me and how his hand felt against my cheek."
@@ -908,6 +922,7 @@ label l_choice2_done:
     mc "Prince Lewis, are you taking a break?"
     show l ss
     "He doesn\'t even lower his book, retorting with lightning speed."
+    voice l_ofc
     l "I decided to take an example from you. Always taking breaks."
     show d oh
     "I chuckle and rest my chin on my hand. I gaze at Lewis as he reads. I wish I had my phone so I can take a picture and capture this moment."
@@ -925,11 +940,12 @@ label l_choice2_done:
     mc "Why?"
     show l ss b
     "With an awkward cough, he lifts his book back up. This time it covers his face, but I can still tell he\'s blushing."
+    voice l_this
     l "Because I like seeing you happy."
     show d sb
     "There is a pause."
     l "Now eat before I change my mind."
-    scene black with fade #WIP
+    scene black with fade
     "Moments like these keep happening. Where we would share a glance, several words, and there is something there. It\'s driving me crazy."
     "I feel like I\'ve suddenly become the lead in a romance, vying for the male lead\'s attention and waiting for that one moment that ties everything together."
     "The more intimate moments, the ones filled with raw honesty, are shared in his office."
@@ -954,6 +970,7 @@ label l_choice2_done:
     mc "Is this all you read?!"
     show l an
     "Lewis turns in his chair to frown at me."
+    voice l_sigh
     l "I\'m a prince. I have no time for anything other than educational and helpful books."
     show d gloom
     mc "(Weirdo.)"
@@ -962,6 +979,7 @@ label l_choice2_done:
     show d ls
     mc "Maybe you have something interesting here…"
     show l nerve
+    voice l_stop
     l "[mcname], can you just sit still?"
     show d oh
     "I don\'t listen. Obviously. My fingers brush against the spines of the books as I scan over the titles. There had to be something of substance."
@@ -1044,7 +1062,6 @@ label l_choice3_done:
     show l ss
     voice l67
     l "Shouldn\'t this be a good thing? Now I can make all those cliche romance scenarios happen."
-    #CHECK WIP
     show d sb
     pause 0.1
     show d sb a
@@ -1093,6 +1110,7 @@ label l_choice3_done:
     show d ss
     mc "I do find it endearing, though. And I\'m glad we have at least one thing in common."
     show l shock
+    voice l_stop
     l "Do we need to have things in common?"
     show l f
     "He pulls away, going to sit at his desk. I notice that his ears are a dark red."
@@ -1105,6 +1123,7 @@ label l_choice3_done:
     show d oh
     mc "We do?"
     show l f
+    voice l_this
     l "Y-yes! I mean…we get along. You know, we aren\'t at each other\'s throats."
     show d ss
     mc "Which I am truly thankful for."
@@ -1126,6 +1145,7 @@ label l_choice3_done:
     o "Lewis is here."
     show d sb a
     show o laugh
+    voice o_laugh
     "My head perks up and my eyes go wide with attention as I look around, only to find no Lewis. Otillia giggles."
     o "There you are! Your head was in the clouds."
     show d n b
@@ -1176,10 +1196,12 @@ label l_choice3_done:
     show o talk neu
     o "If I\'m being honest, I was worried about you. There was some lost look in your eyes, as if you were searching for something that didn\'t exist anymore. But now you have a light in your eyes."
     show o happy ex
+    voice o_glad
     o "I say that you don\'t need to be afraid of falling in love. It seems that someone will be there to catch you when you fall."
     show d ls
     mc "Otillia…I love you so much! You\'re the best friend ever!"
     show o flust
+    voice o_laugh
     "I lean in, giving her a bear hug. She laughs and the sound brings me ease. Her words have brought me ease. I didn\'t even realize I was so stressed about this."
     show o flust smile
     o "Yes, I love you too. Now let\'s get some rest. It\'s a big day tomorrow."
@@ -1262,6 +1284,7 @@ label l_choice3_done:
     mc "Thank you."
     "I try to curtsy, but he grabs my hand. He kisses it gently while his eyes never leave mine. Lewis clears his throat."
     show l a
+    voice l_stop
     l "David. Please do not try to use your playboy wiles on my fiance."
     show d n b
     "My face turns red. Now Lewis is being possessive? What is happening? Am I dreaming? I must be."
@@ -1273,6 +1296,7 @@ label l_choice3_done:
     l "Do be kind to her. I don\'t want her getting run off by you or the twins\' shenanigans."
     d "Then you should be lucky the twins are out on a trip. I\'m positive I saw them scheming."
     show l an
+    voice l_sigh
     "Lewis sighs, rolling his eyes."
     l "I don\'t doubt it."
     show l neu
@@ -1295,6 +1319,7 @@ label l_choice3_done:
     show d a
     "Then again, I\'ve rarely seen nobles have any type of decorum in manhwa."
     show l a
+    voice l_ofc
     l "[mcname] has been nothing short of an angel to me and those around her. I would appreciate it if you acknowledged her growth instead of her past."
     show d oh
     "I look at Lewis in surprise."
@@ -1312,6 +1337,7 @@ label l_choice3_done:
     show d fc
     mc "I can\'t help it. All this socializing just makes me want to stuff my face."
     show l bs
+    voice l_laugh
     "He laughs, a genuine laugh, as we go to the table."
     l "Please refrain from doing so until after the ball."
     show l ss at center
@@ -1329,9 +1355,11 @@ label l_choice3_done:
     "Lewis takes a tea sandwich. This one is filled with what looks like smoked turkey, apple, and cheese."
     "This is the moment of truth. To see if he can truly enjoy food without doing our little ceremony like back at the tasting."
     show l ce
+    voice l_this
     l "Oh, my. The flavors are quite bold. I like this one."
     show d ls
     "A grin spreads across my face as Cenric gasps in joy."
+    voice c_laugh
     show c laugh
     c "That means a lot, Prince Lewis! Thank you!"
     show l ss
@@ -1347,6 +1375,7 @@ label l_choice3_done:
     show l bs
     "I push the childish thought away and watch his reaction once again. This time, his eyes light up and he immediately goes in for another bite."
     show l ss
+    voice l_this
     l "It\'s not too sweet and has a perfect balance of lemon flavor."
     l "I think this may be a new favorite of mine."
     show d ls
@@ -1372,6 +1401,7 @@ label l_choice3_done:
     mc "It\'s a big deal. We thought this day would never come."
     show l an
     "Lewis rolls his eyes."
+    voice l_stop
     l "Excuse me, I liked tea sandwiches before."
     mc "That doesn\'t count."
     l "And why not?"
@@ -1380,6 +1410,7 @@ label l_choice3_done:
     show d ls
     mc "The lemon tart fits you much better."
     show l nerve
+    voice l_sigh
     l "I don\'t even know what that means."
     show o laugh
     "Otillia giggles, covering her mouth as she does so."
@@ -1402,6 +1433,7 @@ label l_choice3_done:
     "This time, it is Otillia\'s turn to blush. She smiles sheepishly and thanks us."
     show o smile evil
     "At this moment, the band starts playing. Otillia’s smile turns more mischievous."
+    voice o_laugh
     o "Oh! Music! It would be great to start dancing!"
     show d oh
     mc "(She\'s much more of a schemer than I thought.)"
@@ -1424,6 +1456,7 @@ label l_choice3_done:
     l "What do you think of the party?"
     show d n l
     mc "Like I thought, I am overwhelmed. Your brother, some of the other nobles…I didn\'t realize I would do this much socializing."
+    voice l_laugh
     "He chuckles."
     show l ss
     voice l77
