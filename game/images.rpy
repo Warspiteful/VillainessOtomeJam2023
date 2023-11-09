@@ -3,11 +3,11 @@ image cg1:
 image cg2:
     "Finished CGs/IMG_6702.png"
 image cg3:
-    "Finished CGs/lewiscg.png"
+    "Finished CGs/meeting lewis.png"
 image cg4:
-    "Finished CGs/IMG_6750.png"
+    "Finished CGs/Meeting Cenric.png"
 image cg5:
-    "Finished CGs/IMG_6752.png"
+    "Finished CGs/meeting otillia.png"
 image cg6:
     "Finished CGs/Lewis_Chibi.png"
 

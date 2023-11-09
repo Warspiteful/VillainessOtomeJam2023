@@ -829,10 +829,12 @@ label l_choice2_done:
     show d neu
     mc "Now focus."
     mc "What do you taste? What do you feel?"
+    scene lewis_cg1
     "Lewis hums and takes a moment. I can see the cogs in his brain turn as he slowly articulates his thoughts."
-    show l ce
     voice l50
     l "It tastes sweet. Delicate. Refreshing… It reminds me of you."
+    show bg kitchen day with dissolve
+    show d ls
     show d sb a
     "I can\'t hide the shock fast enough as Lewis opens his eyes. My cheeks are almost as red as the strawberries."
     show l f
@@ -1456,8 +1458,11 @@ label l_choice3_done:
     mc "I…I feel the same. I\'ll be honest, I never had any intention of falling in love with you. But before I knew it, I was already falling before I could stop it."
     mc "I love how you act all cool and aloof, but you\'re secretly kind. Your work ethic is nothing short of admirable."
     mc "And above all else, you actually listened to me and took a chance when it would\'ve been so easy to throw me to the side."
-    "Lewis pulls me to his chest. His hand cups my cheek as he kisses me. Without any regard to the people around us, he kisses me as if it\'s the one thing that\'ll keep him alive and breathing."
+    scene lewis_cg2
+    "Lewis pulls me to his chest. Without any regard to the people around us, he kisses me as if it's the one thing that'll keep him alive and breathing."
     "I find myself kissing back with just as much emotion."
+    scene bg hall day with dissolve
+    show d n b at left2
     show l bs
     "When he pulls away, he smiles at my red face and hazy eyes. His hand falls back to its original place as he continues to twirl me around the dance floor."
     show d n l

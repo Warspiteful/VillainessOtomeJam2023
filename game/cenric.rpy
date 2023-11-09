@@ -909,11 +909,11 @@ label cenric_route:
     show d oh
     "It rolls away."
     "I try again."
+    scene cenric_chibi
     "It rolls away."
-    show d ga
     mc "Damn tomato!"
-    show c laugh
     "Cenric laughs. He centers the tomato on the cutting board."
+    scene bg kitchen evening with fade
     show c smile neu at right2
     show d at left2
     with move
@@ -1178,8 +1178,10 @@ label cenric_route:
     c "Can I kiss you?"
     show d n b
     "I almost don\'t hear his words. They\'re so quiet that I thought I just imagined it. But he\'s looking at me expectantly. So I nod."
-    show c at left2 with move
+    scene cenric_cg1
     "He closes the distance between us. His lips are soft and sweet. A sense of warmth washes over me. It\'s like I\'ve been sunbathing on a perfect summer day."
+    show bg kitchen day
+    show d n b at left
     show c at right with move
     "When I move to wrap my arms around him, he suddenly pushes me away. I stare at him in shock."
     show d oh
@@ -1272,6 +1274,7 @@ label cenric_route:
     voice c67
     c "Please."
     show c smile calm
+    scene cenric_cg2
     "We head back to the refreshments and start handing out food and replenishing when needed. Cenric\'s face is beaming with every compliment he receives."
     "This is all I need. Food and the man I love. It\'s a perfect ending."
     scene end card with fade
