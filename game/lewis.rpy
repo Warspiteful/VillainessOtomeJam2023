@@ -3,7 +3,7 @@ label lewis_route:
     "Dinner time. My favorite time of day. There\'s nothing like a nice and big meal to end off the day."
     show d fc with dissolve
     "It\'s something to be savored. It\'s like taking off your shoes after a long day at work. Dinner is sacred in every way."
-    show l neu at right
+    show l neu at right, flip
     show d oh at left
     with moveinright
     "Then there\'s Lewis, sitting there with his food barely touched. I\'ve already had seconds. I stare at him."
@@ -74,7 +74,7 @@ label lewis_route:
     "I looked like an idiot. But the good news is that I probably avoided any villainess death flags for the rest of my life."
     show d oh
     o "Lady [mcname]!!"
-    show o happy ex at right
+    show o happy ex at right, flip
     show d at left
     with moveinright
     "I look up and see Otillia walking towards me with a bright smile."
@@ -122,7 +122,7 @@ label lewis_route:
     mc "Nothing."
     scene bg dining night with fade
     show d fc at left
-    show l neu at right
+    show l neu at right, flip
     with dissolve
     "Dinner, once again, looks divine. I\'m practically drooling at the sight."
     show d oh
@@ -282,7 +282,7 @@ label l_choice1_done:
     scene bg ballroom with fade
     "A week later, we\'re in the ballroom deciding on decorations. We\'ve slowly been putting together the details of the party."
     "It feels nice, being able to converse with him. Despite all the scolding, he is fun to talk to."
-    show l an at right
+    show l an at right, flip
     show d ls at left
     with dissolve
     voice l24
@@ -319,7 +319,7 @@ label l_choice1_done:
     show l an
     "Lewis stares at me, his eyes narrowed in disbelief. I struggle to hold back a laugh. It\'s moments like these that I truly started to enjoy."
     scene bg hall day with fade
-    show l neu at right
+    show l neu at right, flip
     with moveinleft
 
     pause 1
@@ -352,7 +352,7 @@ label l_choice1_done:
     mc "(I never wood have thought he likes oak this much.)"
     "He steps behind me, placing his hands on my shoulders. I try to look back at him, but instead he leads me over to a chair and pushes me down."
     show d at left
-    show l neu at right
+    show l neu at right, flip
     with moveinright
     "I sit obediently, still confused. I watch with wide eyes as he picks out a book from his bookshelf and hands it to me."
     mc "What\'s this?"
@@ -387,7 +387,7 @@ label l_choice1_done:
     "An hour or two later and Lewis has been sighing constantly. I look up from the cookbook in concern."
     "It is obvious he\'s stressed about whatever work he\'s currently doing."
     show d oh at left
-    show l neu at right
+    show l neu at right, flip
     with dissolve
     mc "Lewis?"
     voice l36
@@ -470,7 +470,7 @@ label l_choice1_done:
     "The next day is spent in Otillia\'s room. Her room is decorated in soft pinks, glowing in the sunlight."
     "She has a small vanity with hardly any makeup or perfume on it. It fits her character perfectly."
     "A set of dresses are laid out on the bed. Only two are hers while the rest are from my closet."
-    show o flust at right with moveinright
+    show o flust at right, flip with moveinright
     voice o10
     o "[mcname], are you sure it\'s okay if I borrow these?"
     "I nod, sitting on the bed as I watch Otillia look over the dresses."
@@ -676,7 +676,7 @@ label l_choice2_done:
     c "As you wish."
     hide c
     with dissolve
-    show l at right
+    show l at right, flip
     show d at left
     with move
     show d oh
@@ -891,7 +891,7 @@ label l_choice2_done:
     voice c13
     c "How\'s it going in here?"
     show d sb a at left
-    show l nerve at right
+    show l nerve at right, flip
     with move
     "At the sound of Cenric\'s loud and booming voice, I jump away from Lewis. My body heats up from embarrassment."
     mc "E-everything\'s fine."
@@ -916,7 +916,7 @@ label l_choice2_done:
     "It\'s a nice day out. I decided to take a walk to clear my mind and get a rest from all the busy work that\'s been happening recently. I take a deep breath, enjoying the cool breeze and fresh air."
     show l neu at left
     "I spot Lewis sitting under the gazebo, book in hand. I walk closer and notice he\'s eating tea sandwiches. A smile comes across my face as I decide to greet him."
-    show d ls at right with moveinright
+    show d ls at right, flip with moveinright
     mc "Do my eyes deceive me?"
     "I cheekily smirk at him as I sit down."
     mc "Prince Lewis, are you taking a break?"
@@ -954,11 +954,11 @@ label l_choice2_done:
     "The vulnerable side that seems to only be for me. Even if I annoy him by talking his ear off, he is never truly angry at me. If anything, he got used to it."
     scene bg office day with fade
     show l neu at left with dissolve
-    show d ss at right with moveinright
+    show d ss at right, flip with moveinright
     "The day is long and I find Lewis still working in his office. I don\'t say a word and softly shut the door behind me. I start to wander around his office."
     show d at center with move
     pause 0.3
-    show d at right with move
+    show d at right, flip with move
     "I naturally gravitate towards his bookshelf. I always wanted to see what types of things he liked reading. I mumble out titles."
     show d at center with move
     mc "\'War Tactics\'..."
@@ -1132,7 +1132,7 @@ label l_choice3_done:
     "Instead, I just sit back in the chair, enjoying the silence and his company. I have truly come to love these moments, shared only between us."
     scene bg mcroom nightlight with fade
     show d n b at left
-    show o neu at right
+    show o neu at right, flip
     with dissolve
     "It\'s the night before the ball. I\'m in my room, sitting on the bed as I brush out Otillia\'s hair. I invited her over for a talk, but now that she\'s here, I can\'t seem to get the words out."
     show o smile nor
@@ -1216,7 +1216,7 @@ label l_choice3_done:
     "Excitement fills me as I close my eyes. Tomorrow will be filled with happiness. For once, I don\'t care how others will see me. All I care about is seeing Lewis happy."
     scene bg hall day with fade
     show d pout upset at left
-    show o laugh at right
+    show o laugh at right, flip
     with dissolve
     "I haven\'t seen Lewis. I stand in the hall, my arms crossed with a pout on my lips. Otillia laughs at me."
     o "[mcname], it\'s all right. You knew that he would be busy today."
@@ -1238,7 +1238,7 @@ label l_choice3_done:
     show d neu
     "I take a look around, making sure no one notices me. I then take out a piece of chocolate that was hidden in my shawl."
     show d oh at left
-    show l ss at right
+    show l ss at right, flip
     with moveinright
     "Before I can eat it, I see Lewis speed walking towards me. My eyes light up and I smile."
     show d ss
@@ -1386,7 +1386,7 @@ label l_choice3_done:
     show l behind d
     show l at left2
     show c at right2
-    show o flust at right
+    show o flust at right, flip
     with move
     voice o34
     o "What\'s the victory for?"

@@ -79,11 +79,12 @@ label cenric_route:
     show d oh
     show c timid
     mc "(Uh oh.)"
-    show c behind d at left2
-    show l a at right
+    show c behind d at center
+    show l a at right, flip
     with moveinright
     "I turn and see Lewis glaring at us with his arms crossed. Well, not us. More specifically, me."
     show d ss
+    voice l_sigh
     "I give him a smile. He sighs heavily, as if he just found a child sneaking snacks before dinner. Which I did not think of doing."
     "This time."
     "Lewis walks over to us and puts his hands on his hips."
@@ -112,9 +113,10 @@ label cenric_route:
     show l neu
     voice l88
     l "All right. I\'ll leave you to your own devices."
-    hide l
+    show l at offscreenright, flip
     show c at right
     with moveinright
+    hide l
     "After Lewis gives me an unspoken warning, he exits the kitchen. I shake my head."
     show d gloom
     mc "I apologize about him."
@@ -139,8 +141,10 @@ label cenric_route:
     "Cenric bows his head."
     voice c29
     c "I-I would appreciate that, my lady."
-    hide c with dissolve
-    show d at center
+    hide c
+    show bg hall day
+    show d neu at center
+    with dissolve
     "I leave the kitchen with a wave. Cenric is truly a sweet man. He seems happy enough when I talk to him. There\'s just some sadness that I see hidden in his eyes."
     "For now, I\'ll put that on the backburner. I need to make sure this ball is planned perfectly."
     "I don\'t want Lewis to be upset with me, but I also don\'t want to stress him out."
@@ -148,8 +152,8 @@ label cenric_route:
     "I know just the person to help me with everything."
     scene bg tearoom day
     show d neu at left
-    show o neu at right
-    with dissolve
+    show o neu at right, flip
+    with fade
     "The next morning, I meet Otillia in the drawing room."
     "Since she\'s the one who came up with the idea of the ball, she surely must have some ideas on what I can do."
     show d ss
@@ -347,6 +351,7 @@ label cenric_route:
     mc "I don\'t like that. I don\'t want you to see me that way."
     show c smile neu
     "Cenric looks at me. His expression is soft, a ghost of a smile on his lips."
+    voice c_wish
     c "Okay. Then I\'ll call you just [mcname]."
     show d ss
     mc "Good."
@@ -382,6 +387,7 @@ label cenric_route:
     show d ls
     mc "Here!"
     show c laugh
+    voice c_laugh
     c "Good choice!"
     show c smile calm
     "He sits and takes out the food, setting it between us. I lick my lips in excitement as I look over the food. Along with the flatbread, he brought cookies for dessert. For drinks, he made fruit juice."
@@ -394,6 +400,7 @@ label cenric_route:
     show d ls
     mc "I like it! It\'s a little sour!"
     show c pout
+    voice c_aww
     "Cenric sighs. He picks up a piece of the flatbread and bites into it. He pouts as he chews, making me hold back a laugh."
     show d oh
     mc "What\'s wrong, Cenric?"
@@ -473,7 +480,7 @@ label cenric_route:
     show d at left
     show c behind d at left2
     show l bs at right2
-    show o blush smile at right
+    show o blush smile at right, flip
     with moveinright
     "Lewis is laughing. Actually laughing. The smile on his face looks so pure and natural."
     show c laugh
@@ -553,6 +560,7 @@ label cenric_route:
     show d n l
     mc "It\'s nothing. I\'m just helping you out."
     show c laugh
+    voice c_laugh
     c "You\'re a great friend!"
     show d gloom
     "Friend."
@@ -583,7 +591,7 @@ label cenric_route:
     l "Come in."
     show bg office after
     show d at left
-    show l neu at right
+    show l neu at right, flip
     with dissolve
     "I open the door to find him sitting at his desk as he looks over papers. When he hears me enter, he sets down the paper and looks up at me."
     l "Did you need something?"
@@ -601,6 +609,7 @@ label cenric_route:
     show d n b
     mc "I\'m working with Cenric on it. He\'s actually going to teach me how to cook."
     show l shock
+    voice l_this
     l "Why?"
     show d neu
     mc "Because it\'s necessary."
@@ -612,6 +621,7 @@ label cenric_route:
     "My smile grows into a smirk."
     mc "Thank you. Did I satisfy your expectations?"
     show l ss
+    voice l_sigh
     "Lewis sighs, rolling his eyes. He then gives me a playful smile."
     voice l90
     l "Yes. Yes, you did."
@@ -639,11 +649,13 @@ label cenric_route:
     "I roll my eyes."
     mc "I\'m being serious, Lewis. As long as she\'s keeping you from getting too stressed, I don\'t care."
     show l neu
+    voice l_sigh
     "He sighs, almost in relief."
     l "I could say the same for you. You look happy spending time with Cenric. I thought you would get too overwhelmed with all the party planning."
     show d ss
     mc "It looks like we\'re both happy."
     show l ss
+    voice l_laugh
     "He smiles and laughs slightly."
     l "That\'s right."
     show d neu
@@ -664,6 +676,7 @@ label cenric_route:
     with dissolve
     show c laugh at right
     with moveinright
+    voice c_hey
     c "[mcname]!!!"
     "I look up to see Cenric happily laughing and running towards me, waving like he just came back from a long trip."
     show d n b
@@ -766,6 +779,7 @@ label cenric_route:
     "The vendor and I start to chat about growing crops. He even gives me tips on how to start my own garden. Cenric watches us with a grin."
     "After about ten minutes of chatting, Cenric finally interrupts."
     show c laugh
+    voice c_laugh
     c "All right, all right. I think we\'ve talked enough about growing veggies."
     "The man laughs, his attitude from before completely gone."
     vo "I expect you to help this lovely lady out, Cenric. Do all the heavy lifting for her."
@@ -869,6 +883,7 @@ label cenric_route:
     show d ls
     mc "Now I mix!"
     show c flust surp
+    voice c_hey
     c "Wait–!"
     show d oh
     show c laugh
@@ -890,6 +905,7 @@ label cenric_route:
     show d fc
     mc "Permission to eat the cookie dough, Chef?"
     show c laugh
+    voice c_laugh1
     "Cenric laughs, the sound coming from deep in his belly."
     c "No. It\'ll give you a stomachache."
     show c blush laugh
@@ -912,6 +928,7 @@ label cenric_route:
     scene cenric_chibi
     "It rolls away."
     mc "Damn tomato!"
+    voice c_laugh
     "Cenric laughs. He centers the tomato on the cutting board."
     scene bg kitchen evening with fade
     show c smile neu at right2
@@ -948,6 +965,7 @@ label cenric_route:
     show d n l
     mc "All thanks to you, Chef."
     show c laugh
+    voice c_laugh
     "He laughs, shaking his head."
     c "Enough with calling me Chef."
     show c smile calm
@@ -1017,6 +1035,7 @@ label cenric_route:
     show d ga
     mc "What?! That is an insult!! Beef stew brings happiness and comfort. It\'s like a warm hug! I\'ve craved your beef stew since I first tasted it!"
     show c blush laugh a
+    voice c_laugh
     "Cenric face turns a dark red. He giggles, actually giggles. He turns his face away, trying to hide his flush."
     "Then the timer goes off, causing both of us to jump."
     show c at right2 with move
@@ -1044,7 +1063,7 @@ label cenric_route:
     "I go to knock on his door but see that it\'s slightly cracked open. I mutter out an \'excuse me\' before opening the door."
     show bg lewisroom day
     show d at left
-    show l bb at right
+    show l bb at right, flip
     show o blush smile at right2
     with dissolve
     "Otillia is in Lewis\'s room. And they\'re kissing. I let out a gasp."
@@ -1072,6 +1091,7 @@ label cenric_route:
     show d oh
     mc "Don\'t answer that."
     show l nerve
+    voice l_this
     l "[mcname], I–"
     show d ss
     mc "I don\'t want to marry you."
@@ -1116,6 +1136,7 @@ label cenric_route:
     show d oh at left2 with move
     mc "Why are you here all alone?"
     show c huh blush
+    voice c_hey
     "I walk over to him, my arms crossed. Cenric gives me a startled look as he jumps slightly. His gaze softens."
     show c smile neu
     c "I just wanted some alone time."
@@ -1164,6 +1185,7 @@ label cenric_route:
     show d at left with move
     "Cenric reaches into the bag. I decide to make a run for it."
     show c at center with move
+    voice c_hey
     "Cenric notices. His hands reach out and grab my waist, turning me around and pulling me flush against his chest."
     show c conf
     voice c56

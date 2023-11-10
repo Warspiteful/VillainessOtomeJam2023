@@ -50,7 +50,7 @@ label start:
     "My thoughts are interrupted by a lady bursting into my room. I pause mid bite."
     scene bg mcroom base
     show d oh at left
-    show maid at right
+    show maid at right, flip
     with dissolve
     "She stares at me."
     "I stare back."
@@ -137,7 +137,7 @@ label start:
     "Megane: A character with glasses. Oftentimes, male megane are seen as stoic and aloof."
     scene bg tearoom day
     show d n b at left
-    show l neu at right_fix
+    show l neu at right, flip
     with dissolve
     stop music fadeout 3.0
     play music music_Lewis_nm fadein 3.0
@@ -262,7 +262,7 @@ label choice1_done:
     show d fbb
     "Not even the title of villainess. Although it would be a shame if I die again because of it."
     "I sigh happily and pick up a cream puff."
-    show l neu at right_fix
+    show l neu at right, flip
     show d oh at left
     with dissolve
     with move
@@ -316,7 +316,7 @@ label choice1_done:
     voice l7
     l "Otillia is visiting soon. Be ready by then."
     show l at offscreenright
-    show maid at right
+    show maid at right, flip
     with move
     "Without another word, he gets up and exits the room."
     "I turn towards the maid, the uneaten cream puff in my hand."
@@ -347,7 +347,7 @@ label choice1_done:
     "Both of them walk over to me. The chef bows deeply, not making eye contact."
     scene bg tearoom day
     show d neu at left
-    show c puppy lookDown at right
+    show c puppy lookDown at right, flip
     voice c1
 
     c "My lady… I'm Cenric. The head chef."
@@ -463,7 +463,7 @@ label choice2_done:
     play music music_Main_nm
     scene bg tearoom day
     show d ss at center
-    show o neu at right
+    show o neu at right, flip
     show d ls at left
     with dissolve
     "I grin, walking over to them. I curtsy, my eyes meeting hers."
@@ -496,7 +496,7 @@ label choice2_done:
     show d ss
     show o neu at center
     with move
-    show l neu at right
+    show l neu at right, flip
     with dissolve
     "I guide her over to the couch. We both sit as the grand mage and Lewis sit across from us. I take a deep breath. Doing good so far."
     mc "Please, tell me about your studies so far. I have never met someone with powerful magic before."
@@ -505,10 +505,7 @@ label choice2_done:
     voice o_alright
     o "Oh, it's not much. It's just light magic. Healing… I'm not special."
     "The grand mage shakes her head."
-    hide d
-    show o neu at left with move
-    show l neu at right_fix
-
+    show l neu at right, flip
     gm "Light magic is the rarest form of magic. Not to mention your healing powers are quite exceptional. You are like a gift from the gods."
     show o flust ce smile
     "Despite looking uncomfortable, Otillia blushes, looking down into her lap."
@@ -527,13 +524,13 @@ label choice2_done:
     voice o_glad
     o "Thank you for saying that, my lady."
     show l nerve
+    hide o with dissolve
     l "By the way, I wanted to ask about–"
-    show c conf at left
-    hide o
-    show l shock
-    with dissolve
-    "Lewis's words are interrupted by Cenric entering the room. He's rolling a cart filled with tea and snacks. My eyes immediately light up."
+    show c conf at center
     show d oh
+    show l shock
+    with moveinright
+    "Lewis's words are interrupted by Cenric entering the room. He's rolling a cart filled with tea and snacks. My eyes immediately light up."
     voice l_sigh
     "Lewis looks surprised before sighing and glancing over at me."
     l "[mcname], what is this?"
@@ -567,10 +564,12 @@ label choice3_eatmore:
     l "I don't think it's entirely appropriate–"
     show d pout upset
     mc "Oh, shush. We have guests. We can't have them hungry."
-    hide l
-    show d at right
+    show c at right
+    show l at offscreenright
+    show d at left
     show o flust at center
-    with dissolve
+    with moveinright
+    hide l
     "Otillia walks over, her eyes scanning all the options."
     show d ls
     mc "Pick whatever you'd like."
@@ -591,7 +590,7 @@ label choice3_eatmore:
     show d ls
     "Cenric doesn't say anything and looks away. His face is almost completely red."
     hide c
-    show l an at right
+    show l an at right, flip
     with dissolve
     voice l_sigh
     "I bite back a giggle and then turn to the food, grabbing some for myself. Lewis sighs and rolls his eyes."
@@ -628,7 +627,7 @@ label choice3_appreciate: #WIP: Set transforms to show all 4 sprites on-screen a
     "I turn towards Cenric and see his face fall. I turn back towards Lewis and frown. Can someone really be this apathetic towards food?"
     hide c
     show d pout upset at left
-    show l an at right
+    show l an at right, flip
     with moveoutleft
     mc "Don't be rude. Cenric worked hard."
     l "Food isn't necessarily something I need to worry about. We're here for a meeting, not your hunger."
@@ -653,7 +652,7 @@ label choice3_done:
     show d gloom
     "I just need to avoid becoming a villainess."
     show o flust at left
-    show l ss at right
+    show l ss at right, flip
     with dissolve
     voice o3
     o "Well, I'm no one to celebrate."
@@ -698,12 +697,12 @@ label choice3_done:
     show o ce happy
     voice o8
     o "It's settled! I'll leave the planning to you two!"
-    show o happy ex
-    "There isn't much room for discussion. Otillia quickly changes the subject and refuses to let it circle back to the party. After a while, both her and the grand mage depart."
-    hide o
+    show o at offscreenleft
+    show l neu at right, flip
     show d ss at left
-    show l neu at right
     with move
+    hide o
+    "There isn't much room for discussion. Otillia quickly changes the subject and refuses to let it circle back to the party. After a while, both her and the grand mage depart."
     "I sit back in my chair, sipping on some tea. I think that went well. Well enough to form a good relationship with Otillia and not be blasted away by light magic."
     show d ls
     mc "(Victory!)"
@@ -798,4 +797,3 @@ label LewisRoute:
     show d gloom
     "Yeah. Not cut out to be a villainess."
     jump lewis_route
-    

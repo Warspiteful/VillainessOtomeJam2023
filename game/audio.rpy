@@ -9,7 +9,7 @@ define audio.c_laugh = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughM
 define audio.l_ofc = "audio/Voice Files/RoughMix.Lewis Lines.Completed/RoughMix.Lewis Lines.Completed.OfCourse.mp3"
 define audio.l_sigh = "audio/Voice Files/RoughMix.Lewis Lines.Completed/RoughMix.Lewis Lines.Completed.Sigh.mp3"
 define audio.l_stop = "audio/Voice Files/RoughMix.Lewis Lines.Completed/RoughMix.Lewis Lines.Completed.StopIt.mp3"
-define audio.l_this = "audio/Voice Files/RoughMix.Lewis Lines.Completed/RoughMix.Lewis Lines.Completed.ThisIsurse.mp3"
+define audio.l_this = "audio/Voice Files/RoughMix.Lewis Lines.Completed/RoughMix.Lewis Lines.Completed.ThisIs.mp3"
 define audio.l_laugh = "audio/Voice Files/RoughMix.Lewis Lines.Completed/RoughMix.Lewis Lines.Completed.Laughter.mp3"
 
 define audio.o1 = "audio/Voice Files/RoughMix.Otillia Lines.Completed/RoughMix.Otillia Lines.Completed.Line 3.mp3"
