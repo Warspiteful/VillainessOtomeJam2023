@@ -121,6 +121,11 @@ define audio.c59 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.C
 define audio.c60 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.Cenric Lines.Completed.Line 62.mp3"
 define audio.c61 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.Cenric Lines.Completed.Line 63.mp3"
 define audio.c62 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.Cenric Lines.Completed.Line 64.mp3"
+define audio.c63 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.Cenric Lines.Completed.Line 65.mp3"
+define audio.c64 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.Cenric Lines.Completed.Line 66.mp3"
+define audio.c65 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.Cenric Lines.Completed.Line 67.mp3"
+define audio.c66 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.Cenric Lines.Completed.Line 68.mp3"
+define audio.c67 = "audio/Voice Files/RoughMix.Cenric Lines.Completed/RoughMix.Cenric Lines.Completed.Line 69.mp3"
 
 
 define audio.l1 = "audio/Voice Files/RoughMix.Lewis Lines.Completed/RoughMix.Lewis Lines.Completed.Line 3.mp3"

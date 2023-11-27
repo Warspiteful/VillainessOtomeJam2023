@@ -5,9 +5,8 @@ init python:
 
 label start:
 
-    play music music_Credits
+    play music music_Main_nm
     show cg1
-
     "The hit manhwa 'My Magical Kindness Made the Cold Prince Fall in Love!!' is the newest craze among manhwa readers."
     "Honestly…it's not the greatest out there. I've definitely read better. The plot is repetitive and the characters are the most basic tropes."
     "However…there's one thing that keeps me reading: the food."
@@ -25,13 +24,11 @@ label start:
     "I lay back on my bed, phone in hand. My body feels light and tingly."
     y "(Did I eat today? I'm sure I did.)"
     y "(So why…do I feel this way?)"
-    stop music fadeout 1.0
     "My eyes drift close. I decide not to fight the feeling and fall asleep. I'll just eat a big breakfast tomorrow."
     scene black with fade
     call screen custom_input_modal("What was the villainess's name?", 'mcname')
 
     scene bg mcroom base with fade
-    play music music_Main
     "The next morning, I could hear the sounds of birds chirping. My nose twitches as a sweet scent slowly wafts through the room."
     "With a groan, I sit up, my eyes still closed. My muscles are sore and it feels as if I ran a marathon."
     "The smell of food is enough to make me crack open my eyes. Immediately, I notice a silver tray on my bedside."
@@ -129,6 +126,7 @@ label start:
     "The common room is just as elaborate as my bedroom, if not more." #WIP: [mcname]
     "The first thing I notice is a large bookshelf sprawling the length of one wall. A heavy dark oak table is surrounded by velvet couches and chairs."
     "Behind it are windows with thick red curtains that have been opened to let in the morning light."
+    play music music_Lewis_nm
     "A man sits in the padded chair at the head of the table. There's food laid out in front of him. All of it untouched."
     scene cg3 with dissolve
     "Lewis, the love interest of the manhwa."
@@ -139,8 +137,6 @@ label start:
     show d n b at left
     show l neu at right, flip
     with dissolve
-    stop music fadeout 3.0
-    play music music_Lewis_nm fadein 3.0
     voice l1
     l "Oh, you're awake. Good morning."
     "I just stare at him. It takes me a minute to realize he's talking to me."
@@ -240,6 +236,7 @@ label choice1_done:
     "The manhwa was fairly new and I had read all available episodes."
     show d gloom
     "When [mcname] showed up in the story, she was cruel from the get go. Stubborn, violent, and selfish, she was hated in the fandom."
+    play music music_em
     "I don't want that. And I don't want whatever death flags the author had planned."
     "Death flags: An element in a story used to foreshadow a character's imminent death or downfall."
     show d pout sad
@@ -267,6 +264,7 @@ label choice1_done:
     with dissolve
     with move
     l "[mcname]!"
+    stop music
     "I'm knocked out of my thoughts as I look up at Lewis."
     mc "Sorry, sorry. What is it?"
     show l nerve
@@ -282,7 +280,6 @@ label choice1_done:
     "I shake my head slightly and wave my hand dismissively."
     show d ss
     mc "I'm not interested in petty gossip."
-    stop music
     show d sb
     show l shock
     "The room is filled with gasps. I look around, confused."
@@ -294,7 +291,6 @@ label choice1_done:
     show l shock
     "The maid shakily points at me, her face filled with fear."
     m "Who are you and what have you done with [mcname]?"
-    play music music_Main_nm
     show d gloom
     "Oh, right."
     "[mcname] loved gossip and spreading rumors. It eventually made a rift between her and Lewis."
@@ -338,8 +334,8 @@ label choice1_done:
     "It's not like I don't want them to end up together. I just want to live and not suffer the fate of every manhwa villainess."
     show d neu
     "When I'm about to formulate a plan, I hear hushed whispering from the corner."
-    play music music_Cenric_nm
     scene cg4 with dissolve
+    play music music_Cenric_nm
     "I look towards the source of the noise and see the maid and a man in a chef's uniform conversing with each other."
     "The man is tall and big, with fluffy blonde hair and a slightly chubby face."
     "Cute."
@@ -433,6 +429,7 @@ label choice2_pleasure:
 
 label choice2_done:
     show d oh
+    play music music_Main
     "Since I'm alone–"
     show d gloom
     "I look over to the maid standing in the corner."
@@ -454,13 +451,12 @@ label choice2_done:
     "Did people even know that I died? Would they even care? What about–"
     show d gloom
     mc "What about the food in my fridge? It'll spoil. Such a waste."
-    play music music_Oti_nm
     scene cg5 with dissolve
     "I can hear more voices getting closer to the room. I turn and see Lewis, Otillia, and the grand mage."
     mc "Woah."
+    play music music_Oti_nm
     "Otillia is even more gorgeous in person. Golden locks fall across her shoulders, looking as smooth as silk. She has a rosy complexion, her hazel eyes captivating."
     "She's the typical heroine, except her beauty puts her above others. This is when it sets in that I truly am inside a manhwa."
-    play music music_Main_nm
     scene bg tearoom day
     show d ss at center
     show o neu at right, flip
@@ -530,6 +526,7 @@ label choice2_done:
     show d oh
     show l shock
     with moveinright
+    play music music_Cenric_nm
     "Lewis's words are interrupted by Cenric entering the room. He's rolling a cart filled with tea and snacks. My eyes immediately light up."
     voice l_sigh
     "Lewis looks surprised before sighing and glancing over at me."
@@ -645,6 +642,7 @@ label choice3_appreciate: #WIP: Set transforms to show all 4 sprites on-screen a
 
 label choice3_done:
     scene bg tearoom day with fade
+    play music music_Oti
     show d ss at center with dissolve
     "We all sit with our plates, the conversation flowing easily between one another. The attention is on Otillia and her upbringing."
     "I never thought I'd be in a position like this. It seems so surreal that I'm in a pretty and glittering dress while talking to the two most important people in the kingdom."
@@ -707,6 +705,7 @@ label choice3_done:
     show d ls
     mc "(Victory!)"
     show l nerve
+    play music music_Lewis
     l "[mcname]?"
     show d oh
     mc "Hmm?"
@@ -755,6 +754,7 @@ label CenricRoute:
     show d fc
     "What he doesn't know is that I'll use this chance to eat more of Cenric's food."
     "It's a truly evil plan."
+    stop music
     jump cenric_route
 
 label LewisRoute:
@@ -796,4 +796,5 @@ label LewisRoute:
     "I stop, a disgusted look crossing my face."
     show d gloom
     "Yeah. Not cut out to be a villainess."
+    stop music
     jump lewis_route

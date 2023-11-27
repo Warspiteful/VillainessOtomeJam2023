@@ -25,6 +25,7 @@ label cenric_route:
     show d oh
     mc "(Oops.)"
     show c flust surp at right2 with move
+    play music music_Cenric_nm
     "Everyone in the kitchen stops. Cenric turns around, his eyes widening slightly. He immediately comes over."
     voice c18
     c "My lady, are you okay?!"
@@ -154,6 +155,7 @@ label cenric_route:
     show d neu at left
     show o neu at right, flip
     with fade
+    play music music_Oti_nm
     "The next morning, I meet Otillia in the drawing room."
     "Since she\'s the one who came up with the idea of the ball, she surely must have some ideas on what I can do."
     show d ss
@@ -239,6 +241,7 @@ label cenric_route:
     "My stomach growls. I’ve been doing so much talking and planning that I forgot to eat a snack before lunch. I make my way to the kitchen."
     show bg kitchen day with dissolve
     show d neu
+    play music music_Cenric
     mc "Cenric? Are you in here?"
     show d ss at left
     show c tense at right
@@ -283,11 +286,11 @@ label cenric_route:
     "Cenric says nothing and only nods as he eats. I furrow my eyebrows slightly. Is he okay?"
     show d oh
     mc "What do you think? Do you have any food in mind?"
-    show c shy ex
+    show c frown neu
     c "It\'s your ball, Lady [mcname]. Not mine."
     show d gloom
     mc "Oh."
-    "I shrink in on myself. He never had such a…disinterested tone before. ALmost as if I\'m being annoying."
+    "I shrink in on myself. He never had such a…disinterested tone before. Almost as if I\'m being annoying."
     show d neu
     mc "Am I being too much?"
     show c conf
@@ -295,6 +298,7 @@ label cenric_route:
     c "Not at all."
     show c frown neu
     c "It\'s just… It\'s been some time since I\'ve had a passion for food. Your passion has made me…"
+    play music music_Romance
     "He stops talking. His eyes shift to above my gaze."
     show c tense
     "As he reaches out, I freeze. His hand moves towards my hair."
@@ -336,7 +340,7 @@ label cenric_route:
     "I laugh, bumping his shoulder."
     mc "It\'s all right. I won\'t bite your head off for not addressing me properly."
     mc "In fact, it makes me somewhat uncomfortable if you do."
-    show c flust surp
+    show c shy slight_open
     "He looks at me, his eyebrows raised."
     voice c35
     c "Really?"
@@ -359,6 +363,7 @@ label cenric_route:
     show d ss at left
     show c conf at right
     with dissolve
+    play music music_Main
     "The next day, I arrive at the kitchen. I give Cenric a smile as I wait in the doorway."
     mc "What\'s on the menu for today?"
     c "Flatbread pizza."
@@ -430,13 +435,15 @@ label cenric_route:
     "I try to not talk about food too much. Other than commenting on the food he makes for lunch, I keep it to a minimum. I can tell that it still makes him sad."
     "Seeing Cenric sad is the worst."
     show bg fountain day with dissolve
+    show c puppy lookDown at center
     "His eyes would get wide, his shoulders drooping as he fidgets with his fingers. It always looks as if he was going to cry. As cute as that is, I would get the strong urge to reach out and hug him."
     "So I avoid going too deep into the topic."
-    show bg kitchen day
+    scene bg kitchen day
     show d s at left
     show c laugh at right
-    with dissolve
+    with fade
     mc "And then she said my dress was tacky!"
+    show c talk neu
     "Cenric gasps."
     voice c36
     c "She did not!"
@@ -448,6 +455,7 @@ label cenric_route:
     show c frown neu
     "He shivers."
     voice c38
+    show c close pout
     c "Scary."
     show d s
     mc "The worst part of it all is that they looked at me all crazy like when I started eating a second plate of desserts. Apparently that\'s a taboo."
@@ -485,11 +493,11 @@ label cenric_route:
     "Lewis is laughing. Actually laughing. The smile on his face looks so pure and natural."
     show c laugh
     voice c42
-    c "Oh, it\'s Prince Lewis. Let\'s go say"
+    c "Oh, it\'s Prince Lewis. Let\'s go say–Woah!"
     show c flust surp at left
     show d at left2
     with move
-    extend "–Woah!"
+    play music music_Romance
     "I grab his arm and drag him behind a large tree. Cenric\'s body shields mine as his forearm braces against the tree to balance him."
     show d ss
     mc "(Looks like everything is on track for them.)"
@@ -586,6 +594,7 @@ label cenric_route:
     scene bg hall2 afternoon with fade
     "I spent the rest of the day party planning to distract myself from my budding emotions. After I finish, I decide to pay Lewis a visit."
     show d neu with dissolve
+    play music music_Lewis_nm
     "I knock on his office door."
     mc "Lewis? Are you free?"
     l "Come in."
@@ -776,6 +785,7 @@ label cenric_route:
     vo "Special manure mix. Gets them all nice and juicy."
     show d ls
     mc "Amazing… And these potatoes! I\'ve never seen any this big!"
+    show c smile neu
     "The vendor and I start to chat about growing crops. He even gives me tips on how to start my own garden. Cenric watches us with a grin."
     "After about ten minutes of chatting, Cenric finally interrupts."
     show c laugh
@@ -793,6 +803,7 @@ label cenric_route:
     show d ss
     "The vendor laughs, shaking his head. Cenric pays for the veggies and we are off shopping again."
     show c tense
+    play music music_Main_nm
     "The stares follow us to every stall. I ignore them while Cenric seems anxious. Every time he tries to check on me I just brush him off. A majority of the time, the merchants warm up to me, however, some of them still give me a sour attitude."
     "After buying some sweets, we start making our way back up through the streets. Cenric\'s eyes are on me."
     show c smile calm
@@ -849,6 +860,7 @@ label cenric_route:
     with dissolve
     "Now that we\'re in the kitchen, I feel a wave of nervousness wash over me. Why? I don\'t know. I look at Cenric who\'s retying his apron."
     show d oh
+    play music music_Cenric_nm
     mc "Is this a good idea?"
     show c laugh
     c "Sure it is! I promise you\'ll be good."
@@ -886,7 +898,7 @@ label cenric_route:
     voice c_hey
     c "Wait–!"
     show d oh
-    show c laugh
+    show c close laugh
     "I reach into the bowl with both hands and start to mix. Flour sticks to my hands. Cenric bursts out laughing."
     c "You\'re supposed to use a spoon first. Then when it all clumps together, you knead it."
     show d n b
@@ -904,8 +916,8 @@ label cenric_route:
     c "Next time we can make cookies. It\'s surprisingly hard to do."
     show d fc
     mc "Permission to eat the cookie dough, Chef?"
-    show c laugh
-    voice c_laugh1
+    show c close laugh
+    voice c_laugh
     "Cenric laughs, the sound coming from deep in his belly."
     c "No. It\'ll give you a stomachache."
     show c blush laugh
@@ -922,17 +934,16 @@ label cenric_route:
     show d ss
     mc "Don\'t worry, I got this."
     "I give him a confident grin. He shakes his head, crossing his arms as he watches me. I grip the tomato and try to cut it."
-    show d oh
+    scene cenric_chibi
     "It rolls away."
     "I try again."
-    scene cenric_chibi
     "It rolls away."
     mc "Damn tomato!"
     voice c_laugh
     "Cenric laughs. He centers the tomato on the cutting board."
     scene bg kitchen evening with fade
     show c smile neu at right2
-    show d at left2
+    show d pout upset at left2
     with move
     voice c48
     c "Let me help."
@@ -990,6 +1001,7 @@ label cenric_route:
     "I can truly feel Cenric\'s passion for cooking. And it makes me wonder why he lost it in the first place."
     "The mood is peaceful as we wait for the pizza to cook in the oven. I decide to just ask."
     show d oh
+    play music music_em
     mc "What made you lose your passion for cooking?"
     show c tense
     "Cenric looks at me, his gaze unreadable."
@@ -1040,7 +1052,7 @@ label cenric_route:
     "Then the timer goes off, causing both of us to jump."
     show c at right2 with move
     show d oh
-    extend "Cenric immediately goes over to the oven. As soon as he opens the door, the smell wafts out into the kitchen."
+    "Cenric immediately goes over to the oven. As soon as he opens the door, the smell wafts out into the kitchen."
     show c laugh
     c "Pizza is done!"
     "I watch as he sets it down on the counter."
@@ -1066,6 +1078,7 @@ label cenric_route:
     show l bb at right, flip
     show o blush smile at right2
     with dissolve
+    play music music_Main_nm
     "Otillia is in Lewis\'s room. And they\'re kissing. I let out a gasp."
     show d ls
     mc "Finally!"
@@ -1091,7 +1104,6 @@ label cenric_route:
     show d oh
     mc "Don\'t answer that."
     show l nerve
-    voice l_this
     l "[mcname], I–"
     show d ss
     mc "I don\'t want to marry you."
@@ -1163,6 +1175,7 @@ label cenric_route:
     voice c53
     c "Did you just throw flour at me?"
     show d ls
+    play music music_Romance
     mc "What are you gonna do about it?"
     show c conf
     "I smirk mischievously. Cenric looks determined as he reaches into the bag of flour."
@@ -1185,7 +1198,6 @@ label cenric_route:
     show d at left with move
     "Cenric reaches into the bag. I decide to make a run for it."
     show c at center with move
-    voice c_hey
     "Cenric notices. His hands reach out and grab my waist, turning me around and pulling me flush against his chest."
     show c conf
     voice c56
@@ -1200,18 +1212,19 @@ label cenric_route:
     c "Can I kiss you?"
     show d n b
     "I almost don\'t hear his words. They\'re so quiet that I thought I just imagined it. But he\'s looking at me expectantly. So I nod."
-    scene cenric_cg1
+    scene cenric_cg1 with fade
     "He closes the distance between us. His lips are soft and sweet. A sense of warmth washes over me. It\'s like I\'ve been sunbathing on a perfect summer day."
-    show bg kitchen day
+    scene bg kitchen day
     show d n b at left
-    show c at right with move
+    show c huh blush at right
+    with fade
     "When I move to wrap my arms around him, he suddenly pushes me away. I stare at him in shock."
     show d oh
     mc "What? What is it?"
     "I pause and lightly touch my lips with my fingers."
     show d gloom
     mc "Does my breath stink?"
-    show c huh blush
+    show c huh blush a
     voice c58
     c "I just kissed an engaged woman! A noble woman engaged to a prince!"
     show d neu
@@ -1250,6 +1263,7 @@ label cenric_route:
     scene bg ballroom with fade
     show d gloom at center with dissolve
     mc "(My feet hurt.)"
+    play music music_Main
     "The ball has been in full swing for almost an hour now. After Lewis and I mentioned that we wouldn\'t get married, things were…crazy, to say the least."
     "There were a lot of murmurs, glances, and no doubt ill feelings towards me. Lewis could see the situation going out of control and quickly quelled the rumors."
     "He said it was mutual and that we remain friends. No one was going to argue with the future king anyway."
@@ -1299,6 +1313,6 @@ label cenric_route:
     scene cenric_cg2
     "We head back to the refreshments and start handing out food and replenishing when needed. Cenric\'s face is beaming with every compliment he receives."
     "This is all I need. Food and the man I love. It\'s a perfect ending."
-    scene end card with fade
+    scene black with fade
     pause
     return

@@ -6,6 +6,7 @@ label lewis_route:
     show l neu at right, flip
     show d oh at left
     with moveinright
+    play music music_Lewis
     "Then there\'s Lewis, sitting there with his food barely touched. I\'ve already had seconds. I stare at him."
     "He notices and lowers the papers he\'s reading. He\'s always reading."
     show l nerve
@@ -52,6 +53,7 @@ label lewis_route:
     voice l_ofc
     l "As do I."
     scene bg fc day with fade
+    play music music_Main
     "I got lost. A lot. The castle was way bigger than I anticipated and all the halls looked the same."
     "I knew I looked crazy constantly wandering the halls, but Lewis had been in constant meetings for the past couple of days."
     "Because of this, I decided to study. The last couple of days I tried to acquaint myself with the relationships of nobles that previously existed."
@@ -77,6 +79,7 @@ label lewis_route:
     show o happy ex at right, flip
     show d at left
     with moveinright
+    play music music_Oti
     "I look up and see Otillia walking towards me with a bright smile."
     show d ls
     mc "Hello, Otillia. How many times have I told you to call me just [mcname]?"
@@ -134,6 +137,7 @@ label lewis_route:
     voice l21
     l "No, there’s something. What is it?"
     show d gloom
+    play music music_em
     "I set down my fork and take a nervous breath. This is it. I can do it. I’ll get closer to him."
     show d neu
     mc "I know that you seem to have worries about my sudden change in personality. But I want to assure you that I am no longer the person I was."
@@ -151,8 +155,7 @@ label lewis_route:
     show l bb n
     "Lewis’ face turns red as he looks away."
     voice l23
-    l "Y-you don’t need to do all that. It is truly okay. In fact, I’m used to doing all this work alone."
-    l "I am sure I can handle it by myself. So you can just–"
+    l "Y-you don’t need to do all that. It is truly okay. In fact, I’m used to doing all this work alone. I am sure I can handle it by myself. So you can just–"
     show d n l
     mc "Oh, shush. Eat your food."
     show l f
@@ -163,6 +166,7 @@ label lewis_route:
     "He likes cutting his food up into small bites and eating slowly while poring over documents."
     "I almost want to say something, but I know that I\'ve pushed the issue too much for now."
     show d neu
+    play music music_Lewis_nm
     mc "So…have you given any thought to the guest list?"
     show l neu
     l "Hmm?"
@@ -275,6 +279,7 @@ label choice1_matching:
 label l_choice1_done:
     show d neu
     show l neu
+    play music music_Main_nm
     "As we continue to converse, I notice that Lewis has eaten a lot more than he normally does. In fact, he would normally already be in his office by this time."
     "If talking to him distracts him enough for this to happen, maybe I should start doing this at every dinner."
     "Before, it seemed awkward to even be in the same room as him. But we\'re now slowly warming up to each other."
@@ -301,7 +306,6 @@ label l_choice1_done:
     show d n l
     mc "That\'s what you think."
     show l ss
-    voice l_laugh
     "Lewis chuckles to himself as he continues to look through the fabrics. My mind tries to wander to food, but I keep it on track."
     "I pick up another fabric. This is the same dark blue that Lewis likes, except it has silver detailing. I show it to him."
     show d oh
@@ -362,6 +366,7 @@ label l_choice1_done:
     mc "Oh, so you joke now?"
     "His face stays serious, but his eyes hold a hint of playfulness."
     voice l34
+    play music music_Romance
     l "I do. It\'s actually a cookbook one of my younger brothers gifted me. I never had any use for it. It\'s yours now, if you\'d like."
     show d oh
     "My eyes widen. I start to flip through the book. It\'s filled with different recipes, many of which I\'ve never even heard of before."
@@ -397,6 +402,7 @@ label l_choice1_done:
     "He looks up from his papers. With a thoughtful hum, he leans back in his chair."
     "I take note of the way his shoulders seem to relax ever so slightly and how he stretches out his hands. It seems a distraction is needed."
     voice l37
+    play music music_Lewis
     l "What do you want to know?"
     mc "I\'ve only met them once. I would like to know your thoughts on them."
     voice l38
@@ -439,6 +445,7 @@ label l_choice1_done:
     show d neu
     mc "(Safe. That was a close one.)"
     show l ss
+    play music music_em
     l "The oldest is Finnley. He\'s the one I\'m closest to. Despite never favoring any loud spaces and often getting left out…he always made sure to check on me. He is a truly kind man."
     show d pout sad
     mc "Do you… How do you feel about his sickness?"
@@ -466,7 +473,7 @@ label l_choice1_done:
     mc "You have a deal."
     scene bg o_room day with fade
     show d neu at left with dissolve
-
+    play music music_Oti
     "The next day is spent in Otillia\'s room. Her room is decorated in soft pinks, glowing in the sunlight."
     "She has a small vanity with hardly any makeup or perfume on it. It fits her character perfectly."
     "A set of dresses are laid out on the bed. Only two are hers while the rest are from my closet."
@@ -606,6 +613,7 @@ label l_choice2_done:
     show d ss
     mc "It is."
     scene bg hall day with fade
+    play music music_Cenric_nm
     "Today is the day. I can already smell the food wafting in throughout the castle. I happily hum to myself as I practically skip down the halls."
     show d fbb at offscreenright with moveinleft
     pause 0.1
@@ -680,6 +688,7 @@ label l_choice2_done:
     show d at left
     with move
     show d oh
+    play music music_Lewis
     "He gives a bow then leaves Lewis and me alone. I start looking over the table. Desserts, side dishes, finger foods… There is truly a lot to eat."
     mc "Where should we start?"
     show l nerve
@@ -706,6 +715,7 @@ label l_choice2_done:
     show d neu
     mc "Well…"
     show d ss
+    play music music_em
     mc "Food has always brought me happiness and comfort. Whenever I was stressed from work or from life in general, I would eat food. The stress would just melt away."
     show d neu
     mc "It was honestly a struggle. It\'s something I enjoyed, but I got some pushback from others."
@@ -740,6 +750,7 @@ label l_choice2_done:
     mc "I\'m sorry that you had to go through that."
     show l nerve
     l "I-it\'s fine. It… It isn\'t so bad nowadays."
+    play music music_Lewis
     "I pick up one of the tea sandwiches."
     show d oh
     mc "Why did you choose this?"
@@ -845,6 +856,7 @@ label l_choice2_done:
     mc "Now focus."
     mc "What do you taste? What do you feel?"
     scene lewis_cg1
+    play music music_Romance
     "Lewis hums and takes a moment. I can see the cogs in his brain turn as he slowly articulates his thoughts."
     voice l50
     l "It tastes sweet. Delicate. Refreshing… It reminds me of you."
@@ -889,6 +901,7 @@ label l_choice2_done:
     l "I want to be someone worthy of your–"
     show c conf at center with moveinright
     voice c13
+    play music music_Cenric
     c "How\'s it going in here?"
     show d sb a at left
     show l nerve at right, flip
@@ -904,6 +917,7 @@ label l_choice2_done:
     l "It\'s delicious."
     show d ls
     mc "(He said it\'s delicious!)"
+    play music music_Romance
     "I can feel my body reach cloud nine. Finally, finally, I got this closed off prince to show me his true self."
     "I grab a random plate of food, shoving it in Lewis\' direction."
     show d fc
@@ -962,10 +976,8 @@ label l_choice2_done:
     "I naturally gravitate towards his bookshelf. I always wanted to see what types of things he liked reading. I mumble out titles."
     show d at center with move
     mc "\'War Tactics\'..."
-    show d at right2 with move
-    mc "\'Western Kingdom Politics\'…"
-    show d oh
-    extend "\'Diplomacy, Civility, and Cordiality: A Guide to Manners\'?!"
+    show d oh at right2 with move
+    mc "\'Western Kingdom Politics\'...\'Diplomacy, Civility, and Cordiality: A Guide to Manners\'?!"
     "I look at the prince, disbelief written all over my face."
     mc "Is this all you read?!"
     show l an
@@ -1134,6 +1146,7 @@ label l_choice3_done:
     show d n b at left
     show o neu at right, flip
     with dissolve
+    play music music_Oti
     "It\'s the night before the ball. I\'m in my room, sitting on the bed as I brush out Otillia\'s hair. I invited her over for a talk, but now that she\'s here, I can\'t seem to get the words out."
     show o smile nor
     o "[mcname]?"
@@ -1240,6 +1253,7 @@ label l_choice3_done:
     show d oh at left
     show l ss at right, flip
     with moveinright
+    play music music_Lewis
     "Before I can eat it, I see Lewis speed walking towards me. My eyes light up and I smile."
     show d ss
     mc "Lewis! I haven\'t seen you all day."
@@ -1264,7 +1278,7 @@ label l_choice3_done:
     show d oh
     mc "Oh."
     show d sb
-    mc "Oh."
+    mc "{i}Oh.{/i}"
     show l bs
     "Before I can even respond, the doors of the ballroom open. Lewis straightens himself and loops his arm around mine. The bright lights are a shock but not as much of a shock as Lewis\' words."
     show bg ballroom
@@ -1375,7 +1389,6 @@ label l_choice3_done:
     show l bs
     "I push the childish thought away and watch his reaction once again. This time, his eyes light up and he immediately goes in for another bite."
     show l ss
-    voice l_this
     l "It\'s not too sweet and has a perfect balance of lemon flavor."
     l "I think this may be a new favorite of mine."
     show d ls
@@ -1445,6 +1458,7 @@ label l_choice3_done:
     with move
     "Lewis turns to me, holding out his hand."
     voice l75
+    play music music_Romance
     l "May I have this dance, my lady?"
     show d neu
     "I nod silently and take his hand. He leads me out to the center of the ballroom to join the other couples dancing."
@@ -1494,9 +1508,8 @@ label l_choice3_done:
     scene lewis_cg2
     "Lewis pulls me to his chest. Without any regard to the people around us, he kisses me as if it's the one thing that'll keep him alive and breathing."
     "I find myself kissing back with just as much emotion."
-    scene bg hall day with dissolve
-    show d n b at left2
-    show l bs
+    show d n b at left
+    show l bs at right
     "When he pulls away, he smiles at my red face and hazy eyes. His hand falls back to its original place as he continues to twirl me around the dance floor."
     show d n l
     "I start laughing like I\'ve never laughed before. It\'s filled with pure elation and love."
@@ -1509,6 +1522,6 @@ label l_choice3_done:
     show l nerve
     voice l84
     l "What\'s a manhwa?"
-    scene end card with fade
+    scene black with fade
     pause
     return
