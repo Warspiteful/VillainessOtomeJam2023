@@ -680,6 +680,7 @@ label cenric_route:
     "Besides…"
     show d n b
     mc "(I have someone I care about.)"
+    play music music_Cenric
     scene bg hall day with fade
     show d oh at left
     with dissolve
@@ -1274,6 +1275,7 @@ label cenric_route:
     with dissolve
     "But I don\'t care about the food. For once. Now I want to talk to Cenric. It seems there\'s a lull in the crowd so I make my way over to the table and pull him aside."
     "He gives me a smile. His face is sweaty and he looks exhausted, but he also seems truly happy. No sadness in his eyes."
+    play music music_Romance
     voice c63
     c "Hi."
     show d ls
@@ -1314,5 +1316,6 @@ label cenric_route:
     "We head back to the refreshments and start handing out food and replenishing when needed. Cenric\'s face is beaming with every compliment he receives."
     "This is all I need. Food and the man I love. It\'s a perfect ending."
     scene black with fade
+    stop music fadeout 1.0
     pause
     return

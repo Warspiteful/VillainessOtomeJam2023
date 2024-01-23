@@ -114,7 +114,7 @@ screen say(who, what):
 
         text what id "what":
             yalign 0.25
-        
+
 
 
     ## If there's a side image, display it above the text. Do not display on the
@@ -302,10 +302,10 @@ screen navigation():
             xpos gui.navigation_xpos
             yalign 0.95
 
-                
+
             textbutton _("Start") action Start():
                     text_size 80
-                        
+
 
             textbutton _("Load") action ShowMenu("load")
 
@@ -358,7 +358,7 @@ screen navigation():
                 imagebutton auto "gui/game_menu_custom/return_%s.png" action Return():
                     xpos 200
                     ypos 50
-            
+
             if not main_menu:
                 textbutton _("MENU") action MainMenu():
                     background Frame("gui/game_menu_custom/frame_options_nav.png", 35, 35, 75, 75,)
@@ -367,7 +367,7 @@ screen navigation():
                     text_idle_color gui.idle_color
                     text_hover_color gui.hover_color
 
-            
+
 
 
 
@@ -380,7 +380,7 @@ style mainmenu_button is gui_button:
     hover_sound "audio/Other/hover_sound.wav"
     xalign 0.5
     hover_underline "gui/title_card/mmbutton_hover.png"
-    
+
 style menu_button:
     hover_sound "audio/Other/hover_sound.wav"
     background Frame("gui/game_menu_custom/submenu_[prefix_]nav.png", 35, 35, 75, 75,  tile=False, yminimum = 127, xpadding = 50)
@@ -393,7 +393,7 @@ style menu_button_text:
     color "#FFF"
 
 style mainmenu_button_text:
-    size 55      
+    size 55
 
 style navigation_button:
     size_group "navigation"
@@ -606,7 +606,7 @@ screen about():
                 xsize 1300
                 ysize 800
 
-            
+
 
 
 style about_label is gui_label
@@ -674,7 +674,7 @@ screen file_slots(title):
                 background Frame("gui/game_menu_custom/frame_options_sub.png", 35, 35, 75, 75)
                 ysize 810
 
-               
+
             ## The grid of file slots.
                 grid 3 1:
                     style_prefix "slot"
@@ -697,7 +697,7 @@ screen file_slots(title):
                             add AlphaMask(Transform(FileScreenshot(slot), ypos = 100), "gui/game_menu_custom/SLOT_MASK.png") xpos -15 ypos -14
 
                             text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("Empty Slot")):
-                            
+
                                 style "slot_time_text"
                                 ypos 50
                                 xpos 190
@@ -707,7 +707,7 @@ screen file_slots(title):
 
                             key "save_delete" action FileDelete(slot)
 
-            imagebutton idle "gui/game_menu_custom/arrow_R.png" action FilePageNext():
+            imagebutton idle "gui/game_menu_custom/arrow_R.png" action FilePageNext(max=2):
                 xpos 1330
                 yalign 0.5
 
@@ -728,7 +728,7 @@ screen file_slots(title):
                     textbutton _("{#quick_page}Q") action FilePage("quick")
 
                 ## range(1, 10) gives the numbers from 1 to 9.
-                for page in range(1, 10):
+                for page in range(1, 3):
                     textbutton "[page]" action FilePage(page)
 
 
@@ -739,7 +739,7 @@ style page_button is gui_button
 style page_button_text:
     selected_color gui.hover_color
     size 50
-    
+
 style slot_button_text is gui_button_text
 style slot_time_text is slot_button_text
 style slot_name_text is slot_button_text
@@ -778,38 +778,40 @@ screen options():
     default sub_menu = "graphics_options"
     use game_menu(_("Options"), scroll="viewport"):
         hbox:
-            frame:
-                background Frame("gui/game_menu_custom/frame_options_nav.png", 35, 35, 75, 75)
-                xsize 400
-                ysize 810
-                vbox:
-                    
+            use options_nav
+            use options_list
 
-                    spacing 50
-                    style_prefix "options"
-                    
-                    textbutton _("Graphics") action SetScreenVariable("sub_menu", "graphics_options")
 
-                    textbutton _("Skip") action SetScreenVariable("sub_menu", "skip_options")
+screen options_list:
+    frame:
+        background Frame("gui/game_menu_custom/frame_options_sub.png", 35, 35, 75, 75)
+        ypos 30
+        xpos 5
+        xsize 900
+        ysize 760
+        if sub_menu == "graphics_options":
+            use graphics_options()
+        elif sub_menu == "skip_options":
+            use skip_options()
+        elif sub_menu == "sound_options":
+            use sound_options()
+        elif sub_menu == "text_options":
+            use text_options()
 
-                    textbutton _("Sound") action SetScreenVariable("sub_menu","sound_options")
-                    textbutton _("Text") action SetScreenVariable("sub_menu","text_options")
+screen options_nav:
+    zorder 10
+    frame:
+        background Frame("gui/game_menu_custom/frame_options_nav.png", 35, 35, 75, 75)
+        xsize 400
+        ysize 810
+        vbox:
+            spacing 50
+            style_prefix "options"
+            textbutton _("Graphics") yminimum 50 action SetScreenVariable("sub_menu", "graphics_options")
+            textbutton _("Skip") yminimum 50 action SetScreenVariable("sub_menu", "skip_options")
 
-            frame:
-                background Frame("gui/game_menu_custom/frame_options_sub.png", 35, 35, 75, 75)
-                ypos 30
-                xpos 70
-                xsize 900
-                ysize 760
-                if sub_menu == "graphics_options":
-                    use graphics_options()
-                elif sub_menu == "skip_options":
-                    use skip_options()
-                elif sub_menu == "sound_options":
-                    use sound_options()
-                elif sub_menu == "text_options":
-                    use text_options()
-               
+            textbutton _("Sound") yminimum 50 action SetScreenVariable("sub_menu","sound_options")
+            textbutton _("Text") yminimum 50 action SetScreenVariable("sub_menu","text_options")
 
 screen graphics_options():
     tag menu
@@ -881,7 +883,7 @@ screen sound_options():
 
             hbox:
                 bar value Preference("voice volume")
-      
+
 
 style options_button:
     hover_sound "audio/Other/hover_sound.wav"
@@ -899,7 +901,7 @@ style options_button_text:
     xalign 0.5
     idle_color gui.idle_color
     hover_color gui.hover_color
-    hover_outlines [(absolute(5) ,"#FFF", absolute(0), absolute(0))] 
+    hover_outlines [(absolute(5) ,"#FFF", absolute(0), absolute(0))]
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text
@@ -923,7 +925,7 @@ style check_button_text:
     xalign 0.5
     idle_color gui.idle_color
     hover_color gui.hover_color
-    
+
 style check_vbox is pref_vbox
 
 style slider_label is pref_label

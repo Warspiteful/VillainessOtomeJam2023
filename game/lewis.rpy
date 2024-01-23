@@ -1523,5 +1523,6 @@ label l_choice3_done:
     voice l84
     l "What\'s a manhwa?"
     scene black with fade
+    stop music fadeout 1.0
     pause
     return
