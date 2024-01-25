@@ -61,9 +61,12 @@ style vscrollbar:
     thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 style slider:
-    ysize gui.slider_size
+    xysize (500,58)
     base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
     thumb "gui/slider/horizontal_[prefix_]thumb.png"
+    thumb_offset 10
+    left_gutter 9
+    right_gutter 5
 
 style vslider:
     xsize gui.slider_size
@@ -391,6 +394,7 @@ style menu_button:
 style menu_button_text:
     size 70
     color "#FFF"
+    selected_idle_outlines [(absolute(2) ,"#89769b", absolute(0), absolute(0))]
 
 style mainmenu_button_text:
     size 55
@@ -899,9 +903,11 @@ style options_button_text:
     size 90
     xpos 160
     xalign 0.5
-    idle_color gui.idle_color
-    hover_color gui.hover_color
+    idle_color "6a649b"
+    hover_color "#cbbdde"
+    selected_idle_color "#cbbdde"
     hover_outlines [(absolute(5) ,"#FFF", absolute(0), absolute(0))]
+    selected_idle_outlines [(absolute(3) ,"#b5a4c8", absolute(0), absolute(0))]
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text
