@@ -395,6 +395,8 @@ style menu_button_text:
     size 70
     color "#FFF"
     selected_idle_outlines [(absolute(2) ,"#89769b", absolute(0), absolute(0))]
+    idle_outlines [(absolute(2) ,"#FFF0", absolute(0), absolute(0))]
+    hover_outlines [(absolute(2) ,"#FFF0", absolute(0), absolute(0))]
 
 style mainmenu_button_text:
     size 55
@@ -906,7 +908,8 @@ style options_button_text:
     idle_color "6a649b"
     hover_color "#cbbdde"
     selected_idle_color "#cbbdde"
-    hover_outlines [(absolute(5) ,"#FFF", absolute(0), absolute(0))]
+    idle_outlines [(absolute(3) ,"#fff0", absolute(0), absolute(0))]
+    hover_outlines [(absolute(3) ,"#FFF", absolute(0), absolute(0))]
     selected_idle_outlines [(absolute(3) ,"#b5a4c8", absolute(0), absolute(0))]
 
 style pref_label is gui_label
