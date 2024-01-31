@@ -37,7 +37,7 @@ define gui.hover_color = '#b48ac7'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#5e5793'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#8888887f'
@@ -55,7 +55,7 @@ define gui.interface_text_color = '#000000'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "fonts/Merienda-VariableFont_wght.ttf"
+define gui.text_font = gui.preference("font", "fonts/Merienda-VariableFont_wght.ttf")
 
 ## The font used for character names.
 define gui.name_text_font = "fonts/Calligraffitti-Regular.ttf"
@@ -82,6 +82,8 @@ define gui.notify_text_size = 24
 
 ## The size of the game's title.
 define gui.title_text_size = 75
+
+# Default Font
 
 
 ## Main and Game Menus #########################################################

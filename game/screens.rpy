@@ -726,13 +726,6 @@ screen file_slots(title):
 
                 spacing gui.page_spacing
 
-
-                if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
-
-                if config.has_quicksave:
-                    textbutton _("{#quick_page}Q") action FilePage("quick")
-
                 ## range(1, 10) gives the numbers from 1 to 9.
                 for page in range(1, 3):
                     textbutton "[page]" action FilePage(page)
@@ -803,6 +796,8 @@ screen options_list:
             use sound_options()
         elif sub_menu == "text_options":
             use text_options()
+        elif sub_menu == "accessibility_options":
+            use accessibility_options()
 
 screen options_nav:
     zorder 10
@@ -811,13 +806,13 @@ screen options_nav:
         xsize 400
         ysize 810
         vbox:
-            spacing 50
+            spacing 10
             style_prefix "options"
             textbutton _("Graphics") yminimum 50 action SetScreenVariable("sub_menu", "graphics_options")
             textbutton _("Skip") yminimum 50 action SetScreenVariable("sub_menu", "skip_options")
-
             textbutton _("Sound") yminimum 50 action SetScreenVariable("sub_menu","sound_options")
             textbutton _("Text") yminimum 50 action SetScreenVariable("sub_menu","text_options")
+            textbutton _("Font") yminimum 50 action SetScreenVariable("sub_menu","accessibility_options")
 
 screen graphics_options():
     tag menu
@@ -857,6 +852,18 @@ screen text_options():
         label _("Auto-Forward Time")
 
         bar value Preference("auto-forward time")
+
+screen accessibility_options():
+    tag menu
+    vbox:
+        xpos 200
+        yalign 0.5
+        xsize 800
+        spacing 100
+        style_prefix "check"
+        textbutton _("{font=fonts/Merienda-VariableFont_wght.ttf}{size=55}Default{/font}{/size}") action gui.SetPreference("font", "fonts/Merienda-VariableFont_wght.ttf")
+        textbutton _("{font=fonts/OpenDyslexic.otf}{size=55}OpenDyslexic{/font}{/size}") action gui.SetPreference("font", "fonts/OpenDyslexic.otf")
+        textbutton _("{font=fonts/Atkinson-Hyperlegible-Regular-102.otf}{size=78}Atkinson{/font}") action gui.SetPreference("font", "fonts/Atkinson-Hyperlegible-Regular-102.otf")
 
 screen sound_options():
     tag menu
