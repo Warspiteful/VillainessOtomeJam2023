@@ -231,7 +231,8 @@ label choice1_important:
 
 label choice1_done:
     scene bg tearoom day
-    show d neu at center with dissolve
+    show d neu at center 
+    with dissolve
     "Lewis sips on his coffee, not paying me any attention. I use the time to think about how I should go about this whole villainess thing."
     "The manhwa was fairly new and I had read all available episodes."
     show d gloom
