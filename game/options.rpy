@@ -245,6 +245,7 @@ init python:
     build.classify('game/**.rpy', 'archive')
     build.classify('game/**.rpyc', 'archive')
     build.classify('game/**.webm', 'archive')
+    build.classify('game/**.clip', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
