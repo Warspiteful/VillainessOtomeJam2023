@@ -1508,8 +1508,10 @@ label l_choice3_done:
     scene lewis_cg2
     "Lewis pulls me to his chest. Without any regard to the people around us, he kisses me as if it's the one thing that'll keep him alive and breathing."
     "I find myself kissing back with just as much emotion."
+    scene bg ballroom
     show d n b at left
     show l bs at right
+    with dissolve
     "When he pulls away, he smiles at my red face and hazy eyes. His hand falls back to its original place as he continues to twirl me around the dance floor."
     show d n l
     "I start laughing like I\'ve never laughed before. It\'s filled with pure elation and love."
